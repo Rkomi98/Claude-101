@@ -34,7 +34,7 @@ Un esempio che mette tutto insieme: *"Sono il responsabile marketing di una star
 
 Questo prompt funziona perché non lascia spazio all'ambiguità su nessuno dei tre fronti.
 
-This prompt framework is adapted from the 4D Framework for AI Fluency, developed through research collaboration between Professor Rick Dakan (Ringling College of Art and Design) and Professor Joseph Feller (University College Cork). The framework identifies four core competencies—Delegation, Description, Discernment, and Diligence—that enable effective collaboration with AI.
+Questo framework per i prompt è un adattamento del 4D Framework for AI Fluency, sviluppato attraverso una collaborazione di ricerca tra il Professor Rick Dakan (Ringling College of Art and Design) e il Professor Joseph Feller (University College Cork). Il framework individua quattro competenze chiave (Delega, Descrizione, Discernimento e Diligenza) che consentono una collaborazione efficace con l'IA.
 Se vuoi andare più in profondità ti suggeriamo di guardare [questo corso](https://anthropic.skilljar.com/ai-fluency-framework-foundations)
 
 ---
@@ -45,17 +45,23 @@ Claude può lavorare sia su testo che su contenuto visivo all'interno di documen
 
 In pratica, caricare un file è un modo per fare un salto avanti: anziché descrivere a parole cosa hai davanti, lo mostri direttamente. Puoi chiedere a Claude di riassumere un documento, descrivere un'immagine, identificare tendenze in un foglio di calcolo, o individuare bug in del codice. Una volta caricato il file, Claude ne analizza il contenuto e lo tiene in conto durante tutta la conversazione.
 
-Una nota utile: se vuoi che Claude tenga conto di alcune preferenze in ogni conversazione, puoi configurarle una volta sola in Impostazioni, sotto "Preferenze personali". Non doverle riscrivere ogni volta è, a conti fatti, uno dei dettagli più comodamente sottovalutati.
+> Una nota utile: se vuoi che Claude tenga conto di alcune preferenze in ogni conversazione, puoi configurarle una volta sola in Impostazioni, sotto "Preferenze personali". Non doverle riscrivere ogni volta è, a conti fatti, uno dei dettagli più comodamente sottovalutati.
 
 ---
 
-## La conversazione è iterativa, non a sportello
+## La conversazione è iterativa
 
-Il nodo che divide chi usa Claude bene da chi lo usa male è proprio questo: la conversazione non finisce alla prima risposta.
+Le conversazioni devono essere un ciclo iterativo. Se il risultato non ti convince, hai diverse strade. Puoi chiedere un approfondimento su un punto specifico, dare un feedback diretto sul tono o sul formato, oppure correggere la rotta se Claude ha interpretato la richiesta in modo diverso da quello che avevi in mente. Puoi anche modificare il tuo messaggio originale cliccando l'icona della matita, utile quando vuoi cambiare la domanda alla radice invece di aggiungere un nuovo strato.
 
-Se il risultato non ti convince, hai diverse strade. Puoi chiedere un approfondimento su un punto specifico, dare un feedback diretto sul tono o sul formato, oppure correggere la rotta se Claude ha interpretato la richiesta in modo diverso da quello che avevi in mente. Puoi anche modificare il tuo messaggio originale cliccando l'icona della matita, utile quando vuoi cambiare la domanda alla radice invece di aggiungere un nuovo strato.
+Se la prima risposta di Claude non è esattamente quella che desideravi, hai a disposizione diverse opzioni:
 
-L'approccio funziona un po' come avviene con un collaboratore umano: raramente la prima bozza è quella definitiva, e non è un problema. Il punto è costruire il risultato passo dopo passo, guidando la conversazione invece di aspettarsi che vada da sola.
+- **Fai domande di approfondimento**: parti dalla risposta di Claude chiedendo maggiori dettagli, un punto di vista diverso o dei chiarimenti. Ad esempio: "Puoi approfondire il secondo punto?" oppure "È utile, ma puoi renderlo più sintetico?".
+
+- **Fornisci feedback**: dì a Claude cosa ti è piaciuto e cosa no della sua risposta. "Questo va bene, ma il tono è troppo formale. Puoi renderlo più colloquiale?". Mi raccomando devi essere proattivo, dì cosa deve fare, non cosa non deve fare. Per esperienza funziona meglio!
+
+- **Reindirizza o ricomincia**: se Claude è andato in una direzione diversa da quella che intendevi, riportalo semplicemente sulla strada giusta. "A dire il vero, chiedevo di X, non di Y. Fammi chiarire...". Nel peggiore dei casi, riavvia la tua conversazione in una nuova chat per rinfrescare completamente il contesto.
+
+- **Consiglio pro**: puoi anche cliccare sull'icona della matita su uno qualsiasi dei tuoi messaggi per modificare e reinviare il tuo prompt. Questo è utile quando vuoi rifinire la tua richiesta piuttosto che aggiungere un nuovo messaggio.
 
 ---
 

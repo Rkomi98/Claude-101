@@ -1,0 +1,7 @@
+# Introduzione ai progetti
+
+La sezione sui progetti descrive come organizzare il lavoro in spazi dedicati e autonomi. Un progetto in Claude è una raccolta di conversazioni, documenti e impostazioni che condividono una stessa memoria. Ogni progetto conserva la cronologia delle chat, le informazioni caricate e le istruzioni personalizzate, consentendo di tornare sui contenuti quando serve. Questo significa che all’interno di un progetto l’assistente ricorda le interazioni precedenti e può usarle per contestualizzare le risposte【959338839071822†screenshot】.
+
+Per arricchire la comprensione dell’assistente, si possono aggiungere al progetto documenti e materiali pertinenti. Queste “conoscenze” diventano una base di riferimento: quando si pone una domanda, Claude consulta il contenuto caricato per fornire risposte coerenti e informate. L’utente può anche definire istruzioni specifiche, stabilendo il tono da adottare, il livello di approfondimento o il formato desiderato delle risposte. Queste indicazioni guidano l’assistente in tutte le conversazioni del progetto, creando un’esperienza personalizzata.
+
+Attraverso i progetti è possibile gestire più iniziative contemporaneamente senza confusione: ognuno di essi è isolato e mantiene la sua memoria e i suoi documenti. L’approccio suggerito dal corso mira a offrire una struttura che favorisca l’organizzazione e la continuità, trasformando Claude in un vero e proprio assistente per la gestione delle attività nel tempo.
