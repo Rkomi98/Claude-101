@@ -1,86 +1,91 @@
-# Getting better results
-## Learning objectives
+# Ottenere risultati migliori
 
-By the end of this lesson, you will be able to:
+## Obiettivi di apprendimento
 
-    Recognize common challenges when starting out with AI and use troubleshooting techniques to overcome them
-    Define AI Fluency and know where to go to learn more about working with AI in a fluent way
-    Explain how you might set up evals to better understand how Claude might perform with your unique workflows
+Al termine di questa lezione, sarai in grado di:
 
-## Common challenges and how to fix them
+- Riconoscere le sfide comuni quando si inizia a usare l'IA e utilizzare tecniche di risoluzione dei problemi per superarle.
+- Definire l'AI Fluency (alfabetizzazione all'IA) e sapere dove approfondire per lavorare con l'IA in modo più naturale.
+- Spiegare come impostare delle valutazioni (evals) per comprendere meglio le prestazioni di Claude nei tuoi specifici flussi di lavoro.
 
-As you start working with Claude, you'll likely encounter moments where the response isn't quite what you expected. This is normal—and it's an opportunity to refine your approach. Here are some of the most common challenges and how to address them.
-| Challenge | What's happening | Try this |
+## Sfide comuni e come risolverle
+
+Iniziando a lavorare con Claude, probabilmente incontrerai momenti in cui la risposta non è esattamente quella che ti aspettavi. È normale, ed è un'opportunità per affinare il tuo approccio. Ecco alcune delle sfide più comuni e come affrontarle.
+
+| Sfida | Cosa sta succedendo | Prova questo |
 |---|---|---|
-| Claude's response is too generic | Your prompt didn't include enough context about your specific situation | Add details about your audience, role, or constraints. Instead of "Write an email about the project delay," try "Write an email to our enterprise client explaining that the software integration will be delayed by two weeks. They've been patient so far but this is the second delay. Keep it professional but apologetic." |
-| The response is too long (or too short) | Claude is guessing at appropriate length | Be explicit: "Give me a two-paragraph summary" or "Keep this under 100 words" or "I need a comprehensive analysis—length isn't a concern." |
-| Claude didn't follow my format | Claude understood what you want but not how you want it presented | Show, don't just tell. Provide an example of the format, or describe the structure explicitly: "Use bullet points with bold headers for each section." |
-| I got confident-sounding information that turned out to be wrong | Claude occasionally generates plausible but incorrect information, especially with specific facts or niche topics | For high-stakes work, verify key facts independently. Ask Claude to cite sources or indicate confidence level. Enable web search to ground responses in current information. |
-| The tone isn't right | Claude defaults to helpful and professional, which may not match your needs | Describe the tone in plain language: "Make this more conversational" or "This should sound authoritative and formal." Provide an example of writing in the style you want. |
+| La risposta di Claude è troppo generica | Il tuo prompt non includeva abbastanza contesto sulla tua situazione specifica | Aggiungi dettagli sul tuo pubblico, ruolo o vincoli. Invece di "Scrivi un'email sul ritardo del progetto", prova "Scrivi un'email al nostro cliente enterprise spiegando che l'integrazione del software subirà un ritardo di due settimane. Sono stati pazienti finora, ma questo è il secondo ritardo. Mantieni un tono professionale ma di scusa." |
+| La risposta è troppo lunga (o troppo corta) | Claude sta tirando a indovinare la lunghezza appropriata | Sii esplicito: "Fammi un riassunto di due paragrafi" o "Mantieni il testo sotto le 100 parole" o "Ho bisogno di un'analisi completa, la lunghezza non è un problema." |
+| Claude non ha seguito il mio formato | Claude ha capito cosa vuoi ma non come vuoi che venga presentato | Mostra, non limitarti a raccontare. Fornisci un esempio del formato o descrivi esplicitamente la struttura: "Usa un elenco puntato con intestazioni in grassetto per ogni sezione." |
+| Ho ricevuto informazioni che sembravano sicure ma si sono rivelate errate | A volte Claude genera informazioni plausibili ma errate, specialmente su fatti specifici o argomenti di nicchia | Per lavori importanti, verifica i fatti chiave in modo indipendente. Chiedi a Claude di citare le fonti o di indicare il suo livello di sicurezza. Abilita la ricerca web per basare le risposte su informazioni aggiornate. |
+| Il tono non è quello giusto | Di default Claude è disponibile e professionale, ma potrebbe non corrispondere alle tue esigenze | Descrivi il tono con parole semplici: "Rendilo più colloquiale" o "Dovrebbe sembrare autorevole e formale." Fornisci un esempio di scrittura nello stile che desideri. |
 
-## The iteration mindset
+## La mentalità iterativa
 
-One of the most important shifts when working with Claude is recognizing that your first prompt rarely produces a perfect result—and that's okay. Think of your initial prompt as the start of a conversation, not a one-shot request.
+Uno dei cambiamenti più importanti quando si lavora con Claude è riconoscere che il primo prompt raramente produce un risultato perfetto, e va bene così. Pensa al tuo prompt iniziale come all'inizio di una conversazione, non a una richiesta unica (one-shot).
 
-Effective Claude users:
+Gli utenti efficaci di Claude:
 
-    Treat first drafts as starting points. Review what Claude produces, identify what's working and what isn't, then refine.
-    Give specific feedback. "Make it shorter" is fine, but "Cut the first two paragraphs and make the conclusion more action-oriented" is better.
-    Know when to start fresh. If a conversation has gone off track, sometimes it's faster to open a new chat with a clearer prompt than to try to redirect.
+- **Considerano le prime bozze come punti di partenza.** Rivedono ciò che Claude produce, identificano cosa funziona e cosa no, quindi affinano.
+- **Forniscono feedback specifici.** "Fallo più corto" va bene, ma "Taglia i primi due paragrafi e rendi la conclusione più orientata all'azione" è meglio.
+- **Sanno quando ricominciare da capo.** Se una conversazione ha preso la strada sbagliata, a volte è più veloce aprire una nuova chat con un prompt più chiaro piuttosto che cercare di reindirizzarla.
 
-## What is AI Fluency?
+## Cos'è l'AI Fluency?
 
-AI Fluency is the ability to collaborate effectively with AI tools—not just knowing which buttons to click, but developing the judgment to use AI well across different situations.
+L'AI Fluency è la capacità di collaborare in modo efficace con gli strumenti di intelligenza artificiale: non significa solo sapere quali pulsanti premere, ma sviluppare la capacità di giudizio per usare bene l'IA in diverse situazioni.
 
-The 4D Framework for AI Fluency, developed through research collaboration between Professor Rick Dakan (Ringling College of Art and Design) and Professor Joseph Feller (University College Cork), identifies four core competencies that, when combined, can help you make the most of your AI interactions:
+Il 4D Framework for AI Fluency, sviluppato attraverso una collaborazione di ricerca tra il Professor Rick Dakan (Ringling College of Art and Design) e il Professor Joseph Feller (University College Cork), individua quattro competenze chiave che, se combinate, possono aiutarti a trarre il massimo dalle tue interazioni con l'IA:
 
-    Delegation: Deciding on what work should be done by humans, what work should be done by AI, and how to distribute tasks between them. Includes understanding your goals, AI capabilities, and making strategic choices about collaboration.
-    Description: Effectively communicating with AI systems. Includes clearly defining outputs, guiding AI processes, and specifying desired AI behaviors and interactions.
-    Discernment: Thoughtfully and critically evaluating AI outputs, processes, behaviors and interactions. Includes assessing quality, accuracy, appropriateness, and determining areas for improvement.
-    Diligence: Using AI responsibly and ethically. Includes making thoughtful choices about AI systems and interactions, maintaining transparency, and taking accountability for AI-assisted work.
+- **Delega (Delegation):** decidere quale lavoro debba essere fatto dagli umani, quale dall'IA e come distribuire i compiti. Include la comprensione dei propri obiettivi, delle capacità dell'IA e la capacità di compiere scelte strategiche sulla collaborazione.
+- **Descrizione (Description):** comunicare efficacemente con i sistemi di IA. Include la chiara definizione dei risultati, la guida dei processi dell'IA e la specifica dei comportamenti e delle interazioni desiderate.
+- **Discernimento (Discernment):** valutare in modo attento e critico i risultati, i processi, i comportamenti e le interazioni dell'IA. Include la valutazione della qualità, dell'accuratezza, dell'adeguatezza e la determinazione delle aree di miglioramento.
+- **Diligenza (Diligence):** utilizzare l'IA in modo responsabile ed etico. Include il fare scelte ponderate sui sistemi e le interazioni dell'IA, mantenere la trasparenza e assumersi la responsabilità del lavoro assistito dall'IA.
 
-You've already been practicing these skills throughout this course. The prompt framework from Lesson 2 (setting the stage, defining the task, specifying rules) is rooted in Description. The troubleshooting techniques above draw on Discernment and Diligence.
+Hai già messo in pratica queste abilità durante questo corso. Il framework per i prompt della Lezione 2 (fornire il contesto, definire il compito, specificare le regole) è radicato nella Descrizione. Le tecniche di risoluzione dei problemi viste sopra attingono al Discernimento e alla Diligenza.
 
-To learn more, check out our free AI Fluency course that explore all four competencies in depth, with practical exercises and real-world applications.
-Evaluating Claude for your workflows
+Per saperne di più, dai un'occhiata al nostro corso gratuito sull'AI Fluency che esplora a fondo tutte e quattro le competenze, con esercizi pratici e applicazioni nel mondo reale.
 
-As you start integrating Claude into more of your work, you might wonder: how do I know if Claude is actually good at this particular task?
+## Valutare Claude per i tuoi flussi di lavoro
 
-This is where Discernment becomes essential. Evals (short for evaluations) are a way to develop intuition for assessing Claude's outputs on the tasks that matter to you. They're systematic ways to test how well Claude performs on specific types of tasks that matter to you.
-Why evals matter
+Man mano che inizi a integrare Claude in una parte maggiore del tuo lavoro, potresti chiederti: come faccio a sapere se Claude è davvero bravo in questo compito specifico?
 
-Your work is unique. Claude might excel at drafting marketing copy but need more guidance for technical documentation in your specific domain. Running simple evals helps you:
+È qui che il Discernimento diventa essenziale. Le "evals" (abbreviazione di valutazioni) sono un modo per sviluppare l'intuito nel giudicare i risultati di Claude sui compiti che ti interessano. Sono metodi sistematici per testare quanto bene Claude si comporta su tipi specifici di compiti per te importanti.
 
-    Understand where Claude adds the most value in your workflow
-    Identify tasks where you'll need to provide more context or examples
-    Build confidence in Claude's outputs for recurring tasks
+### Perché le valutazioni sono importanti
 
-A simple eval approach
+Il tuo lavoro è unico. Claude potrebbe eccellere nella stesura di testi di marketing, ma aver bisogno di maggiore guida per la documentazione tecnica nel tuo dominio specifico. Eseguire semplici valutazioni ti aiuta a:
 
-You don't need complex infrastructure to evaluate Claude. Here's a practical approach:
+- Capire dove Claude aggiunge maggior valore al tuo flusso di lavoro.
+- Identificare i compiti per i quali dovrai fornire più contesto o esempi.
+- Acquisire sicurezza nei risultati di Claude per i compiti ricorrenti.
 
-    Gather examples. Collect 5-10 examples of a task you do regularly—emails you've written, reports you've created, analyses you've done.
-    Create test prompts. Write prompts that would generate similar outputs. Include the context you'd naturally have when doing this work.
-    Compare outputs. Run your prompts and compare Claude's responses to your examples. Ask yourself:
-        Does Claude capture the key information?
-        Is the tone and style appropriate?
-        What's missing or could be improved?
-    Refine your approach. Based on what you learn, adjust your prompts, add examples to show Claude what good looks like, or identify where human review is essential.
+### Un approccio semplice alle valutazioni
 
-Example: Using Claude for data analysis
+Non hai bisogno di infrastrutture complesse per valutare Claude. Ecco un approccio pratico:
 
-The video above is taken from our AI Fluency for nonprofits course, but the example is relevant for anyone working with data in AI. To evaluate how Claude might work with your data:
+1. **Raccogli esempi.** Metti insieme 5-10 esempi di un compito che svolgi regolarmente: email che hai scritto, report che hai creato, analisi che hai fatto.
+2. **Crea prompt di test.** Scrivi prompt che genererebbero risultati simili. Includi il contesto che avresti naturalmente svolgendo questo lavoro.
+3. **Confronta i risultati.** Esegui i tuoi prompt e confronta le risposte di Claude con i tuoi esempi. Chiediti:
+   - Claude coglie le informazioni chiave?
+   - Il tono e lo stile sono appropriati?
+   - Cosa manca o potrebbe essere migliorato?
+4. **Affina il tuo approccio.** In base a ciò che impari, adatta i tuoi prompt, aggiungi esempi per mostrare a Claude com'è un buon risultato, o identifica dove la revisione umana è essenziale.
 
-    Find a dataset you've manually analyzed
-    Create prompts that request Claude to do the analysis on your behalf
-    Compare Claude's results to your originals
-    Note patterns and refine your prompt accordingly: Maybe Claude gets the right numbers but misses the overall patterns
+### Esempio: Usare Claude per l'analisi dei dati
 
-This kind of lightweight evaluation helps you develop intuition for how to work with Claude on tasks that matter to you—and where to focus your review and refinement energy.
-Lesson reflection
+Il video qui sopra (n.d.r. dal corso originale) è tratto dal nostro corso AI Fluency per le organizzazioni no profit, ma l'esempio è rilevante per chiunque lavori con i dati e l'IA. Per valutare come Claude potrebbe lavorare con i tuoi dati:
 
-Before moving on, consider:
+- Trova un set di dati che hai analizzato manualmente.
+- Crea prompt che chiedano a Claude di fare l'analisi per tuo conto.
+- Confronta i risultati di Claude con i tuoi originali.
+- Prendi nota degli schemi ricorrenti e affina il prompt di conseguenza: forse Claude ottiene i numeri giusti ma si perde le tendenze generali.
 
-    Which of the common challenges have you already encountered? What techniques might you try next time?
-    Where in your work would a simple eval help you understand if Claude is a good fit for a recurring task?
-    How might the 4D Framework help you think about your collaboration with Claude?
+Questo tipo di valutazione leggera ti aiuta a sviluppare l'intuito su come lavorare con Claude sui compiti che ti interessano e su dove concentrare le tue energie di revisione e affinamento.
+
+## Riflessione sulla lezione
+
+Prima di proseguire, considera:
+
+- Quali delle sfide comuni hai già incontrato? Quali tecniche potresti provare la prossima volta?
+- In quale parte del tuo lavoro una semplice valutazione (eval) ti aiuterebbe a capire se Claude è adatto a un compito ricorrente?
+- In che modo il Framework delle 4D potrebbe aiutarti a riflettere sulla tua collaborazione con Claude?
