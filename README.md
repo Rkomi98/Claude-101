@@ -2,7 +2,7 @@
 
 Blog editoriale in italiano sui corsi pubblici di Anthropic. Ottimizzato per la lettura, con tema scuro/chiaro, lettura automatica (TTS) e navigazione per capitoli.
 
-🔗 **[Leggi online →](https://mirkocalcaterra.github.io/Claude-101/)**
+🔗 **[Leggi online →](https://rkomi98.github.io/Claude-101/)**
 
 ---
 
