@@ -4,7 +4,7 @@
 
 ---
 
-## Cosa imparerai
+## Cosa imparerai in questo articolo
 
 Prima di entrare nel merito, un orientamento rapido. Al termine di questa lettura saprai come avviare una conversazione con Claude, come costruire un prompt che funziona davvero, come caricare file e immagini per dare contesto, e come iterare sulle risposte invece di accontentarti della prima.
 
@@ -14,9 +14,9 @@ Prima di entrare nel merito, un orientamento rapido. Al termine di questa lettur
 
 Facciamo subito un passo indietro, perché è qui che molti partono col piede sbagliato.
 
-Claude non è uno strumento a cui fare interrogazioni puntuali. È un collaboratore intelligente con cui ragionare insieme. La differenza non è sottile: il modo in cui lo usi determina quasi tutto quello che ottieni. Puoi portare il tuo contesto, la tua esperienza, il tuo giudizio. Claude porta la capacità di elaborazione. Separati, entrambi sono parziali. Messi insieme, si amplificano a vicenda.
+Claude non è uno strumento a cui fare interrogazioni puntuali. È un collaboratore intelligente con cui ragionare insieme.
 
-Il punto di partenza pratico? Parlagli come parleresti a un collega competente: in modo naturale, senza cerimonie, senza costruire la frase come se stessi compilando un modulo.
+Il modo in cui lo usi determina quasi tutto quello che ottieni. Per iniziare ti consiglio di parlagli come parleresti a un collega molto competente: in modo **naturale**, senza cerimonie, senza costruire la frase come se stessi compilando un modulo.
 
 ---
 
@@ -24,15 +24,18 @@ Il punto di partenza pratico? Parlagli come parleresti a un collega competente: 
 
 Aprendo Claude.ai trovi un'interfaccia volutamente pulita: un campo testo, nient'altro di necessario in superficie. Ma prima di digitare, vale la pena fermarsi un secondo su tre domande.
 
-**Chi sei e cosa stai cercando di fare.** Non serve una presentazione formale, ma Claude lavora meglio quando capisce il contesto: sei un marketing lead che prepara un pitch deck, uno sviluppatore che deve spiegare del codice a un cliente, un ricercatore che vuole riassumere un paper? Più il contesto è preciso, più la risposta sarà calibrata.
+1. **Chi sei e cosa stai cercando di fare.** Non serve una presentazione formale, ma Claude lavora meglio quando capisce il contesto: sei un marketing lead che prepara un pitch deck, uno sviluppatore che deve spiegare del codice a un cliente, un ricercatore che vuole riassumere un paper? Più il contesto è preciso, più la risposta sarà calibrata.
 
-**Cosa vuoi che faccia.** Scrivere, analizzare, costruire, semplificare, confrontare? Il verbo dell'azione conta. "Parlami di X" e "Analizza X e confrontalo con Y" producono risultati molto diversi.
+2. **Cosa vuoi che faccia.** Scrivere, analizzare, costruire, semplificare, confrontare? Il verbo dell'azione conta. "Parlami di X" e "Analizza X e confrontalo con Y" producono risultati molto diversi.
 
-**Con quale forma e tono.** Un report formale con citazioni, una bozza informale da raffinare, un testo conciso per un pubblico non tecnico? Specificarlo non è burocrazia: è risparmio di tempo, tuo.
+3. **Con quale forma e tono.** Un report formale con citazioni, una bozza informale da raffinare, un testo conciso per un pubblico non tecnico? Specificarlo serve per risparmiare tempo. Se puoi fornire esempi, è il posto giusto per darli!
 
 Un esempio che mette tutto insieme: *"Sono il responsabile marketing di una startup nel settore streaming indipendente. Stiamo preparando un pitch deck per investitori Series A. Puoi fare una ricerca sullo stato attuale del mercato dello streaming di film indie e identificare trend chiave, posizionamento della concorrenza e opportunità di crescita? Usa fonti aggiornate con citazioni e struttura il risultato come un report professionale di massimo cinque pagine, con executive summary, analisi di mercato, panorama competitivo e opportunità."*
 
 Questo prompt funziona perché non lascia spazio all'ambiguità su nessuno dei tre fronti.
+
+This prompt framework is adapted from the 4D Framework for AI Fluency, developed through research collaboration between Professor Rick Dakan (Ringling College of Art and Design) and Professor Joseph Feller (University College Cork). The framework identifies four core competencies—Delegation, Description, Discernment, and Diligence—that enable effective collaboration with AI.
+Se vuoi andare più in profondità ti suggeriamo di guardare [questo corso](https://anthropic.skilljar.com/ai-fluency-framework-foundations)
 
 ---
 
