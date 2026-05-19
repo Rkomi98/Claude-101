@@ -25,10 +25,10 @@ window.BLOG_DATA = {
         {
           id: 'prima-conversazione',
           num: '02',
-          title: 'La tua prima conversazione',
-          desc: 'Come strutturare un prompt efficace, il modello delle 4D e l\'importanza dell\'iterazione.',
-          readingTime: '2 min',
-          sections: ['Prompt efficace', 'Modello 4D', 'Documenti', 'Iterazione'],
+          title: 'La prima conversazione con Claude',
+          desc: 'Costruire un prompt che funziona davvero: contesto, obiettivo, forma — e come iterare sulle risposte.',
+          readingTime: '4 min',
+          sections: ['Prompt efficace', '4D Framework', 'Caricamenti', 'Memoria e stili'],
           available: true,
         },
         {
@@ -136,21 +136,58 @@ window.BLOG_DATA = {
     'claude-101/prima-conversazione': {
       courseId: 'claude-101',
       chapterId: 'prima-conversazione',
-      title: 'La tua prima conversazione con Claude',
+      title: 'La prima conversazione con Claude',
       titleEm: '',
-      lede: 'Come costruire un dialogo efficace: il modello delle quattro D, l\'importanza del contesto e l\'arte di iterare fino al risultato desiderato.',
-      readingTime: '2 min',
-      words: 330,
+      lede: 'Claude non è un motore di ricerca da interrogare: è un collaboratore con cui ragionare. Ecco come costruire il primo prompt, caricare file, iterare sulle risposte e configurare memoria e stili.',
+      readingTime: '4 min',
+      words: 750,
       updated: '19 maggio 2026',
       sections: [
         {
-          id: 's-prima-conversazione',
-          title: 'La tua prima conversazione con Claude',
+          id: 's-non-motore-ricerca',
+          title: 'Perché Claude non è un motore di ricerca',
           paragraphs: [
-            "Per ottenere il meglio da Claude è necessario instaurare un dialogo chiaro e strutturato. Il corso consiglia di considerare l'assistente come un collega: occorre presentare il contesto, spiegare il compito da svolgere e stabilire le regole della risposta. Per iniziare è sufficiente scrivere nel campo di testo dell'interfaccia, ma la qualità del prompt fa la differenza. Un prompt efficace definisce lo scenario, descrive la domanda o l'obiettivo e specifica eventuali vincoli, ad esempio lunghezza, formato o tono.",
-            "Gli autori presentano il modello delle \"4D\": delegare, descrivere, discernere e essere diligenti. Delegare significa chiarire ciò che si vuole che Claude faccia; descrivere vuol dire fornire abbastanza dettagli affinché l'assistente comprenda; discernere consiste nel valutare le risposte per capire se soddisfano l'esigenza; infine la diligenza prevede di rivedere e perfezionare le richieste nel tempo. Se il risultato non è adeguato, si può riformulare la domanda, chiedere chiarimenti o ricominciare da capo.",
-            "Un'altra funzionalità fondamentale è la possibilità di caricare documenti o collegare altre applicazioni. In questo modo Claude può analizzare file, fogli di calcolo o contenuti esterni e incorporare queste informazioni nella risposta. È consigliabile citare in modo esplicito i file caricati e spiegare come devono essere utilizzati. La personalizzazione attraverso memorie persistenti e stili permette inoltre di adattare il comportamento di Claude alle preferenze dell'utente.",
-            "Infine, il corso invita a sperimentare: le conversazioni con Claude sono iterative, quindi è normale procedere per tentativi. Osservare come l'assistente interpreta le istruzioni, fornire feedback mirati e concedersi la libertà di cambiare direzione aiuta a sviluppare una maggiore confidenza. Ogni iterazione porta a un risultato più vicino alle esigenze dell'utente.",
+            "Facciamo subito un passo indietro, perché è qui che molti partono col piede sbagliato. Claude non è uno strumento a cui fare interrogazioni puntuali. È un collaboratore intelligente con cui ragionare insieme.",
+            "Il modo in cui lo usi determina quasi tutto quello che ottieni. Per iniziare ti consiglio di parlagli come parleresti a un collega molto competente: in modo naturale, senza cerimonie, senza costruire la frase come se stessi compilando un modulo.",
+          ],
+        },
+        {
+          id: 's-primo-messaggio',
+          title: 'Prima di scrivere il primo messaggio',
+          paragraphs: [
+            "Aprendo Claude.ai trovi un'interfaccia volutamente pulita. Ma prima di digitare, vale la pena fermarsi su tre domande.",
+            "Chi sei e cosa stai cercando di fare. Non serve una presentazione formale, ma Claude lavora meglio quando capisce il contesto: sei un marketing lead che prepara un pitch deck, uno sviluppatore che deve spiegare del codice a un cliente, un ricercatore che vuole riassumere un paper? Più il contesto è preciso, più la risposta sarà calibrata.",
+            "Cosa vuoi che faccia. Scrivere, analizzare, costruire, semplificare, confrontare? Il verbo dell'azione conta. \"Parlami di X\" e \"Analizza X e confrontalo con Y\" producono risultati molto diversi.",
+            "Con quale forma e tono. Un report formale con citazioni, una bozza informale da raffinare, un testo conciso per un pubblico non tecnico? Specificarlo serve per risparmiare tempo. Se puoi fornire esempi, è il posto giusto per darli.",
+            "Un esempio che mette tutto insieme: \"Sono il responsabile marketing di una startup nel settore streaming indipendente. Stiamo preparando un pitch deck per investitori Series A. Puoi fare una ricerca sullo stato attuale del mercato dello streaming di film indie e identificare trend chiave, posizionamento della concorrenza e opportunità di crescita? Usa fonti aggiornate con citazioni e struttura il risultato come un report professionale di massimo cinque pagine, con executive summary, analisi di mercato, panorama competitivo e opportunità.\" Questo prompt funziona perché non lascia spazio all'ambiguità su nessuno dei tre fronti.",
+            "Questo framework è un adattamento del 4D Framework for AI Fluency, sviluppato dal Professor Rick Dakan (Ringling College of Art and Design) e dal Professor Joseph Feller (University College Cork), che individua quattro competenze chiave per collaborare efficacemente con l'IA: Delega, Descrizione, Discernimento e Diligenza.",
+          ],
+        },
+        {
+          id: 's-contesto-file',
+          title: 'Fornire contesto: caricamenti, connettori e preferenze',
+          paragraphs: [
+            "Claude può lavorare sia su testo che su contenuto visivo all'interno di documenti. I formati accettati includono PDF, DOCX, CSV, TXT e i principali formati immagine come PNG e JPEG.",
+            "Caricare un file è un modo per fare un salto avanti: anziché descrivere a parole cosa hai davanti, lo mostri direttamente. Puoi chiedere a Claude di riassumere un documento, descrivere un'immagine, identificare tendenze in un foglio di calcolo, o individuare bug in del codice. Una volta caricato il file, Claude ne analizza il contenuto e lo tiene in conto durante tutta la conversazione.",
+            "Se vuoi che Claude tenga conto di alcune preferenze in ogni conversazione, puoi configurarle una volta sola in Impostazioni, sotto \"Preferenze personali\". Non doverle riscrivere ogni volta è, a conti fatti, uno dei dettagli più comodamente sottovalutati.",
+          ],
+        },
+        {
+          id: 's-iterare',
+          title: 'La conversazione è iterativa',
+          paragraphs: [
+            "Le conversazioni devono essere un ciclo iterativo. Se il risultato non ti convince, hai diverse strade: chiedere un approfondimento su un punto specifico, dare un feedback diretto sul tono o sul formato, oppure correggere la rotta se Claude ha interpretato la richiesta in modo diverso da quello che avevi in mente.",
+            "Fai domande di approfondimento partendo dalla risposta di Claude: \"Puoi approfondire il secondo punto?\" oppure \"È utile, ma puoi renderlo più sintetico?\". Fornisci feedback dicendo cosa ti è piaciuto e cosa no: \"Questo va bene, ma il tono è troppo formale. Puoi renderlo più colloquiale?\". Sii proattivo: dì cosa deve fare, non cosa non deve fare.",
+            "Se Claude è andato in una direzione diversa da quella che intendevi, riportalo sulla strada giusta: \"A dire il vero, chiedevo di X, non di Y. Fammi chiarire...\". Nel peggiore dei casi, riavvia la conversazione in una nuova chat per rinfrescare completamente il contesto. Puoi anche cliccare sull'icona della matita su uno dei tuoi messaggi per modificare e reinviare il prompt — utile quando vuoi rifinire la richiesta piuttosto che aggiungere un nuovo messaggio.",
+          ],
+        },
+        {
+          id: 's-memoria-stili',
+          title: 'Memoria e stili: due leve per lavorare meglio nel tempo',
+          paragraphs: [
+            "Con l'uso continuato, due funzionalità diventano sempre più rilevanti. La memoria salva automaticamente informazioni rilevanti dalle conversazioni precedenti: il tuo ruolo, le tue preferenze, le decisioni già prese. Se in una sessione dici a Claude che lavori nel settore B2B in ambito marketing, non dovrai ripeterlo ogni volta. Puoi revisionare, modificare o cancellare quello che ha memorizzato in qualsiasi momento dalle Impostazioni.",
+            "Gli stili ti permettono di definire come Claude scrive: puoi scegliere tra opzioni predefinite come \"conciso\", \"formale\" o \"esplicativo\", oppure creare uno stile personalizzato descrivendo esattamente il registro che vuoi. Una volta impostato, vale per tutte le conversazioni.",
+            "Prima di passare alla prossima lezione, prova a formulare un prompt usando i tre elementi visti sopra — chi sei, cosa vuoi, con quale forma. Nella lezione successiva vedremo come dare istruzioni ancora più precise su tono, formato e approccio.",
           ],
         },
       ],
