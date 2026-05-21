@@ -1,21 +1,21 @@
-# Learning objectives
+# Obiettivi di apprendimento
 
-By the end of this lesson you'll be able to:
+Al termine di questa lezione, sarai in grado di:
 
-- Explain what Claude is and the principles that guide its design
-- Describe Claude's core capabilities and how it differs from a simple chatbot
-- Identify the different ways to access Claude (web, desktop, and mobile)
+- Spiegare cos'è Claude e i principi che guidano il suo design
+- Descrivere le capacità principali di Claude e come si differenzia da un semplice chatbot
+- Identificare i diversi modi per accedere a Claude (web, desktop e mobile)
 
-## Course roadmap
+## Tabella di marcia del corso
 
 ```mermaid
 timeline
-    title Course roadmap
-    Meet Claude : What is Claude, how do you talk to it, and how do you get great results?
-    Organizing your work : How do Projects, Artifacts, and Skills give Claude structure and reusable knowledge?
-    Expanding Claude's reach : How do Connectors, Enterprise Search, and Research bring your tools and the web into the conversation?
-    Putting it all together : What does Claude look like in action across roles, and where else can you work with it?
-    Conclusion & certificate : Where do you go from here, and how do you earn your certificate?
+    title Tabella di marcia del corso
+    Incontrare Claude : Cos'è Claude, come parlargli e come ottenere ottimi risultati?
+    Organizzare il lavoro : Come Progetti, Artefatti e Competenze danno a Claude struttura e conoscenza riutilizzabile?
+    Espandere la portata : Come Connettori, Ricerca Aziendale e Ricerca web portano i tuoi strumenti nella conversazione?
+    Mettere tutto insieme : Come si presenta Claude in azione nei vari ruoli e dove altro puoi lavorarci?
+    Conclusione e certificato : Quali sono i prossimi passi e come ottenere il certificato?
 ```
 
 ## Cos'è Claude?
