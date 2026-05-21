@@ -2,25 +2,18 @@ window.BLOG_GENERATED_CONTENT = {
   "articleContentByKey": {
     "claude-101/cose-claude": {
       "readingTime": "10 min",
-      "words": 300,
+      "words": 1101,
       "sections": [
         {
           "id": "panoramica",
           "title": "Panoramica",
           "paragraphs": [
-            "Al termine di questa lezione, sarai in grado di:"
+            "Al termine di questa lezione, sarai in grado di:",
+            "Spiegare cos'è Claude e i principi che guidano il suo design",
+            "Descrivere le capacità principali di Claude e come si differenzia da un semplice chatbot",
+            "Identificare i diversi modi per accedere a Claude (web, desktop e mobile)"
           ],
-          "blocks": [
-            {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Spiegare cos'è Claude e i principi che guidano il suo design",
-                "Descrivere le capacità principali di Claude e come si differenzia da un semplice chatbot",
-                "Identificare i diversi modi per accedere a Claude (web, desktop e mobile)"
-              ]
-            }
-          ]
+          "blocks": []
         },
         {
           "id": "tabella-di-marcia-del-corso",
