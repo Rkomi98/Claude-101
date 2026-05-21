@@ -304,6 +304,16 @@ function ArticleBlock({ block }) {
   if (block.type === 'timeline') {
     return <TimelineBlock title={block.title} items={block.items} />;
   }
+  if (block.type === 'list') {
+    const ListTag = block.ordered ? 'ol' : 'ul';
+    return (
+      <ListTag className="article-list">
+        {block.items.map((item, index) => (
+          <li key={`${item}-${index}`}>{item}</li>
+        ))}
+      </ListTag>
+    );
+  }
   return null;
 }
 

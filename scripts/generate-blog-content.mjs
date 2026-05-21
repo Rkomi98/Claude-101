@@ -100,6 +100,7 @@ function markdownToSections(markdown) {
   let currentSection = null;
   let paragraphBuffer = [];
   let tableBuffer = [];
+  let listBuffer = null;
   let inFence = false;
   let fenceLang = '';
   let fenceBuffer = [];
@@ -147,6 +148,12 @@ function markdownToSections(markdown) {
     tableBuffer = [];
   };
 
+  const flushList = () => {
+    if (!listBuffer || !listBuffer.items.length) return;
+    ensureSection().blocks.push(listBuffer);
+    listBuffer = null;
+  };
+
   const flushFence = () => {
     if (!fenceBuffer.length) return;
     const section = ensureSection();
@@ -177,6 +184,7 @@ function markdownToSections(markdown) {
     if (trimmed.startsWith('```')) {
       flushParagraph();
       flushTable();
+      flushList();
       inFence = true;
       fenceLang = trimmed.slice(3).trim().toLowerCase();
       fenceBuffer = [];
@@ -186,18 +194,21 @@ function markdownToSections(markdown) {
     if (!trimmed) {
       flushParagraph();
       flushTable();
+      flushList();
       continue;
     }
 
     if (/^---+$/.test(trimmed) || /^___+$/.test(trimmed) || /^__wf_reserved_/.test(trimmed)) {
       flushParagraph();
       flushTable();
+      flushList();
       continue;
     }
 
     if (isReadingTimeLine(trimmed)) {
       flushParagraph();
       flushTable();
+      flushList();
       continue;
     }
 
@@ -205,6 +216,7 @@ function markdownToSections(markdown) {
     if (headingMatch) {
       flushParagraph();
       flushTable();
+      flushList();
       const level = headingMatch[1].length;
       const title = normalizeInline(headingMatch[2]);
       if (level >= 2 && title) {
@@ -216,6 +228,7 @@ function markdownToSections(markdown) {
 
     if (trimmed.startsWith('|')) {
       flushParagraph();
+      flushList();
       tableBuffer.push(trimmed);
       continue;
     }
@@ -225,7 +238,12 @@ function markdownToSections(markdown) {
       flushParagraph();
       flushTable();
       const text = normalizeInline(bulletMatch[1]);
-      if (text) ensureSection().paragraphs.push(text);
+      if (!text) continue;
+      if (!listBuffer || listBuffer.type !== 'list' || listBuffer.ordered) {
+        flushList();
+        listBuffer = { type: 'list', ordered: false, items: [] };
+      }
+      listBuffer.items.push(text);
       continue;
     }
 
@@ -234,10 +252,16 @@ function markdownToSections(markdown) {
       flushParagraph();
       flushTable();
       const text = normalizeInline(orderedMatch[1]);
-      if (text) ensureSection().paragraphs.push(text);
+      if (!text) continue;
+      if (!listBuffer || listBuffer.type !== 'list' || !listBuffer.ordered) {
+        flushList();
+        listBuffer = { type: 'list', ordered: true, items: [] };
+      }
+      listBuffer.items.push(text);
       continue;
     }
 
+    flushList();
     const quoteMatch = trimmed.match(/^>\s?(.*)$/);
     if (quoteMatch) {
       paragraphBuffer.push(quoteMatch[1]);
@@ -249,6 +273,7 @@ function markdownToSections(markdown) {
 
   flushParagraph();
   flushTable();
+  flushList();
 
   return sections
     .map((section) => ({

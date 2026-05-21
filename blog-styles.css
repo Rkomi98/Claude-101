@@ -497,6 +497,8 @@
 }
 .prose ul, .prose ol { margin: 0 0 24px; padding-left: 24px; }
 .prose li { margin-bottom: 8px; }
+.prose .article-list { margin-top: 4px; }
+.prose .article-list li::marker { color: var(--accent); }
 .prose strong { font-weight: 600; color: var(--ink); }
 .prose em { font-style: italic; }
 .prose blockquote {
