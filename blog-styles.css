@@ -540,6 +540,66 @@
   color: var(--accent);
   margin-bottom: 8px;
 }
+.prose .roadmap-block {
+  margin: 28px 0 36px;
+  padding: 24px 24px 20px;
+  background:
+    linear-gradient(180deg, color-mix(in oklab, var(--paper-2), transparent 8%), var(--paper-2));
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+}
+.prose .roadmap-block__eyebrow {
+  font-family: var(--mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--accent);
+  margin-bottom: 18px;
+}
+.prose .roadmap-block__list {
+  display: grid;
+  gap: 16px;
+}
+.prose .roadmap-step {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  gap: 16px;
+  align-items: start;
+}
+.prose .roadmap-step__rail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+}
+.prose .roadmap-step__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px color-mix(in oklab, var(--accent), transparent 84%);
+  margin-top: 7px;
+}
+.prose .roadmap-step__line {
+  width: 1px;
+  flex: 1;
+  margin-top: 8px;
+  background: linear-gradient(180deg, var(--accent), color-mix(in oklab, var(--accent), transparent 82%));
+}
+.prose .roadmap-step__label {
+  font-family: var(--sans);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -.01em;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+.prose .roadmap-step__text {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--ink-2);
+}
 
 /* TTS reading highlight */
 .prose .reading {
@@ -771,6 +831,10 @@
 .blog.mobile .prose { font-size: 17px; line-height: 1.6; }
 .blog.mobile .prose h2 { font-size: 24px; margin-top: 36px; }
 .blog.mobile .prose p:first-of-type::first-letter { font-size: 48px; }
+.blog.mobile .prose .roadmap-block { padding: 18px 16px 14px; }
+.blog.mobile .prose .roadmap-step { grid-template-columns: 14px 1fr; gap: 12px; }
+.blog.mobile .prose .roadmap-step__label { font-size: 14px; }
+.blog.mobile .prose .roadmap-step__text { font-size: 16px; }
 .blog.mobile .prev-next { grid-template-columns: 1fr; }
 .blog.mobile .footer__inner { grid-template-columns: 1fr; gap: 32px; }
 .blog.mobile .footer__bottom { flex-direction: column; gap: 8px; }

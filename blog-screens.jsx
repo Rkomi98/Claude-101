@@ -277,6 +277,36 @@ function AboutScreen() {
   );
 }
 
+function TimelineBlock({ title, items = [] }) {
+  return (
+    <div className="roadmap-block">
+      <div className="roadmap-block__eyebrow">{title}</div>
+      <div className="roadmap-block__list">
+        {items.map((item, index) => (
+          <div key={`${item.label}-${index}`} className="roadmap-step">
+            <div className="roadmap-step__rail" aria-hidden="true">
+              <span className="roadmap-step__dot"/>
+              {index < items.length - 1 && <span className="roadmap-step__line"/>}
+            </div>
+            <div className="roadmap-step__body">
+              <div className="roadmap-step__label">{item.label}</div>
+              <p className="roadmap-step__text">{item.text}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function ArticleBlock({ block }) {
+  if (!block) return null;
+  if (block.type === 'timeline') {
+    return <TimelineBlock title={block.title} items={block.items} />;
+  }
+  return null;
+}
+
 // ─── Floating TTS player ────────────────────────────────────────
 function TTSPlayer({ state, controls }) {
   if (!state.active) return null;
@@ -479,6 +509,9 @@ function ChapterScreen({ courseId, chapterId, navigate, tts }) {
                   >
                     {p}
                   </p>
+                ))}
+                {(s.blocks || []).map((block, bi) => (
+                  <ArticleBlock key={`${s.id}-block-${bi}`} block={block} />
                 ))}
               </section>
             ))}

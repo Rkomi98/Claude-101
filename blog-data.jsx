@@ -11,14 +11,14 @@ window.BLOG_DATA = {
       titleEm: 'Le basi',
       desc: 'Cos\'è Claude, come iniziare una conversazione, ottenere risultati migliori e organizzare il lavoro con progetti e app desktop.',
       level: 'Principiante',
-      hours: '10 min',
+      hours: '43 min',
       chapters: [
         {
           id: 'cose-claude',
           num: '01',
           title: 'Cos\'è Claude?',
           desc: 'L\'assistente di Anthropic, la sua missione, le interfacce disponibili e l\'approccio collaborativo.',
-          readingTime: '2 min',
+          readingTime: '10 min',
           sections: ['Missione', 'Personalizzazione', 'Interfacce', 'Sicurezza'],
           available: true,
         },
@@ -27,7 +27,7 @@ window.BLOG_DATA = {
           num: '02',
           title: 'La prima conversazione con Claude',
           desc: 'Costruire un prompt che funziona davvero: contesto, obiettivo, forma — e come iterare sulle risposte.',
-          readingTime: '4 min',
+          readingTime: '20 min',
           sections: ['Prompt efficace', '4D Framework', 'Caricamenti', 'Memoria e stili'],
           available: true,
         },
@@ -45,7 +45,7 @@ window.BLOG_DATA = {
           num: '04',
           title: 'L\'app desktop: Chat, Cowork, Code',
           desc: 'Le tre modalità dell\'applicazione desktop e quando usarne ciascuna.',
-          readingTime: '2 min',
+          readingTime: '6 min',
           sections: ['Modalità Chat', 'Modalità Cowork', 'Modalità Code'],
           available: true,
         },
@@ -117,10 +117,45 @@ window.BLOG_DATA = {
       title: 'Cos\'è Claude?',
       titleEm: '',
       lede: 'Un\'introduzione all\'assistente di Anthropic: cosa lo distingue da un motore di ricerca, come si personalizza e quale visione guida il suo sviluppo.',
-      readingTime: '2 min',
-      words: 296,
+      readingTime: '10 min',
+      words: 390,
       updated: '19 maggio 2026',
       sections: [
+        {
+          id: 's-roadmap',
+          title: 'Roadmap del corso',
+          paragraphs: [
+            "Prima di entrare nel merito, ecco una vista rapida delle tappe del corso. Sul sito la roadmap viene resa come componente nativo, non come blocco Mermaid."
+          ],
+          blocks: [
+            {
+              type: 'timeline',
+              title: 'Course roadmap',
+              items: [
+                {
+                  label: 'Meet Claude',
+                  text: 'What is Claude, how do you talk to it, and how do you get great results?',
+                },
+                {
+                  label: 'Organizing your work',
+                  text: 'How do Projects, Artifacts, and Skills give Claude structure and reusable knowledge?',
+                },
+                {
+                  label: 'Expanding Claude\'s reach',
+                  text: 'How do Connectors, Enterprise Search, and Research bring your tools and the web into the conversation?',
+                },
+                {
+                  label: 'Putting it all together',
+                  text: 'What does Claude look like in action across roles, and where else can you work with it?',
+                },
+                {
+                  label: 'Conclusion & certificate',
+                  text: 'Where do you go from here, and how do you earn your certificate?',
+                },
+              ],
+            },
+          ],
+        },
         {
           id: 's-cose-claude',
           title: 'Cos\'è Claude?',
@@ -139,7 +174,7 @@ window.BLOG_DATA = {
       title: 'La prima conversazione con Claude',
       titleEm: '',
       lede: 'Claude non è un motore di ricerca da interrogare: è un collaboratore con cui ragionare. Ecco come costruire il primo prompt, caricare file, iterare sulle risposte e configurare memoria e stili.',
-      readingTime: '4 min',
+      readingTime: '20 min',
       words: 750,
       updated: '19 maggio 2026',
       sections: [
@@ -264,7 +299,7 @@ window.BLOG_DATA = {
       title: 'L\'app desktop di Claude: Chat, Cowork, Code',
       titleEm: '',
       lede: 'Tre modalità per tre esigenze diverse: dalla risposta rapida in Chat alla collaborazione strutturata in Cowork, fino allo sviluppo software in Code.',
-      readingTime: '2 min',
+      readingTime: '6 min',
       words: 282,
       updated: '19 maggio 2026',
       sections: [

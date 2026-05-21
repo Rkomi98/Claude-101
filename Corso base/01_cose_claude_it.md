@@ -8,59 +8,52 @@ By the end of this lesson you'll be able to:
 
 ## Course roadmap
 
-Meet Claude
+```mermaid
+timeline
+    title Course roadmap
+    Meet Claude : What is Claude, how do you talk to it, and how do you get great results?
+    Organizing your work : How do Projects, Artifacts, and Skills give Claude structure and reusable knowledge?
+    Expanding Claude's reach : How do Connectors, Enterprise Search, and Research bring your tools and the web into the conversation?
+    Putting it all together : What does Claude look like in action across roles, and where else can you work with it?
+    Conclusion & certificate : Where do you go from here, and how do you earn your certificate?
+```
 
-What is Claude, how do you talk to it, and how do you get great results?
+## Cos'è Claude?
 
-Organizing your work
+(10 minuti)
 
-How do Projects, Artifacts, and Skills give Claude structure and reusable knowledge?
+Claude è più di un chatbot: è un assistente IA progettato per essere il tuo partner di pensiero. In questa lezione scoprirai cosa rende Claude diverso dagli altri strumenti di IA e vedrai come può aiutarti in un'ampia varietà di attività lavorative.
 
-Expanding Claude's reach
+### Punti chiave
 
-How do Connectors, Enterprise Search, and Research bring your tools and the web into the conversation?
+- **Claude è costruito per essere utile, innocuo e onesto:** a livello generale, Claude è guidato da principi che lo aiutano a evitare risposte tossiche o discriminatorie, evitare di assistere le persone in attività illegali o non etiche e, nel complesso, a comportarsi come un sistema IA utile, onesto e innocuo. Questo approccio, chiamato *Constitutional AI*, significa che Claude è addestrato per allinearsi ai valori umani e operare in modo trasparente.
+- **Claude è più di un chatbot:** Claude è in grado di svolgere un'ampia varietà di compiti conversazionali e di elaborazione del testo mantenendo un alto grado di affidabilità e prevedibilità, inclusi riassunti, ricerca, scrittura creativa e collaborativa, Q&A, programmazione e altro. Pensa a Claude come a un compagno di ragionamento che può aiutarti ad affrontare problemi complessi e superare situazioni difficili, non solo a rispondere a semplici domande.
+- **Claude è progettato per essere indirizzabile e collaborativo:** Claude può seguire indicazioni su personalità, tono e comportamento. Gli utenti segnalano che Claude ha molte meno probabilità di produrre output dannosi, è più facile conversare con lui ed è più "guidabile", consentendoti di ottenere il risultato desiderato con meno sforzo.
+- **Puoi accedere a Claude ovunque lavori:** le app di Claude sono disponibili per tutti i piani (Free, Pro, Max, Team ed Enterprise). Le tue conversazioni, i progetti, la memoria e le preferenze si sincronizzano su tutti i dispositivi quando effettui l'accesso. Che tu sia alla scrivania o in movimento, Claude è disponibile tramite web, app desktop e mobile.
 
-Putting it all together
+### Comprendere le capacità di Claude
 
-What does Claude look like in action across roles, and where else can you work with it?
+Claude può aiutarti in un'ampia gamma di attività che vanno ben oltre le semplici interazioni a botta e risposta, arrivando a una vera collaborazione da assistente in grado di automatizzare e migliorare il tuo lavoro. Ecco alcune aree in cui Claude eccelle:
 
-Conclusion & certificate
+- **Scrittura e creazione di contenuti:** Claude può collaborare con te su post per i social media, email professionali e report complessi. Poiché Claude è addestrato per seguire direttive su personalità e tono, potete iterare insieme sulla struttura e sulla chiarezza finché la tua voce non emerge in modo cristallino.
+- **Ricerca e analisi:** Claude ti aiuta a esplorare prospettive di ricerca, compilare risultati e analizzare dati per far emergere insight significativi. Puoi caricare documenti e Claude ti aiuterà a dare un senso a informazioni complesse. Questo è reso possibile dall'ampia finestra di contesto, in grado di assimilare oltre 200.000 token (circa 500 pagine di testo o più), con un massimo di 1 milione di token sui piani Pro, Max, Team ed Enterprise usando Opus 4.7. Ciò permette a Claude di considerare un'enorme mole di materiali in una singola conversazione.
+- **Assistenza alla programmazione (coding):** Claude Opus 4.7 è il nostro modello più potente finora e il miglior modello al mondo per la programmazione. Queste eccellenti prestazioni su compiti reali di coding significano che Claude può aiutarti a scrivere, eseguire il debug e spiegare il codice in diversi linguaggi di programmazione.
+- **Risoluzione di problemi e ragionamento:** Claude gestisce complessi compiti cognitivi, problemi matematici, pensiero e analisi strategica e ricerca. Claude Opus 4.7 e Sonnet 4.7 sono modelli ibridi che offrono due modalità: risposte quasi istantanee e pensiero esteso (*Extended thinking*) per un ragionamento più profondo. Questa funzionalità permette a Claude di affrontare i problemi passo dopo passo, rendendolo particolarmente adatto a compiti che richiedono un'attenta analisi.
+- **Imparare cose nuove:** che tu stia imparando una nuova competenza, esplorando campi a te non familiari o affrontando sfide complesse, Claude può adattarsi al tuo stile e al tuo ritmo di apprendimento. La *Learning mode* (modalità di apprendimento) è una nuova esperienza che guida il tuo processo di ragionamento invece di darti semplicemente le risposte, aiutandoti a sviluppare il pensiero critico.
 
-Where do you go from here, and how do you earn your certificate?
+Lasciati ispirare su come usare Claude nel tuo ruolo specifico esplorando la nostra galleria di casi d'uso su claude.com. Per approfondire cosa l'IA può (e non può) fare, consulta il nostro corso sulle Capacità dell'IA.
 
-## What is Claude?
+### Modi per accedere a Claude
 
-(10 minutes)
+Claude è l'intelligenza: l'assistente IA con cui stai imparando a lavorare in questo corso. Questa stessa intelligenza è disponibile attraverso interfacce diverse, ciascuna adatta a tipologie diverse di compiti.
 
-Claude is more than a chatbot—it's an AI assistant designed to be your thinking partner. In this lesson you'll learn what makes Claude different from other AI tools and see how it can help with a wide variety of work tasks.
-Key takeaways
+- **Claude.ai** (e le relative app mobile e desktop) è il modo principale con cui la maggior parte delle persone interagisce con Claude. Qui puoi fare domande, brainstorming di idee, creare e modificare documenti e molto altro. Claude.ai è ideale per conversazioni, assistenza alla scrittura, ricerca, analisi e creazione di file. Questo è il focus principale del corso.
+- **Claude Code** è uno strumento di coding "agente" progettato per sviluppatori, ma utilizzabile per manipolare qualsiasi tipo di file sul tuo computer. Claude Code può modificare direttamente i file, eseguire comandi e creare commit.
+- **Claude e Slack** portano Claude direttamente nello strumento di comunicazione del tuo team. Puoi chattare con Claude nell'intestazione dell'assistente IA da qualsiasi canale o conversazione, oppure menzionando `@Claude` nei thread. Se connetti Slack a Claude, questo cercherà nei canali del workspace, nei messaggi diretti e nei file condivisi per trovare il contesto necessario a fornirti risposte e ricerche migliori.
+- **Claude per Excel** ti consente di lavorare direttamente con Claude da una barra laterale in Microsoft Excel, dove può leggere, analizzare, modificare e creare nuove cartelle di lavoro. È ottimo per l'analisi di modelli, l'aggiornamento di ipotesi, il debug degli errori, la compilazione di template, la spiegazione di formule e la navigazione in fogli multipli.
 
-    Claude is built to be helpful, harmless, and honest: At a high level, Claude is guided by principles that help it avoid toxic or discriminatory outputs, avoid helping humans engage in illegal or unethical activities, and broadly behave as a helpful, honest, and harmless AI system. This approach, called Constitutional AI, means Claude is trained to align with human values and operate transparently.
-    Claude is more than a chatbot: Claude is capable of a wide variety of conversational and text processing tasks while maintaining a high degree of reliability and predictability, including summarization, search, creative and collaborative writing, Q&A, coding, and more. Think of Claude as a thought partner who can help you tackle complex problems, and work through challenging situations, not just answer simple questions.
-    Claude is designed to be steerable and collaborative: Claude can take direction on personality, tone, and behavior, and customers report that Claude is much less likely to produce harmful outputs, easier to converse with, and more steerable—so you can get your desired output with less effort.
-    You can access Claude wherever you work: Claude apps are available to all plan types—Free, Pro, Max, Team, and Enterprise. Your conversations, projects, memory, and preferences sync across all devices when you're signed in. Whether you're at your desk or on the go, Claude is available through web, desktop, and mobile apps.
+Questo corso si concentrerà principalmente su Claude.ai, ma puoi dare un'occhiata anche a "Claude Code in Action" per maggiori informazioni sull'utilizzo di Claude nei flussi di sviluppo software.
 
-Understanding Claude's capabilities
+## Riflessione sulla lezione
 
-Claude can help with a wide range of tasks that go far beyond simple question-and-answer interactions to assistant-like partnership that can both automate and augment your work. Here's a few things Claude excels at:
-
-    Writing and content creation: Claude can collaborate with you on social media posts, professional emails, and complex reports. Because Claude is trained to take direction on personality and tone, you can iterate together on structure and clarity until your voice comes through clearly.
-    Research and analysis: Claude helps you explore research angles, compile findings, and analyze data to surface meaningful insights. You can upload documents and Claude will help you make sense of complex information—this is enabled by Claude's large context window, which can ingest 200K+ tokens (about 500 pages of text or more), with up to 1M tokens available on Pro, Max, Team, and Enterprise plans when using Opus 4.7. This allows Claude to consider extensive materials in a single conversation.
-    Coding assistance: Claude Opus 4.7 is our most powerful model yet and the best coding model in the world. This strong performance on real-world coding tasks means Claude can help you write, debug, and explain code across multiple programming languages.
-    Problem-solving and reasoning: Claude handles complex cognitive tasks, mathematical problems, strategic thinking and analysis, and research. Claude Opus 4.7 and Sonnet 4.7 are hybrid models offering two modes: near-instant responses and extended thinking for deeper reasoning. Anthropic Extended thinking allows Claude to work through problems step-by-step, making it well-suited for tasks that require careful analysis.
-    Learning new things: Whether you're learning a new skill, exploring unfamiliar domains, or working through complex challenges, Claude can adapt to your learning style and pace. Learning mode is a new Claude experience that guides your reasoning process rather than providing answers, helping develop critical thinking skills.
-
-Get inspired on ways to use Claude in your specific function by exploring our use-case gallery on claude.com. For a deeper dive into what AI can (and can't) do, see our AI Capabilities course.
-Ways to access Claude
-
-Claude is the intelligence—the AI assistant you're learning to work with throughout this course. That same intelligence is available across multiple interfaces, each suited to different types of tasks.
-
-    Claude.ai (and the associated mobile and desktop apps) are the primary way most people interact with Claude. Here, you can ask questions, brainstorm ideas, create and edit documents, and a lot more. Claude.ai is ideal for conversations, writing assistance, research, analysis, and creating files. This is our focus in this course.
-    Claude Code is an agentic coding tool that is designed for developers but can be used for all kinds of file manipulation on your desktop. Claude Code can directly edit files, run commands, and create commits.
-    Claude and Slack brings Claude directly into your team's communication tool. You can chat with Claude in the AI assistant header from any channel or conversation, or by mentioning @Claude in threads. When you connect Slack to Claude, Claude searches your workspace's channels, direct messages, and shared files to find the context you need for better responses and research.
-    Claude for Excel lets you work directly with Claude in a sidebar in Microsoft Excel, where Claude can read, analyze, modify, and create new Excel workbooks. Claude for Excel is best for model analysis, assumption updates, error debugging, template population, formula explanations, and multi-tab navigation.
-
-This course will focus primarily on Claude.ai, but you can also check out Claude Code in Action for more information on using Claude in development workflows.
-Lesson reflection
-
-What tasks in your current work might benefit from having Claude as a thinking partner? Take a look at your calendar (or better yet, ask Claude to) and identify a few tasks you might want to use Claude to support.
+Quali compiti nel tuo lavoro attuale trarrebbero vantaggio dall'avere Claude come partner di ragionamento? Dai un'occhiata al tuo calendario (o meglio ancora, chiedi a Claude di farlo) e individua alcune attività per le quali potresti farti supportare dall'IA.
