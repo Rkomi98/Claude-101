@@ -2,47 +2,47 @@ window.BLOG_GENERATED_CONTENT = {
   "articleContentByKey": {
     "claude-101/cose-claude": {
       "readingTime": "10 min",
-      "words": 1113,
+      "words": 1101,
       "sections": [
         {
           "id": "panoramica",
           "title": "Panoramica",
           "paragraphs": [
-            "By the end of this lesson you'll be able to:",
-            "Explain what Claude is and the principles that guide its design",
-            "Describe Claude's core capabilities and how it differs from a simple chatbot",
-            "Identify the different ways to access Claude (web, desktop, and mobile)"
+            "Al termine di questa lezione, sarai in grado di:",
+            "Spiegare cos'è Claude e i principi che guidano il suo design",
+            "Descrivere le capacità principali di Claude e come si differenzia da un semplice chatbot",
+            "Identificare i diversi modi per accedere a Claude (web, desktop e mobile)"
           ],
           "blocks": []
         },
         {
-          "id": "course-roadmap",
-          "title": "Course roadmap",
+          "id": "tabella-di-marcia-del-corso",
+          "title": "Tabella di marcia del corso",
           "paragraphs": [],
           "blocks": [
             {
               "type": "timeline",
-              "title": "Course roadmap",
+              "title": "Tabella di marcia del corso",
               "items": [
                 {
-                  "label": "Meet Claude",
-                  "text": "What is Claude, how do you talk to it, and how do you get great results?"
+                  "label": "Incontrare Claude",
+                  "text": "Cos'è Claude, come parlargli e come ottenere ottimi risultati?"
                 },
                 {
-                  "label": "Organizing your work",
-                  "text": "How do Projects, Artifacts, and Skills give Claude structure and reusable knowledge?"
+                  "label": "Organizzare il lavoro",
+                  "text": "Come Progetti, Artefatti e Competenze danno a Claude struttura e conoscenza riutilizzabile?"
                 },
                 {
-                  "label": "Expanding Claude's reach",
-                  "text": "How do Connectors, Enterprise Search, and Research bring your tools and the web into the conversation?"
+                  "label": "Espandere la portata",
+                  "text": "Come Connettori, Ricerca Aziendale e Ricerca web portano i tuoi strumenti nella conversazione?"
                 },
                 {
-                  "label": "Putting it all together",
-                  "text": "What does Claude look like in action across roles, and where else can you work with it?"
+                  "label": "Mettere tutto insieme",
+                  "text": "Come si presenta Claude in azione nei vari ruoli e dove altro puoi lavorarci?"
                 },
                 {
-                  "label": "Conclusion & certificate",
-                  "text": "Where do you go from here, and how do you earn your certificate?"
+                  "label": "Conclusione e certificato",
+                  "text": "Quali sono i prossimi passi e come ottenere il certificato?"
                 }
               ]
             }
@@ -430,7 +430,7 @@ window.BLOG_GENERATED_CONTENT = {
   "chapterSectionsByKey": {
     "claude-101/cose-claude": [
       "Panoramica",
-      "Course roadmap",
+      "Tabella di marcia del corso",
       "Cos'è Claude?",
       "Punti chiave",
       "Comprendere le capacità di Claude",
