@@ -41,7 +41,17 @@ Nessuna dipendenza da installare. React e Babel vengono caricati via CDN.
 
 ## Aggiungere contenuto
 
-I testi dei capitoli si trovano in `Corso base/` come file Markdown. I dati del blog sono in [`blog-data.jsx`](blog-data.jsx): aggiungendo un nuovo oggetto nell'array `articles` con la chiave `"<courseId>/<chapterId>"`, il capitolo diventa immediatamente leggibile.
+I testi dei capitoli si trovano in `Corso base/` come file Markdown.
+
+Il sito ora usa un file generato, [`blog-content.generated.js`](blog-content.generated.js), costruito automaticamente dai markdown tramite [`scripts/generate-blog-content.mjs`](scripts/generate-blog-content.mjs).
+
+Per rigenerarlo in locale:
+
+```bash
+node scripts/generate-blog-content.mjs
+```
+
+Su GitHub c'e anche un workflow automatico in [`.github/workflows/sync-blog-content.yml`](.github/workflows/sync-blog-content.yml): a ogni push che modifica i markdown, rigenera `blog-content.generated.js` e lo committa da solo.
 
 ---
 

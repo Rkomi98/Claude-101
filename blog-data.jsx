@@ -2,6 +2,12 @@
 // Contenuti tratti dai corsi pubblici di Claude (Anthropic), tradotti in italiano.
 // Claude 101 ha tutti i capitoli disponibili; gli altri corsi sono placeholder.
 
+const generatedContent = window.BLOG_GENERATED_CONTENT || {
+  articleContentByKey: {},
+  chapterReadingTimeByKey: {},
+  chapterSectionsByKey: {},
+};
+
 window.BLOG_DATA = {
   courses: [
     {
@@ -339,3 +345,61 @@ window.BLOG_DATA = {
 
   },
 };
+
+function parseMinutes(value) {
+  if (!value) return null;
+  const hourMatch = value.match(/(\d+)\s*h/i);
+  const minuteMatch = value.match(/(\d+)\s*m(?:in)?/i);
+
+  if (!hourMatch && !minuteMatch) return null;
+
+  const hours = hourMatch ? Number(hourMatch[1]) : 0;
+  const minutes = minuteMatch ? Number(minuteMatch[1]) : 0;
+  return hours * 60 + minutes;
+}
+
+function formatMinutes(totalMinutes) {
+  if (totalMinutes >= 60) {
+    const hours = Math.floor(totalMinutes / 60);
+    const minutes = totalMinutes % 60;
+    return minutes ? `${hours}h ${minutes}m` : `${hours}h`;
+  }
+  return `${totalMinutes} min`;
+}
+
+for (const [key, generatedArticle] of Object.entries(generatedContent.articleContentByKey || {})) {
+  const existing = window.BLOG_DATA.articles[key] || {};
+  window.BLOG_DATA.articles[key] = {
+    ...existing,
+    ...generatedArticle,
+    sections: generatedArticle.sections || existing.sections || [],
+  };
+}
+
+for (const course of window.BLOG_DATA.courses) {
+  let totalMinutes = 0;
+
+  for (const chapter of course.chapters) {
+    const key = `${course.id}/${chapter.id}`;
+    const generatedTime = generatedContent.chapterReadingTimeByKey?.[key];
+    const generatedSections = generatedContent.chapterSectionsByKey?.[key];
+
+    if (generatedTime) {
+      chapter.readingTime = generatedTime;
+      if (window.BLOG_DATA.articles[key]) {
+        window.BLOG_DATA.articles[key].readingTime = generatedTime;
+      }
+    }
+
+    if (generatedSections && generatedSections.length) {
+      chapter.sections = generatedSections;
+    }
+
+    const chapterMinutes = parseMinutes(chapter.readingTime);
+    if (chapterMinutes != null) totalMinutes += chapterMinutes;
+  }
+
+  if (totalMinutes > 0) {
+    course.hours = formatMinutes(totalMinutes);
+  }
+}
