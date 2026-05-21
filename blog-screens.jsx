@@ -133,8 +133,8 @@ function HomeScreen({ navigate }) {
           <em>letti come un libro.</em>
         </h1>
         <p className="hero__lede">
-          Traduzioni e appunti dai materiali didattici pubblici di Anthropic, riorganizzati
-          in capitoli e sezioni, ottimizzati per la lettura — anche ad alta voce.
+          Claude ha corsi ottimi. Sono in inglese, pensati per il video, e sparsi.
+          Questo è il tentativo di raccoglierli in una lettura scorrevole, in italiano.
         </p>
         <div className="hero__meta">
           <div><b>{courses.length}</b> corsi</div>
