@@ -2,7 +2,7 @@ window.BLOG_GENERATED_CONTENT = {
   "articleContentByKey": {
     "claude-101/cose-claude": {
       "readingTime": "10 min",
-      "words": 334,
+      "words": 342,
       "sections": [
         {
           "id": "panoramica",
@@ -107,7 +107,7 @@ window.BLOG_GENERATED_CONTENT = {
           "title": "Comprendere le capacità di Claude",
           "paragraphs": [
             "Claude può aiutarti in un'ampia gamma di attività che vanno ben oltre le semplici interazioni a botta e risposta, arrivando a una vera collaborazione da assistente in grado di automatizzare e migliorare il tuo lavoro. Ecco alcune aree in cui Claude eccelle:",
-            "Lasciati ispirare su come usare Claude nel tuo ruolo specifico esplorando la nostra galleria di casi d'uso su claude.com. Per approfondire cosa l'IA può (e non può) fare, consulta il nostro corso sulle Capacità dell'IA."
+            "Lasciati ispirare su come usare Claude nel tuo ruolo specifico esplorando la loro galleria di casi d'uso (https://claude.com/resources/use-cases). Per approfondire cosa l'IA può (e non può) fare, consulta come sempre il loro corso sui limiti e potenzialità (https://anthropic.skilljar.com/ai-capabilities-and-limitations) o seguire direttamente Datapizza 😜."
           ],
           "blocks": [
             {
