@@ -123,6 +123,11 @@ const BlogApp = ({ deviceClass = 'desktop', forceTheme = null, instanceId = 'def
   const [route, setRoute] = React.useState({ name: 'home' });
   const voiceStorageKey = `blog.tts.voice.${instanceId}`;
   const themeStorageKey = `blog.theme.${instanceId}`;
+  const supportsRuntimeMarkdown = Boolean(window.BLOG_CONTENT_RUNTIME?.loadGeneratedContent);
+  const isLocalDevHost = Boolean(window.BLOG_CONTENT_RUNTIME?.isLocalDevHost?.());
+  const [contentReady, setContentReady] = React.useState(() => !(supportsRuntimeMarkdown && isLocalDevHost));
+  const [, setContentVersion] = React.useState(0);
+  const contentSignatureRef = React.useRef('');
   const [themePreference, setThemePreference] = React.useState(() => {
     if (forceTheme === 'light' || forceTheme === 'dark') return forceTheme;
     try {
@@ -149,6 +154,46 @@ const BlogApp = ({ deviceClass = 'desktop', forceTheme = null, instanceId = 'def
     return () => { try { mq.removeEventListener('change', cb); } catch { mq.removeListener(cb); } };
   }, []);
   const isDark = themePreference ? themePreference === 'dark' : systemDark;
+
+  React.useEffect(() => {
+    let cancelled = false;
+    const loadGeneratedContent = window.BLOG_CONTENT_RUNTIME?.loadGeneratedContent;
+    if (!loadGeneratedContent || !isLocalDevHost) return undefined;
+
+    const syncGeneratedContent = async (isInitialLoad = false) => {
+      try {
+        const nextGeneratedContent = await loadGeneratedContent();
+        if (cancelled) return;
+
+        const nextSignature = JSON.stringify(nextGeneratedContent);
+        const hasChanged = nextSignature !== contentSignatureRef.current;
+
+        if (hasChanged) {
+          contentSignatureRef.current = nextSignature;
+          window.BLOG_GENERATED_CONTENT = nextGeneratedContent;
+          window.applyGeneratedContent?.(nextGeneratedContent);
+          setContentVersion((version) => version + 1);
+        }
+
+        if (isInitialLoad) setContentReady(true);
+      } catch (error) {
+        console.error('Unable to load markdown content at runtime.', error);
+        if (!cancelled && isInitialLoad) setContentReady(true);
+      }
+    };
+
+    syncGeneratedContent(true);
+
+    const intervalId = window.setInterval(() => {
+      if (document.visibilityState !== 'visible') return;
+      syncGeneratedContent(false);
+    }, 2000);
+
+    return () => {
+      cancelled = true;
+      window.clearInterval(intervalId);
+    };
+  }, [isLocalDevHost]);
 
   const setThemePersist = (t) => {
     setThemePreference(t);
@@ -330,6 +375,27 @@ const BlogApp = ({ deviceClass = 'desktop', forceTheme = null, instanceId = 'def
   }, []);
 
   const tts = { state: ttsState, startChapter, ...ttsControls };
+
+  if (!contentReady) {
+    return (
+      <div
+        className={`blog ${isDark ? 'dark' : ''} ${deviceClass}`}
+        style={{ minHeight: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '32px' }}
+      >
+        <div style={{ textAlign: 'center', maxWidth: '420px' }}>
+          <div style={{ fontFamily: 'var(--mono)', fontSize: '11px', letterSpacing: '.12em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: '12px' }}>
+            Caricamento contenuti
+          </div>
+          <div style={{ fontFamily: 'var(--serif)', fontSize: '32px', lineHeight: '1.1', marginBottom: '10px' }}>
+            Sto rileggendo i Markdown piu recenti.
+          </div>
+          <div style={{ color: 'var(--ink-2)' }}>
+            Un attimo e il sito si aggiorna con l'ultima versione dei capitoli.
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div

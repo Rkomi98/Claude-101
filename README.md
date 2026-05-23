@@ -44,15 +44,11 @@ Nessuna dipendenza da installare. React e Babel vengono caricati via CDN.
 
 I testi dei capitoli si trovano in `Corso base/` come file Markdown.
 
-Il sito ora usa un file generato, [`blog-content.generated.js`](blog-content.generated.js), costruito automaticamente dai markdown tramite [`scripts/generate-blog-content.mjs`](scripts/generate-blog-content.mjs).
+Il sito usa un payload generato, [`blog-content.generated.js`](blog-content.generated.js), costruito dai Markdown tramite [`scripts/generate-blog-content.mjs`](scripts/generate-blog-content.mjs).
 
-Per rigenerarlo in locale:
+In locale, se apri il sito su `localhost`, i Markdown vengono anche riletti automaticamente dal browser: quando salvi un file in `Corso base/`, la pagina si riallinea senza che tu debba rigenerare manualmente il payload.
 
-```bash
-node scripts/generate-blog-content.mjs
-```
-
-Su GitHub c'e anche un workflow automatico in [`.github/workflows/sync-blog-content.yml`](.github/workflows/sync-blog-content.yml): a ogni push che modifica il sito rigenera `blog-content.generated.js` durante il deploy di GitHub Pages, senza creare commit aggiuntivi sul branch.
+Su GitHub Pages invece non c'e polling: il workflow in [`.github/workflows/sync-blog-content.yml`](.github/workflows/sync-blog-content.yml) genera `blog-content.generated.js` durante il deploy e pubblica un sito statico gia pronto. In questo modo la produzione resta leggera e non richiede commit automatici sul branch.
 
 ---
 

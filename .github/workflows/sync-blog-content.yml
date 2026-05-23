@@ -9,6 +9,7 @@ on:
       - 'blog-*.css'
       - 'blog-*.jsx'
       - 'blog-content.generated.js'
+      - 'blog-content.runtime.js'
       - 'Assets/**'
       - 'Corso base/*.md'
       - 'scripts/generate-blog-content.mjs'
@@ -50,6 +51,7 @@ jobs:
           cp blog-*.css dist/
           cp blog-*.jsx dist/
           cp blog-content.generated.js dist/
+          cp blog-content.runtime.js dist/
           cp -R Assets dist/Assets
           touch dist/.nojekyll
 

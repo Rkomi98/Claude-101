@@ -367,39 +367,44 @@ function formatMinutes(totalMinutes) {
   return `${totalMinutes} min`;
 }
 
-for (const [key, generatedArticle] of Object.entries(generatedContent.articleContentByKey || {})) {
-  const existing = window.BLOG_DATA.articles[key] || {};
-  window.BLOG_DATA.articles[key] = {
-    ...existing,
-    ...generatedArticle,
-    sections: generatedArticle.sections || existing.sections || [],
-  };
-}
+function applyGeneratedContent(nextGeneratedContent = {}) {
+  for (const [key, generatedArticle] of Object.entries(nextGeneratedContent.articleContentByKey || {})) {
+    const existing = window.BLOG_DATA.articles[key] || {};
+    window.BLOG_DATA.articles[key] = {
+      ...existing,
+      ...generatedArticle,
+      sections: generatedArticle.sections || existing.sections || [],
+    };
+  }
 
-for (const course of window.BLOG_DATA.courses) {
-  let totalMinutes = 0;
+  for (const course of window.BLOG_DATA.courses) {
+    let totalMinutes = 0;
 
-  for (const chapter of course.chapters) {
-    const key = `${course.id}/${chapter.id}`;
-    const generatedTime = generatedContent.chapterReadingTimeByKey?.[key];
-    const generatedSections = generatedContent.chapterSectionsByKey?.[key];
+    for (const chapter of course.chapters) {
+      const key = `${course.id}/${chapter.id}`;
+      const generatedTime = nextGeneratedContent.chapterReadingTimeByKey?.[key];
+      const generatedSections = nextGeneratedContent.chapterSectionsByKey?.[key];
 
-    if (generatedTime) {
-      chapter.readingTime = generatedTime;
-      if (window.BLOG_DATA.articles[key]) {
-        window.BLOG_DATA.articles[key].readingTime = generatedTime;
+      if (generatedTime) {
+        chapter.readingTime = generatedTime;
+        if (window.BLOG_DATA.articles[key]) {
+          window.BLOG_DATA.articles[key].readingTime = generatedTime;
+        }
       }
+
+      if (generatedSections && generatedSections.length) {
+        chapter.sections = generatedSections;
+      }
+
+      const chapterMinutes = parseMinutes(chapter.readingTime);
+      if (chapterMinutes != null) totalMinutes += chapterMinutes;
     }
 
-    if (generatedSections && generatedSections.length) {
-      chapter.sections = generatedSections;
+    if (totalMinutes > 0) {
+      course.hours = formatMinutes(totalMinutes);
     }
-
-    const chapterMinutes = parseMinutes(chapter.readingTime);
-    if (chapterMinutes != null) totalMinutes += chapterMinutes;
-  }
-
-  if (totalMinutes > 0) {
-    course.hours = formatMinutes(totalMinutes);
   }
 }
+
+window.applyGeneratedContent = applyGeneratedContent;
+applyGeneratedContent(generatedContent);

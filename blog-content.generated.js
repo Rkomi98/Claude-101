@@ -2,7 +2,7 @@ window.BLOG_GENERATED_CONTENT = {
   "articleContentByKey": {
     "claude-101/cose-claude": {
       "readingTime": "10 min",
-      "words": 340,
+      "words": 324,
       "sections": [
         {
           "id": "panoramica",
@@ -114,10 +114,34 @@ window.BLOG_GENERATED_CONTENT = {
               "type": "list",
               "ordered": false,
               "items": [
-                "Scrittura e creazione di contenuti: Claude può collaborare con te su post per i social media, email professionali e report complessi. Poiché Claude è addestrato per seguire direttive su personalità e tono, potete iterare insieme sulla struttura e sulla chiarezza finché la tua voce non emerge in modo cristallino.",
-                "Ricerca e analisi: Claude ti aiuta a esplorare prospettive di ricerca, compilare risultati e analizzare dati per far emergere insight significativi. Puoi caricare documenti e Claude ti aiuterà a dare un senso a informazioni complesse. Questo è reso possibile dall'ampia finestra di contesto, in grado di assimilare oltre 200.000 token (circa 500 pagine di testo o più), con un massimo di 1 milione di token sui piani Pro, Max, Team ed Enterprise usando Opus 4.7. Ciò permette a Claude di considerare un'enorme mole di materiali in una singola conversazione.",
-                "Assistenza alla programmazione (coding): Claude Opus 4.7 è il nostro modello più potente finora e il miglior modello al mondo per la programmazione. Queste eccellenti prestazioni su compiti reali di coding significano che Claude può aiutarti a scrivere, eseguire il debug e spiegare il codice in diversi linguaggi di programmazione.",
-                "Risoluzione di problemi e ragionamento: Claude gestisce complessi compiti cognitivi, problemi matematici, pensiero e analisi strategica e ricerca. Claude Opus 4.7 e Sonnet 4.7 sono modelli ibridi che offrono due modalità: risposte quasi istantanee e pensiero esteso (Extended thinking) per un ragionamento più profondo. Questa funzionalità permette a Claude di affrontare i problemi passo dopo passo, rendendolo particolarmente adatto a compiti che richiedono un'attenta analisi.",
+                "Scrittura e creazione di contenuti: Claude può collaborare con te su post per i social media, email professionali e report complessi. Poiché Claude è addestrato per seguire direttive su personalità e tono, potete iterare insieme sulla struttura e sulla chiarezza finché la tua voce non emerge in modo cristallino."
+              ]
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Ricerca e analisi: Claude ti aiuta a esplorare prospettive di ricerca, compilare risultati e analizzare dati per far emergere insight significativi. Puoi caricare documenti e Claude ti aiuterà a dare un senso a informazioni complesse. Questo è reso possibile dall'ampia finestra di contesto, in grado di assimilare oltre 200.000 token (circa 500 pagine di testo o più), con un massimo di 1 milione di token sui piani Pro, Max, Team ed Enterprise usando Opus 4.7. Ciò permette a Claude di considerare un'enorme mole di materiali in una singola conversazione."
+              ]
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Assistenza alla programmazione (coding): Claude Opus 4.7 è il nostro modello più potente finora e il miglior modello al mondo per la programmazione. Queste eccellenti prestazioni su compiti reali di coding significano che Claude può aiutarti a scrivere, eseguire il debug e spiegare il codice in diversi linguaggi di programmazione."
+              ]
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Risoluzione di problemi e ragionamento: Claude gestisce complessi compiti cognitivi, problemi matematici, pensiero e analisi strategica e ricerca. Claude Opus 4.7 e Sonnet 4.7 sono modelli ibridi che offrono due modalità: risposte quasi istantanee e pensiero esteso (Extended thinking) per un ragionamento più profondo. Questa funzionalità permette a Claude di affrontare i problemi passo dopo passo, rendendolo particolarmente adatto a compiti che richiedono un'attenta analisi."
+              ]
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
                 "Imparare cose nuove: che tu stia imparando una nuova competenza, esplorando campi a te non familiari o affrontando sfide complesse, Claude può adattarsi al tuo stile e al tuo ritmo di apprendimento. La Learning mode (modalità di apprendimento) è una nuova esperienza che guida il tuo processo di ragionamento invece di darti semplicemente le risposte, aiutandoti a sviluppare il pensiero critico."
               ]
             }
@@ -127,7 +151,7 @@ window.BLOG_GENERATED_CONTENT = {
           "id": "modi-per-accedere-a-claude",
           "title": "Modi per accedere a Claude",
           "paragraphs": [
-            "Claude è l'intelligenza: l'assistente IA con cui stai imparando a lavorare in questo corso. Questa stessa intelligenza è disponibile attraverso interfacce diverse, ciascuna adatta a tipologie diverse di compiti.",
+            "Claude è disponibile attraverso interfacce diverse, ciascuna adatta a tipologie diverse di compiti:",
             "Questo corso si concentrerà principalmente su Claude.ai, ma puoi dare un'occhiata anche a \"Claude Code in Action\" per maggiori informazioni sull'utilizzo di Claude nei flussi di sviluppo software."
           ],
           "blocks": [
