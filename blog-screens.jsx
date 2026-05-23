@@ -286,7 +286,7 @@ function AboutScreen() {
 function TimelineBlock({ title, items = [] }) {
   return (
     <div className="roadmap-block">
-      <div className="roadmap-block__eyebrow">{title}</div>
+      <div className="roadmap-block__eyebrow">{renderInlineContent(title)}</div>
       <div className="roadmap-block__list">
         {items.map((item, index) => (
           <div key={`${item.label}-${index}`} className="roadmap-step">
@@ -295,8 +295,8 @@ function TimelineBlock({ title, items = [] }) {
               {index < items.length - 1 && <span className="roadmap-step__line"/>}
             </div>
             <div className="roadmap-step__body">
-              <div className="roadmap-step__label">{item.label}</div>
-              <p className="roadmap-step__text">{item.text}</p>
+              <div className="roadmap-step__label">{renderInlineContent(item.label)}</div>
+              <p className="roadmap-step__text">{renderInlineContent(item.text)}</p>
             </div>
           </div>
         ))}
@@ -305,20 +305,55 @@ function TimelineBlock({ title, items = [] }) {
   );
 }
 
+function renderInlineContent(text = '') {
+  const source = String(text);
+  const parts = [];
+  const pattern = /\[([^\]]+)\]\(([^)]+)\)/g;
+  let lastIndex = 0;
+  let match = pattern.exec(source);
+
+  while (match) {
+    const [raw, label, href] = match;
+    if (match.index > lastIndex) {
+      parts.push(source.slice(lastIndex, match.index));
+    }
+
+    parts.push(
+      <a
+        key={`${href}-${match.index}`}
+        href={href}
+        target="_blank"
+        rel="noreferrer"
+      >
+        {label}
+      </a>
+    );
+
+    lastIndex = match.index + raw.length;
+    match = pattern.exec(source);
+  }
+
+  if (lastIndex < source.length) {
+    parts.push(source.slice(lastIndex));
+  }
+
+  return parts.length ? parts : source;
+}
+
 function ArticleBlock({ block }) {
   if (!block) return null;
   if (block.type === 'timeline') {
     return <TimelineBlock title={block.title} items={block.items} />;
   }
   if (block.type === 'quote') {
-    return <blockquote className="article-quote">{block.text}</blockquote>;
+    return <blockquote className="article-quote">{renderInlineContent(block.text)}</blockquote>;
   }
   if (block.type === 'list') {
     const ListTag = block.ordered ? 'ol' : 'ul';
     return (
       <ListTag className="article-list">
         {block.items.map((item, index) => (
-          <li key={`${item}-${index}`}>{item}</li>
+          <li key={`${item}-${index}`}>{renderInlineContent(item)}</li>
         ))}
       </ListTag>
     );
@@ -545,7 +580,7 @@ function ChapterScreen({ courseId, chapterId, navigate, tts }) {
                     data-tts-section={si}
                     data-tts-paragraph={pi}
                   >
-                    {p}
+                    {renderInlineContent(p)}
                   </p>
                 ))}
                 {(s.blocks || []).map((block, bi) => (

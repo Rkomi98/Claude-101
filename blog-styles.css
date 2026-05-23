@@ -521,6 +521,18 @@
 .prose .article-list li::marker { color: var(--accent); }
 .prose strong { font-weight: 600; color: var(--ink); }
 .prose em { font-style: italic; }
+.prose a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in oklab, var(--accent), transparent 38%);
+  box-shadow: inset 0 -0.08em 0 color-mix(in oklab, var(--accent), transparent 86%);
+  transition: color .15s ease, border-color .15s ease, box-shadow .15s ease;
+}
+.prose a:hover {
+  color: var(--ink);
+  border-bottom-color: var(--accent);
+  box-shadow: inset 0 -0.16em 0 color-mix(in oklab, var(--accent), transparent 76%);
+}
 .prose blockquote {
   border-left: 2px solid var(--accent);
   margin: 24px 0;

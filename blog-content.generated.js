@@ -2,7 +2,7 @@ window.BLOG_GENERATED_CONTENT = {
   "articleContentByKey": {
     "claude-101/cose-claude": {
       "readingTime": "10 min",
-      "words": 334,
+      "words": 340,
       "sections": [
         {
           "id": "panoramica",
@@ -72,7 +72,7 @@ window.BLOG_GENERATED_CONTENT = {
               "type": "list",
               "ordered": false,
               "items": [
-                "Claude è costruito per essere utile, innocuo e onesto: a livello generale, Claude è guidato da principi che lo aiutano a evitare risposte tossiche o discriminatorie, evitare di assistere le persone in attività illegali o non etiche e, nel complesso, a comportarsi come un sistema IA utile, onesto e innocuo. Questo approccio, chiamato Constitutional AI (https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback), significa che Claude è addestrato per allinearsi ai valori umani e operare in modo trasparente. Invito inoltre a leggere la costituzione di Anthropic (https://www.anthropic.com/constitution) per farvi un'idea dell'attenzione all'etica da parte di questa azienda!"
+                "Claude è costruito per essere utile, innocuo e onesto: a livello generale, Claude è guidato da principi che lo aiutano a evitare risposte tossiche o discriminatorie, evitare di assistere le persone in attività illegali o non etiche e, nel complesso, a comportarsi come un sistema IA utile, onesto e innocuo. Questo approccio, chiamato [Constitutional AI](https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback), significa che Claude è addestrato per allinearsi ai valori umani e operare in modo trasparente. Invito inoltre a leggere la [costituzione di Anthropic](https://www.anthropic.com/constitution) per farvi un'idea dell'attenzione all'etica da parte di questa azienda!"
               ]
             },
             {
@@ -107,7 +107,7 @@ window.BLOG_GENERATED_CONTENT = {
           "title": "Comprendere le capacità di Claude",
           "paragraphs": [
             "Claude può aiutarti in un'ampia gamma di attività che vanno ben oltre le semplici interazioni a botta e risposta, arrivando a una vera collaborazione da assistente in grado di automatizzare e migliorare il tuo lavoro. Ecco alcune aree in cui Claude eccelle:",
-            "Lasciati ispirare su come usare Claude nel tuo ruolo specifico esplorando la nostra galleria di casi d'uso su claude.com. Per approfondire cosa l'IA può (e non può) fare, consulta il nostro corso sulle Capacità dell'IA."
+            "Lasciati ispirare su come usare Claude nel tuo ruolo specifico esplorando la [loro galleria di casi d'uso](https://claude.com/resources/use-cases). Per approfondire cosa l'IA può (e non può) fare, consulta come sempre il loro [corso sui limiti e potenzialità](https://anthropic.skilljar.com/ai-capabilities-and-limitations) o seguire direttamente Datapizza 😜."
           ],
           "blocks": [
             {
@@ -155,7 +155,7 @@ window.BLOG_GENERATED_CONTENT = {
     },
     "claude-101/prima-conversazione": {
       "readingTime": "20 min",
-      "words": 690,
+      "words": 689,
       "sections": [
         {
           "id": "cosa-imparerai-in-questo-articolo",
@@ -182,7 +182,7 @@ window.BLOG_GENERATED_CONTENT = {
             "Aprendo Claude.ai trovi un'interfaccia volutamente pulita: un campo testo, nient'altro di necessario in superficie. Ma prima di digitare, vale la pena fermarsi un secondo su tre domande.",
             "Un esempio che mette tutto insieme: \"Sono il responsabile marketing di una startup nel settore streaming indipendente. Stiamo preparando un pitch deck per investitori Series A. Puoi fare una ricerca sullo stato attuale del mercato dello streaming di film indie e identificare trend chiave, posizionamento della concorrenza e opportunità di crescita? Usa fonti aggiornate con citazioni e struttura il risultato come un report professionale di massimo cinque pagine, con executive summary, analisi di mercato, panorama competitivo e opportunità.\"",
             "Questo prompt funziona perché non lascia spazio all'ambiguità su nessuno dei tre fronti.",
-            "Questo framework per i prompt è un adattamento del 4D Framework for AI Fluency, sviluppato attraverso una collaborazione di ricerca tra il Professor Rick Dakan (Ringling College of Art and Design) e il Professor Joseph Feller (University College Cork). Il framework individua quattro competenze chiave (Delega, Descrizione, Discernimento e Diligenza) che consentono una collaborazione efficace con l'IA. Se vuoi andare più in profondità ti suggeriamo di guardare questo corso (https://anthropic.skilljar.com/ai-fluency-framework-foundations)"
+            "Questo framework per i prompt è un adattamento del 4D Framework for AI Fluency, sviluppato attraverso una collaborazione di ricerca tra il Professor Rick Dakan (Ringling College of Art and Design) e il Professor Joseph Feller (University College Cork). Il framework individua quattro competenze chiave (Delega, Descrizione, Discernimento e Diligenza) che consentono una collaborazione efficace con l'IA. Se vuoi andare più in profondità ti suggeriamo di guardare [questo corso](https://anthropic.skilljar.com/ai-fluency-framework-foundations)"
           ],
           "blocks": [
             {

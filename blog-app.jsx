@@ -3,7 +3,15 @@
 const AUTO_TTS_VOICE = '__auto__';
 
 function normalizeSpeechText(text = '') {
-  return String(text).replace(/\s+/g, ' ').trim();
+  return String(text)
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '$1')
+    .replace(/`([^`]+)`/g, '$1')
+    .replace(/\*\*([^*]+)\*\*/g, '$1')
+    .replace(/__([^_]+)__/g, '$1')
+    .replace(/\*([^*]+)\*/g, '$1')
+    .replace(/_([^_]+)_/g, '$1')
+    .replace(/\s+/g, ' ')
+    .trim();
 }
 
 function withSentencePause(text = '') {

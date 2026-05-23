@@ -14,19 +14,25 @@ const ARTICLE_SOURCES = {
   'claude-101/introduzione-progetti': 'Corso base/05_introduzione_progetti_it.md',
 };
 
-function normalizeInline(text) {
+function normalizeInline(text, options = {}) {
+  const { preserveLinks = false } = options;
+
   return text
     .replace(/!\[([^\]]*)\]\([^)]+\)/g, '$1')
-    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '$1 ($2)')
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, preserveLinks ? '[$1]($2)' : '$1')
     .replace(/`([^`]+)`/g, '$1')
     .replace(/\*\*([^*]+)\*\*/g, '$1')
     .replace(/__([^_]+)__/g, '$1')
     .replace(/\*([^*]+)\*/g, '$1')
     .replace(/_([^_]+)_/g, '$1')
     .replace(/【[^】]+】/g, '')
-    .replace(/<[^>]+>/g, '')
+    .replace(/<([^>\s]+)>/g, '$1')
     .replace(/\s+/g, ' ')
     .trim();
+}
+
+function plainTextInline(text) {
+  return normalizeInline(text, { preserveLinks: false });
 }
 
 function slugify(text) {
@@ -76,15 +82,15 @@ function parseMermaidTimeline(source) {
   for (const line of lines.slice(1)) {
     const titleMatch = line.match(/^title\s+(.+)$/i);
     if (titleMatch) {
-      title = normalizeInline(titleMatch[1]);
+      title = normalizeInline(titleMatch[1], { preserveLinks: true });
       continue;
     }
 
     const itemMatch = line.match(/^(.+?)\s*:\s*(.+)$/);
     if (itemMatch) {
       items.push({
-        label: normalizeInline(itemMatch[1]),
-        text: normalizeInline(itemMatch[2]),
+        label: normalizeInline(itemMatch[1], { preserveLinks: true }),
+        text: normalizeInline(itemMatch[2], { preserveLinks: true }),
       });
     }
   }
@@ -128,14 +134,14 @@ function markdownToSections(markdown) {
 
   const flushParagraph = () => {
     if (!paragraphBuffer.length) return;
-    const text = normalizeInline(paragraphBuffer.join(' '));
+    const text = normalizeInline(paragraphBuffer.join(' '), { preserveLinks: true });
     if (text) ensureSection().paragraphs.push(text);
     paragraphBuffer = [];
   };
 
   const flushQuote = () => {
     if (!quoteBuffer.length) return;
-    const text = normalizeInline(quoteBuffer.join(' '));
+    const text = normalizeInline(quoteBuffer.join(' '), { preserveLinks: true });
     if (text) ensureSection().blocks.push({ type: 'quote', text });
     quoteBuffer = [];
   };
@@ -146,7 +152,7 @@ function markdownToSections(markdown) {
     for (const row of tableBuffer) {
       const cells = row
         .split('|')
-        .map((cell) => normalizeInline(cell))
+        .map((cell) => normalizeInline(cell, { preserveLinks: true }))
         .filter(Boolean);
 
       if (!cells.length) continue;
@@ -231,7 +237,7 @@ function markdownToSections(markdown) {
       flushTable();
       flushList();
       const level = headingMatch[1].length;
-      const title = normalizeInline(headingMatch[2]);
+      const title = normalizeInline(headingMatch[2], { preserveLinks: true });
       if (level >= 2 && title) {
         currentSection = { id: uniqueId(title), title, paragraphs: [], blocks: [] };
         sections.push(currentSection);
@@ -252,7 +258,7 @@ function markdownToSections(markdown) {
       flushParagraph();
       flushQuote();
       flushTable();
-      const text = normalizeInline(bulletMatch[1]);
+      const text = normalizeInline(bulletMatch[1], { preserveLinks: true });
       if (!text) continue;
       if (!listBuffer || listBuffer.type !== 'list' || listBuffer.ordered) {
         flushList();
@@ -267,7 +273,7 @@ function markdownToSections(markdown) {
       flushParagraph();
       flushQuote();
       flushTable();
-      const text = normalizeInline(orderedMatch[1]);
+      const text = normalizeInline(orderedMatch[1], { preserveLinks: true });
       if (!text) continue;
       if (!listBuffer || listBuffer.type !== 'list' || !listBuffer.ordered) {
         flushList();
@@ -310,12 +316,12 @@ function countWords(sections) {
     chunks.push(...section.paragraphs);
     for (const block of section.blocks || []) {
       if (block.type === 'quote') {
-        chunks.push(block.text);
+        chunks.push(plainTextInline(block.text));
       }
       if (block.type === 'timeline') {
-        chunks.push(block.title);
+        chunks.push(plainTextInline(block.title));
         for (const item of block.items) {
-          chunks.push(item.label, item.text);
+          chunks.push(plainTextInline(item.label), plainTextInline(item.text));
         }
       }
     }
