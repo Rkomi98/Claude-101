@@ -20,11 +20,6 @@ const Icon = {
       <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
     </svg>
   ),
-  auto: (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-      <circle cx="12" cy="12" r="9"/><path d="M12 3v18"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"/>
-    </svg>
-  ),
   play: <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4l14 8L7 20z"/></svg>,
   pause: <svg viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>,
   stop: <svg viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="6" width="12" height="12"/></svg>,
@@ -95,12 +90,8 @@ function ReadingProgress({ scrollRef }) {
 }
 
 // ─── Header / Nav ───────────────────────────────────────────────
-function Nav({ route, theme, setTheme, navigate }) {
-  const cycleTheme = () => {
-    const order = ['auto', 'light', 'dark'];
-    const next = order[(order.indexOf(theme) + 1) % order.length];
-    setTheme(next);
-  };
+function Nav({ route, isDark, setTheme, navigate }) {
+  const toggleTheme = () => setTheme(isDark ? 'light' : 'dark');
   return (
     <header className="nav">
       <div className="nav__row">
@@ -118,8 +109,20 @@ function Nav({ route, theme, setTheme, navigate }) {
         <nav className="nav__links">
           <a className={route.name === 'home' ? 'active' : ''} onClick={() => navigate({ name: 'home' })}>Corsi</a>
           <a className={route.name === 'about' ? 'active' : ''} onClick={() => navigate({ name: 'about' })}>Su questo blog</a>
-          <button className="icon-btn" onClick={cycleTheme} title={`Tema: ${theme}`}>
-            {theme === 'light' ? Icon.sun : theme === 'dark' ? Icon.moon : Icon.auto}
+          <button
+            className={`theme-switch ${isDark ? 'is-dark' : 'is-light'}`}
+            onClick={toggleTheme}
+            type="button"
+            role="switch"
+            aria-checked={isDark}
+            aria-label={`Attiva tema ${isDark ? 'chiaro' : 'scuro'}`}
+            title={`Tema ${isDark ? 'scuro' : 'chiaro'}`}
+          >
+            <span className="theme-switch__icon theme-switch__icon--sun" aria-hidden="true">{Icon.sun}</span>
+            <span className="theme-switch__track" aria-hidden="true">
+              <span className="theme-switch__thumb" />
+            </span>
+            <span className="theme-switch__icon theme-switch__icon--moon" aria-hidden="true">{Icon.moon}</span>
           </button>
         </nav>
       </div>

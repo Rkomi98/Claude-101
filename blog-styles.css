@@ -147,6 +147,80 @@
 .icon-btn:hover { border-color: var(--rule-2); color: var(--ink); background: var(--paper-2); }
 .icon-btn svg { width: 16px; height: 16px; }
 
+.theme-switch {
+  appearance: none;
+  border: 1px solid var(--rule);
+  background: var(--paper-2);
+  color: var(--ink-2);
+  border-radius: 999px;
+  padding: 6px 10px;
+  min-width: 88px;
+  height: 42px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  transition: border-color .18s ease, background .18s ease, color .18s ease, box-shadow .18s ease;
+}
+.theme-switch:hover {
+  border-color: var(--rule-2);
+  color: var(--ink);
+  box-shadow: 0 10px 24px -18px color-mix(in oklab, var(--accent), transparent 45%);
+}
+.theme-switch:focus-visible {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--accent), transparent 75%);
+}
+.theme-switch__icon {
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: color .18s ease, opacity .18s ease;
+}
+.theme-switch__icon svg {
+  width: 16px;
+  height: 16px;
+}
+.theme-switch__track {
+  position: relative;
+  width: 34px;
+  height: 20px;
+  flex: 0 0 auto;
+  border-radius: 999px;
+  background: color-mix(in oklab, var(--ink), transparent 72%);
+  transition: background .18s ease;
+}
+.theme-switch__thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--paper);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+  transition: transform .18s ease, background .18s ease;
+}
+.theme-switch.is-light .theme-switch__icon--sun,
+.theme-switch.is-dark .theme-switch__icon--moon {
+  color: var(--accent);
+  opacity: 1;
+}
+.theme-switch.is-light .theme-switch__icon--moon,
+.theme-switch.is-dark .theme-switch__icon--sun {
+  opacity: 0.55;
+}
+.theme-switch.is-dark .theme-switch__track {
+  background: color-mix(in oklab, var(--accent), var(--paper) 38%);
+}
+.theme-switch.is-dark .theme-switch__thumb {
+  transform: translateX(14px);
+}
+
 /* ─── Home / Hero ──────────────────────────────────────── */
 .hero { max-width: var(--container); margin: 0 auto; padding: 80px 24px 48px; }
 .hero__kicker {
@@ -918,7 +992,13 @@
 .blog.mobile .nav__brand .ital { font-size: 10px; letter-spacing: .1em; }
 .blog.mobile .nav__links a { display: none; }
 .blog.mobile .nav__links a.always-show,
-.blog.mobile .nav__links .icon-btn { display: flex; }
+.blog.mobile .nav__links .icon-btn,
+.blog.mobile .nav__links .theme-switch { display: flex; }
+.blog.mobile .theme-switch {
+  min-width: 78px;
+  height: 38px;
+  padding: 5px 9px;
+}
 .blog.mobile .hero { padding: 32px 16px 24px; }
 .blog.mobile .hero__meta { gap: 16px; flex-wrap: wrap; }
 .blog.mobile .section-head { padding: 24px 16px 0; margin: 32px auto 16px; }

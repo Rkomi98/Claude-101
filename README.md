@@ -26,9 +26,10 @@ Blog editoriale in italiano sui corsi pubblici di Anthropic. Ottimizzato per la 
 ## Pubblicare su GitHub Pages
 
 1. Vai su **Settings → Pages** nel repository
-2. Scegli **Source: Deploy from a branch**
-3. Branch: `main` / Folder: `/ (root)`
-4. Salva — il sito sarà disponibile su `https://<username>.github.io/<repo>/`
+2. Scegli **Source: GitHub Actions**
+3. Salva — il workflow pubblicherà automaticamente il sito su `https://<username>.github.io/<repo>/`
+
+Se vedi log con `github-pages`, `jekyll` o errori tipo `The GitHub API credentials you provided aren't valid`, il repository sta ancora usando il vecchio deploy da branch: passa a **GitHub Actions** per evitare completamente Jekyll.
 
 ## Sviluppo locale
 
@@ -51,7 +52,7 @@ Per rigenerarlo in locale:
 node scripts/generate-blog-content.mjs
 ```
 
-Su GitHub c'e anche un workflow automatico in [`.github/workflows/sync-blog-content.yml`](.github/workflows/sync-blog-content.yml): a ogni push che modifica i markdown, rigenera `blog-content.generated.js` e lo committa da solo.
+Su GitHub c'e anche un workflow automatico in [`.github/workflows/sync-blog-content.yml`](.github/workflows/sync-blog-content.yml): a ogni push che modifica il sito rigenera `blog-content.generated.js` durante il deploy di GitHub Pages, senza creare commit aggiuntivi sul branch.
 
 ---
 

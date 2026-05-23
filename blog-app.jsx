@@ -122,13 +122,19 @@ function buildArticleSpeechQueue(article) {
 const BlogApp = ({ deviceClass = 'desktop', forceTheme = null, instanceId = 'default' }) => {
   const [route, setRoute] = React.useState({ name: 'home' });
   const voiceStorageKey = `blog.tts.voice.${instanceId}`;
-  const [theme, setTheme] = React.useState(() => {
-    if (forceTheme) return forceTheme;
-    try { return localStorage.getItem(`blog.theme.${instanceId}`) || 'auto'; } catch { return 'auto'; }
+  const themeStorageKey = `blog.theme.${instanceId}`;
+  const [themePreference, setThemePreference] = React.useState(() => {
+    if (forceTheme === 'light' || forceTheme === 'dark') return forceTheme;
+    try {
+      const storedTheme = localStorage.getItem(themeStorageKey);
+      return storedTheme === 'light' || storedTheme === 'dark' ? storedTheme : null;
+    } catch {
+      return null;
+    }
   });
   const scrollRef = React.useRef(null);
 
-  // Resolve theme
+  // Resolve theme: follow the system until the user explicitly picks a mode.
   const [systemDark, setSystemDark] = React.useState(() => {
     if (typeof window !== 'undefined' && window.matchMedia) {
       return window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -142,11 +148,11 @@ const BlogApp = ({ deviceClass = 'desktop', forceTheme = null, instanceId = 'def
     try { mq.addEventListener('change', cb); } catch { mq.addListener(cb); }
     return () => { try { mq.removeEventListener('change', cb); } catch { mq.removeListener(cb); } };
   }, []);
-  const isDark = theme === 'dark' || (theme === 'auto' && systemDark);
+  const isDark = themePreference ? themePreference === 'dark' : systemDark;
 
   const setThemePersist = (t) => {
-    setTheme(t);
-    try { localStorage.setItem(`blog.theme.${instanceId}`, t); } catch {}
+    setThemePreference(t);
+    try { localStorage.setItem(themeStorageKey, t); } catch {}
   };
 
   const navigate = (r) => {
@@ -333,7 +339,7 @@ const BlogApp = ({ deviceClass = 'desktop', forceTheme = null, instanceId = 'def
       <div ref={scrollRef} className="blog-scroll" style={{ flex: 1, position: 'relative' }}>
         <ReadingProgress scrollRef={scrollRef}/>
         <AttributionBanner/>
-        <Nav route={route} theme={theme} setTheme={setThemePersist} navigate={navigate}/>
+        <Nav route={route} isDark={isDark} setTheme={setThemePersist} navigate={navigate}/>
         <main>
           {route.name === 'home' && <HomeScreen navigate={navigate}/>}
           {route.name === 'course' && <CourseScreen courseId={route.courseId} navigate={navigate}/>}
