@@ -599,7 +599,10 @@ function Footer({ navigate }) {
     <footer className="footer">
       <div className="footer__inner">
         <div>
-          <div className="footer__brand"><span className="mark"/>Quaderno</div>
+          <div className="footer__brand">
+            <img className="footer__brand-logo" src="Assets/logo.png" alt="Logo Quaderno" />
+            <span>Quaderno</span>
+          </div>
           <p className="footer__attr">
             Tutti i contenuti di questo blog sono traduzioni e adattamenti dei corsi
             pubblici di Claude pubblicati da Anthropic. Quaderno è un progetto editoriale
