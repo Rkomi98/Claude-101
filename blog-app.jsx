@@ -59,6 +59,14 @@ function pickNarrationVoice(voices = [], preferredVoice = '') {
 function blockToSpeechQueue(block, sectionIndex, sectionTitle) {
   if (!block) return [];
 
+  if (block.type === 'paragraph') {
+    return [{
+      section: sectionIndex,
+      paragraph: block.paragraphIndex ?? -1,
+      text: withSentencePause(block.text),
+    }].filter((item) => item.text);
+  }
+
   if (block.type === 'list') {
     const intro = block.title && block.title !== sectionTitle
       ? withSentencePause(block.title)
@@ -104,14 +112,17 @@ function buildArticleSpeechQueue(article) {
   const queue = [];
   article.sections.forEach((section, sectionIndex) => {
     queue.push({ section: sectionIndex, paragraph: -1, text: withSentencePause(section.title) });
-    (section.paragraphs || []).forEach((paragraph, paragraphIndex) => {
-      queue.push({
-        section: sectionIndex,
-        paragraph: paragraphIndex,
-        text: withSentencePause(paragraph),
-      });
-    });
-    (section.blocks || []).forEach((block) => {
+    const content = Array.isArray(section.content) && section.content.length
+      ? section.content
+      : [
+          ...(section.paragraphs || []).map((text, paragraphIndex) => ({
+            type: 'paragraph',
+            text,
+            paragraphIndex,
+          })),
+          ...(section.blocks || []),
+        ];
+    content.forEach((block) => {
       queue.push(...blockToSpeechQueue(block, sectionIndex, section.title));
     });
   });

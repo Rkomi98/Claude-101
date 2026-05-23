@@ -345,6 +345,9 @@ function renderInlineContent(text = '') {
 
 function ArticleBlock({ block }) {
   if (!block) return null;
+  if (block.type === 'paragraph') {
+    return <p>{renderInlineContent(block.text)}</p>;
+  }
   if (block.type === 'timeline') {
     return <TimelineBlock title={block.title} items={block.items} />;
   }
@@ -576,19 +579,27 @@ function ChapterScreen({ courseId, chapterId, navigate, tts }) {
                 ref={(el) => (sectionRefs.current[s.id] = el)}
               >
                 <h2>{s.title}</h2>
-                {s.paragraphs.map((p, pi) => (
-                  <p
-                    key={pi}
-                    className={tts.state.section === si && tts.state.paragraph === pi && tts.state.playing ? 'reading' : ''}
-                    data-tts-section={si}
-                    data-tts-paragraph={pi}
-                  >
-                    {renderInlineContent(p)}
-                  </p>
-                ))}
-                {(s.blocks || []).map((block, bi) => (
-                  <ArticleBlock key={`${s.id}-block-${bi}`} block={block} />
-                ))}
+                {(Array.isArray(s.content) && s.content.length
+                  ? s.content
+                  : [
+                      ...(s.paragraphs || []).map((text) => ({ type: 'paragraph', text })),
+                      ...((s.blocks || []).map((block) => block)),
+                    ]
+                ).map((block, bi) => {
+                  if (block.type === 'paragraph') {
+                    return (
+                      <p
+                        key={`${s.id}-paragraph-${bi}`}
+                        className={tts.state.section === si && tts.state.paragraph === (block.paragraphIndex ?? -1) && tts.state.playing ? 'reading' : ''}
+                        data-tts-section={si}
+                        data-tts-paragraph={block.paragraphIndex ?? -1}
+                      >
+                        {renderInlineContent(block.text)}
+                      </p>
+                    );
+                  }
+                  return <ArticleBlock key={`${s.id}-block-${bi}`} block={block} />;
+                })}
               </section>
             ))}
           </div>

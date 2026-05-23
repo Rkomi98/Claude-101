@@ -131,22 +131,35 @@
     const ensureSection = (title) => {
       const safeTitle = title || 'Panoramica';
       if (currentSection) return currentSection;
-      currentSection = { id: uniqueId(safeTitle), title: safeTitle, paragraphs: [], blocks: [] };
+      currentSection = { id: uniqueId(safeTitle), title: safeTitle, paragraphs: [], blocks: [], content: [] };
       sections.push(currentSection);
       return currentSection;
+    };
+
+    const pushParagraph = (section, text) => {
+      if (!text) return;
+      const paragraphIndex = section.paragraphs.length;
+      section.paragraphs.push(text);
+      section.content.push({ type: 'paragraph', text, paragraphIndex });
+    };
+
+    const pushBlock = (section, block) => {
+      if (!block) return;
+      section.blocks.push(block);
+      section.content.push(block);
     };
 
     const flushParagraph = () => {
       if (!paragraphBuffer.length) return;
       const text = normalizeInline(paragraphBuffer.join(' '), { preserveLinks: true });
-      if (text) ensureSection().paragraphs.push(text);
+      if (text) pushParagraph(ensureSection(), text);
       paragraphBuffer = [];
     };
 
     const flushQuote = () => {
       if (!quoteBuffer.length) return;
       const text = normalizeInline(quoteBuffer.join(' '), { preserveLinks: true });
-      if (text) ensureSection().blocks.push({ type: 'quote', text });
+      if (text) pushBlock(ensureSection(), { type: 'quote', text });
       quoteBuffer = [];
     };
 
@@ -161,14 +174,14 @@
 
         if (!cells.length) continue;
         if (cells.every((cell) => /^-+$/.test(cell.replace(/\s/g, '')))) continue;
-        section.paragraphs.push(cells.join(' — '));
+        pushParagraph(section, cells.join(' — '));
       }
       tableBuffer = [];
     };
 
     const flushList = () => {
       if (!listBuffer || !listBuffer.items.length) return;
-      ensureSection().blocks.push(listBuffer);
+      pushBlock(ensureSection(), listBuffer);
       listBuffer = null;
     };
 
@@ -177,7 +190,7 @@
       const section = ensureSection();
       if (fenceLang === 'mermaid') {
         const block = parseMermaidTimeline(fenceBuffer.join('\n'));
-        if (block) section.blocks.push(block);
+        if (block) pushBlock(section, block);
       }
       fenceBuffer = [];
       fenceLang = '';
@@ -241,7 +254,7 @@
         const level = headingMatch[1].length;
         const title = normalizeInline(headingMatch[2], { preserveLinks: true });
         if (level >= 2 && title) {
-          currentSection = { id: uniqueId(title), title, paragraphs: [], blocks: [] };
+          currentSection = { id: uniqueId(title), title, paragraphs: [], blocks: [], content: [] };
           sections.push(currentSection);
         }
         continue;
@@ -308,15 +321,22 @@
         ...section,
         paragraphs: section.paragraphs.filter(Boolean),
         blocks: (section.blocks || []).filter(Boolean),
+        content: (section.content || []).filter(Boolean),
       }))
-      .filter((section) => section.paragraphs.length || section.blocks.length);
+      .filter((section) => section.paragraphs.length || section.blocks.length || section.content.length);
   }
 
   function countWords(sections) {
     const chunks = [];
     for (const section of sections) {
-      chunks.push(...section.paragraphs);
-      for (const block of section.blocks || []) {
+      const content = Array.isArray(section.content) && section.content.length
+        ? section.content
+        : [
+            ...(section.paragraphs || []).map((text) => ({ type: 'paragraph', text })),
+            ...(section.blocks || []),
+          ];
+      for (const block of content) {
+        if (block.type === 'paragraph') chunks.push(plainTextInline(block.text));
         if (block.type === 'quote') chunks.push(plainTextInline(block.text));
         if (block.type === 'timeline') {
           chunks.push(plainTextInline(block.title));
