@@ -46,7 +46,7 @@ Claude può aiutarti in un'ampia gamma di attività che vanno ben oltre le sempl
 - **Risoluzione di problemi e ragionamento:** Claude gestisce complessi compiti cognitivi, problemi matematici, pensiero e analisi strategica e ricerca. Claude Opus 4.7 e Sonnet 4.7 sono modelli ibridi che offrono due modalità: risposte quasi istantanee e pensiero esteso (*Extended thinking*) per un ragionamento più profondo. Questa funzionalità permette a Claude di affrontare i problemi passo dopo passo, rendendolo particolarmente adatto a compiti che richiedono un'attenta analisi.
 - **Imparare cose nuove:** che tu stia imparando una nuova competenza, esplorando campi a te non familiari o affrontando sfide complesse, Claude può adattarsi al tuo stile e al tuo ritmo di apprendimento. La *Learning mode* (modalità di apprendimento) è una nuova esperienza che guida il tuo processo di ragionamento invece di darti semplicemente le risposte, aiutandoti a sviluppare il pensiero critico.
 
-Lasciati ispirare su come usare Claude nel tuo ruolo specifico esplorando la nostra galleria di casi d'uso su claude.com. Per approfondire cosa l'IA può (e non può) fare, consulta il nostro corso sulle Capacità dell'IA.
+Lasciati ispirare su come usare Claude nel tuo ruolo specifico esplorando la [loro galleria di casi d'uso](https://claude.com/resources/use-cases). Per approfondire cosa l'IA può (e non può) fare, consulta come sempre il loro [corso sui limiti e potenzialità](https://anthropic.skilljar.com/ai-capabilities-and-limitations) o seguire direttamente Datapizza 😜.
 
 ### Modi per accedere a Claude
 
