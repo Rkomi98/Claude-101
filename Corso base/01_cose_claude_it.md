@@ -50,7 +50,7 @@ Lasciati ispirare su come usare Claude nel tuo ruolo specifico esplorando la [lo
 
 ### Modi per accedere a Claude
 
-Claude è l'intelligenza: l'assistente IA con cui stai imparando a lavorare in questo corso. Questa stessa intelligenza è disponibile attraverso interfacce diverse, ciascuna adatta a tipologie diverse di compiti.
+Claude è disponibile attraverso interfacce diverse, ciascuna adatta a tipologie diverse di compiti:
 
 - **Claude.ai** (e le relative app mobile e desktop) è il modo principale con cui la maggior parte delle persone interagisce con Claude. Qui puoi fare domande, brainstorming di idee, creare e modificare documenti e molto altro. Claude.ai è ideale per conversazioni, assistenza alla scrittura, ricerca, analisi e creazione di file. Questo è il focus principale del corso.
 - **Claude Code** è uno strumento di coding "agente" progettato per sviluppatori, ma utilizzabile per manipolare qualsiasi tipo di file sul tuo computer. Claude Code può modificare direttamente i file, eseguire comandi e creare commit.
