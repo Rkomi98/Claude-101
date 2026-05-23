@@ -99,6 +99,7 @@ function markdownToSections(markdown) {
 
   let currentSection = null;
   let paragraphBuffer = [];
+  let quoteBuffer = [];
   let tableBuffer = [];
   let listBuffer = null;
   let inFence = false;
@@ -130,6 +131,13 @@ function markdownToSections(markdown) {
     const text = normalizeInline(paragraphBuffer.join(' '));
     if (text) ensureSection().paragraphs.push(text);
     paragraphBuffer = [];
+  };
+
+  const flushQuote = () => {
+    if (!quoteBuffer.length) return;
+    const text = normalizeInline(quoteBuffer.join(' '));
+    if (text) ensureSection().blocks.push({ type: 'quote', text });
+    quoteBuffer = [];
   };
 
   const flushTable = () => {
@@ -183,6 +191,7 @@ function markdownToSections(markdown) {
 
     if (trimmed.startsWith('```')) {
       flushParagraph();
+      flushQuote();
       flushTable();
       flushList();
       inFence = true;
@@ -193,6 +202,7 @@ function markdownToSections(markdown) {
 
     if (!trimmed) {
       flushParagraph();
+      flushQuote();
       flushTable();
       flushList();
       continue;
@@ -200,6 +210,7 @@ function markdownToSections(markdown) {
 
     if (/^---+$/.test(trimmed) || /^___+$/.test(trimmed) || /^__wf_reserved_/.test(trimmed)) {
       flushParagraph();
+      flushQuote();
       flushTable();
       flushList();
       continue;
@@ -207,6 +218,7 @@ function markdownToSections(markdown) {
 
     if (isReadingTimeLine(trimmed)) {
       flushParagraph();
+      flushQuote();
       flushTable();
       flushList();
       continue;
@@ -215,6 +227,7 @@ function markdownToSections(markdown) {
     const headingMatch = trimmed.match(/^(#{1,6})\s+(.*)$/);
     if (headingMatch) {
       flushParagraph();
+      flushQuote();
       flushTable();
       flushList();
       const level = headingMatch[1].length;
@@ -228,6 +241,7 @@ function markdownToSections(markdown) {
 
     if (trimmed.startsWith('|')) {
       flushParagraph();
+      flushQuote();
       flushList();
       tableBuffer.push(trimmed);
       continue;
@@ -236,6 +250,7 @@ function markdownToSections(markdown) {
     const bulletMatch = trimmed.match(/^[-*]\s+(.*)$/);
     if (bulletMatch) {
       flushParagraph();
+      flushQuote();
       flushTable();
       const text = normalizeInline(bulletMatch[1]);
       if (!text) continue;
@@ -250,6 +265,7 @@ function markdownToSections(markdown) {
     const orderedMatch = trimmed.match(/^\d+\.\s+(.*)$/);
     if (orderedMatch) {
       flushParagraph();
+      flushQuote();
       flushTable();
       const text = normalizeInline(orderedMatch[1]);
       if (!text) continue;
@@ -264,14 +280,18 @@ function markdownToSections(markdown) {
     flushList();
     const quoteMatch = trimmed.match(/^>\s?(.*)$/);
     if (quoteMatch) {
-      paragraphBuffer.push(quoteMatch[1]);
+      flushParagraph();
+      flushTable();
+      quoteBuffer.push(quoteMatch[1]);
       continue;
     }
 
+    flushQuote();
     paragraphBuffer.push(trimmed);
   }
 
   flushParagraph();
+  flushQuote();
   flushTable();
   flushList();
 
@@ -289,6 +309,9 @@ function countWords(sections) {
   for (const section of sections) {
     chunks.push(...section.paragraphs);
     for (const block of section.blocks || []) {
+      if (block.type === 'quote') {
+        chunks.push(block.text);
+      }
       if (block.type === 'timeline') {
         chunks.push(block.title);
         for (const item of block.items) {

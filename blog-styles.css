@@ -508,6 +508,45 @@
   font-style: italic;
   color: var(--ink-2);
 }
+.prose .article-quote {
+  position: relative;
+  margin: 28px 0;
+  padding: 22px 26px 22px 30px;
+  border: 1px solid color-mix(in oklab, var(--accent), var(--rule) 72%);
+  border-radius: 14px;
+  border-left-width: 5px;
+  background:
+    linear-gradient(135deg, color-mix(in oklab, var(--paper-2), white 18%), color-mix(in oklab, var(--paper), var(--accent) 4%));
+  box-shadow: 0 16px 38px rgba(13, 31, 46, 0.08);
+  font-family: var(--serif);
+  font-size: clamp(20px, 2.6vw, 28px);
+  line-height: 1.55;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  text-wrap: pretty;
+}
+.prose .article-quote::before {
+  content: "“";
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  font-family: var(--serif);
+  font-size: 54px;
+  line-height: 1;
+  color: color-mix(in oklab, var(--accent), white 15%);
+  opacity: 0.9;
+}
+.prose .article-quote::after {
+  content: "Nota personale";
+  display: block;
+  margin-top: 14px;
+  font-family: var(--mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  font-style: normal;
+}
 .prose code {
   font-family: var(--mono);
   font-size: 14px;
@@ -735,6 +774,38 @@
 .tts-divider {
   width: 1px; height: 20px; background: var(--rule);
 }
+.tts-voice {
+  display: flex;
+  align-items: center;
+}
+.tts-voice select {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-2);
+  cursor: pointer;
+  background: var(--paper-2);
+  border: 1px solid var(--rule);
+  border-radius: 100px;
+  padding: 5px 28px 5px 10px;
+  max-width: 170px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, currentColor 50%),
+    linear-gradient(135deg, currentColor 50%, transparent 50%);
+  background-position:
+    calc(100% - 14px) calc(50% - 2px),
+    calc(100% - 9px) calc(50% - 2px);
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+}
+.tts-voice select:hover,
+.tts-voice select:focus {
+  border-color: var(--accent);
+  color: var(--accent);
+  outline: none;
+}
 
 /* ─── Footer ───────────────────────────────────────────── */
 .footer {
@@ -842,6 +913,7 @@
 .blog.mobile .footer__bottom { flex-direction: column; gap: 8px; }
 .blog.mobile .tts-player { bottom: 44px; padding: 6px 8px 6px 12px; gap: 8px; }
 .blog.mobile .tts-player__title { max-width: 120px; font-size: 13px; }
+.blog.mobile .tts-voice select { max-width: 120px; }
 .blog.mobile .about { padding: 32px 16px; }
 .blog.mobile .chapter-article__meta { flex-wrap: wrap; gap: 12px; }
 .blog.mobile .chapter-article__meta .spacer { display: none; }

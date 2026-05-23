@@ -105,9 +105,15 @@ function Nav({ route, theme, setTheme, navigate }) {
     <header className="nav">
       <div className="nav__row">
         <div className="nav__brand" onClick={() => navigate({ name: 'home' })}>
-          <span className="mark"/>
-          <span>Quaderno</span>
-          <span className="ital">— i corsi di Claude</span>
+          <img
+            className="nav__brand-logo"
+            src="Assets/logo.png"
+            alt="Logo Quaderno"
+          />
+          <span className="nav__brand-copy">
+            <span className="nav__brand-title">Quaderno</span>
+            <span className="ital">i corsi di Claude</span>
+          </span>
         </div>
         <nav className="nav__links">
           <a className={route.name === 'home' ? 'active' : ''} onClick={() => navigate({ name: 'home' })}>Corsi</a>
@@ -304,6 +310,9 @@ function ArticleBlock({ block }) {
   if (block.type === 'timeline') {
     return <TimelineBlock title={block.title} items={block.items} />;
   }
+  if (block.type === 'quote') {
+    return <blockquote className="article-quote">{block.text}</blockquote>;
+  }
   if (block.type === 'list') {
     const ListTag = block.ordered ? 'ol' : 'ul';
     return (
@@ -318,13 +327,14 @@ function ArticleBlock({ block }) {
 }
 
 // ─── Floating TTS player ────────────────────────────────────────
-function TTSPlayer({ state, controls }) {
+function TTSPlayer({ state, controls, voices = [], selectedVoice = '', effectiveVoice = null }) {
   if (!state.active) return null;
   const speeds = [0.75, 1, 1.25, 1.5, 2];
   const nextSpeed = () => {
     const i = speeds.indexOf(state.speed);
     controls.setSpeed(speeds[(i + 1) % speeds.length]);
   };
+  const voiceValue = selectedVoice || '__auto__';
   return (
     <div className="tts-player">
       <div style={{ width: 28, height: 28, display:'flex', alignItems:'center', justifyContent:'center', color:'var(--accent)' }}>
@@ -337,6 +347,24 @@ function TTSPlayer({ state, controls }) {
         </div>
       </div>
       <div className="tts-divider"/>
+      {voices.length > 0 && (
+        <label className="tts-voice">
+          <select
+            value={voiceValue}
+            onChange={(e) => controls.setVoice(e.target.value)}
+            title="Voce"
+          >
+            <option value="__auto__">
+              {effectiveVoice ? `Auto · ${effectiveVoice.name}` : 'Auto · Migliore disponibile'}
+            </option>
+            {voices.map((voice) => (
+              <option key={`${voice.name}-${voice.lang}`} value={voice.name}>
+                {voice.name} · {voice.lang}
+              </option>
+            ))}
+          </select>
+        </label>
+      )}
       <button className="tts-speed" onClick={nextSpeed} title="Velocità">{state.speed}×</button>
       <button className="tts-btn" onClick={state.playing ? controls.pause : controls.play} title={state.playing ? 'Pausa' : 'Play'}>
         {state.playing ? Icon.pause : Icon.play}

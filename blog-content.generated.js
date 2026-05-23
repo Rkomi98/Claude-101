@@ -2,7 +2,7 @@ window.BLOG_GENERATED_CONTENT = {
   "articleContentByKey": {
     "claude-101/cose-claude": {
       "readingTime": "10 min",
-      "words": 300,
+      "words": 334,
       "sections": [
         {
           "id": "panoramica",
@@ -72,9 +72,31 @@ window.BLOG_GENERATED_CONTENT = {
               "type": "list",
               "ordered": false,
               "items": [
-                "Claude è costruito per essere utile, innocuo e onesto: a livello generale, Claude è guidato da principi che lo aiutano a evitare risposte tossiche o discriminatorie, evitare di assistere le persone in attività illegali o non etiche e, nel complesso, a comportarsi come un sistema IA utile, onesto e innocuo. Questo approccio, chiamato Constitutional AI, significa che Claude è addestrato per allinearsi ai valori umani e operare in modo trasparente.",
-                "Claude è più di un chatbot: Claude è in grado di svolgere un'ampia varietà di compiti conversazionali e di elaborazione del testo mantenendo un alto grado di affidabilità e prevedibilità, inclusi riassunti, ricerca, scrittura creativa e collaborativa, Q&A, programmazione e altro. Pensa a Claude come a un compagno di ragionamento che può aiutarti ad affrontare problemi complessi e superare situazioni difficili, non solo a rispondere a semplici domande.",
-                "Claude è progettato per essere indirizzabile e collaborativo: Claude può seguire indicazioni su personalità, tono e comportamento. Gli utenti segnalano che Claude ha molte meno probabilità di produrre output dannosi, è più facile conversare con lui ed è più \"guidabile\", consentendoti di ottenere il risultato desiderato con meno sforzo.",
+                "Claude è costruito per essere utile, innocuo e onesto: a livello generale, Claude è guidato da principi che lo aiutano a evitare risposte tossiche o discriminatorie, evitare di assistere le persone in attività illegali o non etiche e, nel complesso, a comportarsi come un sistema IA utile, onesto e innocuo. Questo approccio, chiamato Constitutional AI (https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback), significa che Claude è addestrato per allinearsi ai valori umani e operare in modo trasparente. Invito inoltre a leggere la costituzione di Anthropic (https://www.anthropic.com/constitution) per farvi un'idea dell'attenzione all'etica da parte di questa azienda!"
+              ]
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Claude è più di un chatbot: Claude è in grado di svolgere un'ampia varietà di compiti conversazionali e di elaborazione del testo mantenendo un alto grado di affidabilità e prevedibilità, inclusi riassunti, ricerca, scrittura creativa e collaborativa, Q&A, programmazione e altro. Pensa a Claude come a un compagno di ragionamento che può aiutarti ad affrontare problemi complessi e superare situazioni difficili, non solo a rispondere a semplici domande."
+              ]
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Claude è progettato per essere indirizzabile e collaborativo: Claude può seguire indicazioni su personalità, tono e comportamento. Gli utenti segnalano che Claude ha molte meno probabilità di produrre output dannosi, è più facile conversare con lui ed è più \"guidabile\", consentendoti di ottenere il risultato desiderato con meno sforzo."
+              ]
+            },
+            {
+              "type": "quote",
+              "text": "Personalmente tra tutti i chatbot provati, ritengo Claude, sin dagli inizi, il chatbot più affidabile sia dal punto di vista delle risposte, sia dell'infrastruttura. Per affidabile intendo quindi quanto ha ripagato la mia fiducia."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
                 "Puoi accedere a Claude ovunque lavori: le app di Claude sono disponibili per tutti i piani (Free, Pro, Max, Team ed Enterprise). Le tue conversazioni, i progetti, la memoria e le preferenze si sincronizzano su tutti i dispositivi quando effettui l'accesso. Che tu sia alla scrivania o in movimento, Claude è disponibile tramite web, app desktop e mobile."
               ]
             }
@@ -191,10 +213,14 @@ window.BLOG_GENERATED_CONTENT = {
           "title": "Fornire contesto: caricamenti, connettori e preferenze",
           "paragraphs": [
             "Claude può lavorare sia su testo che su contenuto visivo all'interno di documenti. I formati accettati includono PDF, DOCX, CSV, TXT e i principali formati immagine come PNG e JPEG.",
-            "In pratica, caricare un file è un modo per fare un salto avanti: anziché descrivere a parole cosa hai davanti, lo mostri direttamente. Puoi chiedere a Claude di riassumere un documento, descrivere un'immagine, identificare tendenze in un foglio di calcolo, o individuare bug in del codice. Una volta caricato il file, Claude ne analizza il contenuto e lo tiene in conto durante tutta la conversazione.",
-            "Una nota utile: se vuoi che Claude tenga conto di alcune preferenze in ogni conversazione, puoi configurarle una volta sola in Impostazioni, sotto \"Preferenze personali\". Non doverle riscrivere ogni volta è, a conti fatti, uno dei dettagli più comodamente sottovalutati."
+            "In pratica, caricare un file è un modo per fare un salto avanti: anziché descrivere a parole cosa hai davanti, lo mostri direttamente. Puoi chiedere a Claude di riassumere un documento, descrivere un'immagine, identificare tendenze in un foglio di calcolo, o individuare bug in del codice. Una volta caricato il file, Claude ne analizza il contenuto e lo tiene in conto durante tutta la conversazione."
           ],
-          "blocks": []
+          "blocks": [
+            {
+              "type": "quote",
+              "text": "Una nota utile: se vuoi che Claude tenga conto di alcune preferenze in ogni conversazione, puoi configurarle una volta sola in Impostazioni, sotto \"Preferenze personali\". Non doverle riscrivere ogni volta è, a conti fatti, uno dei dettagli più comodamente sottovalutati."
+            }
+          ]
         },
         {
           "id": "la-conversazione-e-iterativa",
