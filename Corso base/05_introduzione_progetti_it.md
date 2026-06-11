@@ -1,18 +1,18 @@
-## Header Navigation
+## Navigazione
 
 [Anthropic Academy](https://www.anthropic.com/learn) [Courses](https://anthropic.skilljar.com/) 
 
   
 
-**Estimated time:** 20 minutes
+**Tempo stimato:** 20 minuti
 
-### Learning objectives
+### Obiettivi di apprendimento
 
-- Explain what projects are and when to use them
-- Create a new project with a name, description, and visibility settings
-- Add documents and files to your project's knowledge base
-- Write effective project instructions to guide Claude's behavior
-- Share projects with teammates (for Claude for Work (Team and Enterprise plan) users)
+- Spiegare cosa sono i progetti e quando usarli
+- Creare un nuovo progetto con nome, descrizione e impostazioni di visibilità
+- Aggiungere documenti e file alla base di conoscenza (knowledge base) del tuo progetto
+- Scrivere istruzioni di progetto efficaci per guidare il comportamento di Claude
+- Condividere i progetti con i membri del team (per gli utenti di Claude for Work - piani Team ed Enterprise)
 
 ---
 
@@ -20,143 +20,143 @@
 
 ![](https://www.youtube.com/watch?v=GJ5jTgcbRHA)
 
-\[Video: Introduction to Projects - Getting started with projects in Claude.ai\]
+\[Video: Introduzione ai Progetti - Iniziare a usare i progetti su Claude.ai\]
 
-#### Key takeaways
+#### Punti chiave
 
-- **Projects are self-contained workspaces** with their own memory, chat histories, knowledge bases, and customized instructions. Think of them as dedicated environments for specific work streams.
-- **Project knowledge enhances Claude's understanding** by letting you upload relevant documents that Claude references across all chats within that project. No more re-uploading the same files each time.
-- **Project instructions guide Claude's behavior** —you can specify tone, expertise level, response style, and more. These instructions apply to every conversation within the project.
-- **Projects scale automatically.** When your knowledge base approaches context limits, Claude seamlessly enables Retrieval Augmented Generation (RAG) mode to expand capacity by up to 10x while maintaining response quality.
-- **For Claude for Work users, projects enable collaboration.** Share projects with teammates so everyone benefits from the same context, instructions, and accumulated knowledge.
+- **I progetti sono spazi di lavoro autonomi** con la propria memoria, cronologia delle chat, basi di conoscenza e istruzioni personalizzate. Pensali come ambienti dedicati a specifici flussi di lavoro.
+- **La conoscenza del progetto migliora la comprensione di Claude** permettendoti di caricare documenti rilevanti che Claude consulterà in tutte le chat all'interno di quel progetto. Non dovrai più ricaricare gli stessi file ogni volta.
+- **Le istruzioni di progetto guidano il comportamento di Claude**: puoi specificare il tono, il livello di competenza, lo stile di risposta e altro ancora. Queste istruzioni si applicano a ogni conversazione all'interno del progetto.
+- **I progetti scalano automaticamente.** Quando la tua base di conoscenza si avvicina ai limiti di contesto, Claude abilita in modo trasparente la modalità Retrieval Augmented Generation (RAG) per espandere la capacità fino a 10 volte mantenendo la qualità della risposta.
+- **Per gli utenti Claude for Work, i progetti consentono la collaborazione.** Condividi i progetti con i colleghi in modo che tutti traggano vantaggio dallo stesso contesto, dalle stesse istruzioni e dalla conoscenza accumulata.
 
-### What are Projects?
+### Cosa sono i Progetti?
 
-Projects are ideal for storing knowledge Claude should reference, organizing related chats around a specific topic or work area, and collaborating with team members who need access to the same shared context.
+I progetti sono ideali per archiviare le conoscenze che Claude dovrebbe consultare, organizzare le chat correlate a un argomento o area di lavoro specifica e collaborare con i membri del team che necessitano di accedere allo stesso contesto condiviso.
 
-#### When to use Projects
+#### Quando usare i Progetti
 
-Projects are particularly valuable when you're working on something ongoing—not just a one-off question. Consider creating a project when you have a workflow with:
+I progetti sono particolarmente preziosi quando lavori su qualcosa di continuativo, non solo su una domanda occasionale. Prendi in considerazione la creazione di un progetto quando hai un flusso di lavoro con:
 
-- **Reference materials you'll use repeatedly** (meeting notes, survey results, reports, historical data, etc.)
-- **Consistent requirements** for how Claude should respond (always use formal language, always cite sources, always follow our template)
-- **Team collaboration needs** where multiple people should work from the same foundation
+- **Materiali di riferimento che utilizzerai ripetutamente** (note di riunioni, risultati di sondaggi, report, dati storici, ecc.)
+- **Requisiti coerenti** su come Claude dovrebbe rispondere (usare sempre un linguaggio formale, citare sempre le fonti, seguire sempre il nostro template)
+- **Esigenze di collaborazione del team** in cui più persone dovrebbero lavorare partendo dalle stesse basi
 
-### Creating your first project
+### Creare il tuo primo progetto
 
-Setting up a project takes just a few minutes. Here's how to get started:
+Impostare un progetto richiede solo pochi minuti. Ecco come iniziare:
 
-#### Step 1: Set up your project
+#### Passaggio 1: Imposta il tuo progetto
 
-1. Hover over the left sidebar and click "Projects," or navigate directly to claude.ai/projects
-2. Click "+ New Project" in the upper right corner
-3. Give your project a descriptive name (e.g., "Q4 Marketing Campaign" or "Product Documentation")
-4. Add a brief description of what you're working on. While Claude doesn't see this description directly, it helps you and your teammates understand the project's purpose.
-5. Choose your visibility settings: keep it private or share with your organization (for Claude for Work users)
+1. Passa il mouse sulla barra laterale sinistra e clicca su "Projects" (Progetti), oppure naviga direttamente su claude.ai/projects
+2. Clicca su "+ New Project" (Nuovo progetto) nell'angolo in alto a destra
+3. Dai al tuo progetto un nome descrittivo (es. "Campagna di marketing Q4" o "Documentazione di prodotto")
+4. Aggiungi una breve descrizione di ciò a cui stai lavorando. Anche se Claude non vede direttamente questa descrizione, aiuta te e i tuoi colleghi a comprendere lo scopo del progetto.
+5. Scegli le impostazioni di visibilità: mantienilo privato o condividilo con la tua organizzazione (per gli utenti Claude for Work)
 
-#### Step 2: Add project instructions
+#### Passaggio 2: Aggiungi le istruzioni del progetto
 
-Project instructions tell Claude how to behave across all conversations in this project. Click on "Instructions" to open the instructions panel.
+Le istruzioni del progetto indicano a Claude come comportarsi in tutte le conversazioni all'interno del progetto. Clicca su "Instructions" (Istruzioni) per aprire il pannello delle istruzioni.
 
-Good project instructions typically include:
+Le buone istruzioni di progetto includono tipicamente:
 
-- **Context about what you're working on:** "This project is for creating marketing content for our B2B software product."
-- **Process instructions:** "First consider a blog structure that will entice this audience, then write the draft."
-- **Tone and style preferences:** "Use a professional but conversational tone. Avoid jargon when possible."
-- **Specific requirements:** "Always include a call-to-action at the end of marketing copy."
+- **Contesto su ciò a cui stai lavorando:** "Questo progetto serve a creare contenuti di marketing per il nostro prodotto software B2B."
+- **Istruzioni sul processo:** "Considera prima una struttura del blog che attiri questo pubblico, poi scrivi la bozza."
+- **Preferenze di tono e stile:** "Usa un tono professionale ma colloquiale. Evita il gergo quando possibile."
+- **Requisiti specifici:** "Includi sempre una call-to-action alla fine del testo di marketing."
 
-Once you've written your instructions, click "Save instructions." These will apply to every chat in this project and work alongside any user preferences and styles you've set.
+Una volta scritte le istruzioni, clicca su "Save instructions" (Salva istruzioni). Queste si applicheranno a ogni chat nel progetto e funzioneranno in combinazione con le preferenze personali e gli stili che hai impostato.
 
-You can also use project instructions to automate workflows — for example, "When I upload a meeting transcript, create a structured summary using this template." Think of instructions as programming Claude's behavior for this project.
+Puoi anche usare le istruzioni di progetto per automatizzare i flussi di lavoro — ad esempio: "Quando carico la trascrizione di una riunione, crea un riassunto strutturato usando questo template." Pensa alle istruzioni come a una programmazione del comportamento di Claude per questo progetto.
 
-#### Step 3: Build your knowledge base
+#### Passaggio 3: Costruisci la tua base di conoscenza
 
-Your project's knowledge base is where you upload documents that Claude should reference. You'll find the files menu on the right side of your project's main page.
+La base di conoscenza (knowledge base) del tuo progetto è il luogo in cui carichi i documenti che Claude deve consultare. Troverai il menu dei file sul lato destro della pagina principale del tuo progetto.
 
-Click the "+" button to add content. You can upload various file types including PDF, DOCX, CSV, TXT, HTML, and more. You can also connect to Google Drive to link documents directly.
+Clicca sul pulsante "+" per aggiungere contenuti. Puoi caricare vari tipi di file, inclusi PDF, DOCX, CSV, TXT, HTML e altri. Puoi anche collegarti a Google Drive per collegare direttamente i documenti.
 
-**What to upload:**
+**Cosa caricare:**
 
-- Reference documents (brand guidelines, style guides, templates)
-- Background materials (research reports, meeting notes, requirements docs)
-- Examples of work you want Claude to emulate
-- Technical documentation or specifications
+- Documenti di riferimento (linee guida del brand, guide di stile, template)
+- Materiali di base (report di ricerca, appunti di riunioni, documenti dei requisiti)
+- Esempi di lavoro che vuoi che Claude emuli
+- Documentazione tecnica o specifiche
 
-**Pro tip:** Name your files descriptively. Claude uses file names to understand and retrieve the right information, so "Q4-2024-Brand-Guidelines.pdf" is more helpful than "document1.pdf."
+**Consiglio pro:** Dai ai tuoi file un nome descrittivo. Claude usa i nomi dei file per comprendere e recuperare le informazioni giuste, quindi "Q4-2024-Linee-Guida-Brand.pdf" è più utile di "documento1.pdf".
 
-#### How projects handle large knowledge bases
+#### Come i progetti gestiscono basi di conoscenza estese
 
-You might wonder what happens when you upload a lot of content. Projects automatically scale to handle large amounts through a process called Retrieval Augmented Generation (RAG). At a high level, this means that Claude can automatically find and use the most relevant parts of your uploaded documents when answering, without you needing to tell it which file to look at.
+Potresti chiederti cosa succede quando carichi molti contenuti. I progetti scalano automaticamente per gestire grandi quantità di dati attraverso un processo chiamato Retrieval Augmented Generation (RAG). A livello generale, questo significa che Claude può trovare e usare automaticamente le parti più rilevanti dei tuoi documenti caricati nel momento di rispondere, senza che tu debba dirgli quale file guardare.
 
-When your project knowledge approaches the context window limit, Claude seamlessly enables RAG mode. Instead of loading all project content into memory at once, Claude intelligently searches and retrieves only the most relevant information needed to answer your questions. This expands your project's capacity by up to 10x while maintaining response quality.
+Quando la conoscenza del tuo progetto si avvicina al limite della finestra di contesto, Claude abilita in modo trasparente la modalità RAG. Invece di caricare tutti i contenuti del progetto in memoria in una volta sola, Claude cerca in modo intelligente e recupera solo le informazioni più rilevanti necessarie per rispondere alle tue domande. Questo espande la capacità del tuo progetto fino a 10 volte mantenendo inalterata la qualità delle risposte.
 
-You'll see a visual indicator when your project is RAG-enabled, but the experience should feel the same—you can still upload documents, chat with Claude, and get context-aware responses.
+Vedrai un indicatore visivo quando il tuo progetto abilita il RAG, ma l'esperienza d'uso rimarrà la stessa: potrai ancora caricare documenti, chattare con Claude e ottenere risposte sensibili al contesto.
 
-### Working within your project
+### Lavorare all'interno del tuo progetto
 
-Once your project is set up, you can start chatting with Claude. Each conversation within the project automatically has access to your knowledge base and follows your project instructions.
+Una volta impostato il progetto, puoi iniziare a chattare con Claude. Ogni conversazione all'interno del progetto ha automaticamente accesso alla tua base di conoscenza e segue le istruzioni del progetto.
 
-### Collaboration features
+### Funzionalità di collaborazione
 
-For users on Claude for Work (Team and Enterprise) plans, projects become even more powerful through collaboration features.
+Per gli utenti dei piani Claude for Work (Team ed Enterprise), i progetti diventano ancora più potenti grazie alle funzionalità di collaborazione.
 
-#### Permission levels
+#### Livelli di autorizzazione
 
-When sharing a project, you can choose from three permission levels:
+Quando condividi un progetto, puoi scegliere tra tre livelli di autorizzazione:
 
-1. **Can view:** Members can see project contents, access knowledge, and chat—but can't make changes. Think of this as read-only access with discussion rights.
-2. **Can edit:** Members have full collaboration power. They can modify instructions, update knowledge, manage other members, and actively contribute to the project.
-3. **Owner:** Project creators control everything, including who sees the project. They can share with specific people or make projects visible to the entire organization.
+1. **Può visualizzare (Can view):** i membri possono vedere i contenuti del progetto, accedere alle conoscenze e chattare, ma non possono apportare modifiche. Pensalo come un accesso in sola lettura con diritti di discussione.
+2. **Può modificare (Can edit):** i membri hanno pieno potere di collaborazione. Possono modificare le istruzioni, aggiornare le conoscenze, gestire altri membri e contribuire attivamente al progetto.
+3. **Proprietario (Owner):** i creatori del progetto controllano tutto, incluso chi può vedere il progetto. Possono condividerlo con persone specifiche o renderlo visibile all'intera organizzazione.
 
-#### Sharing your project
+#### Condividere il tuo progetto
 
-To share a project:
+Per condividere un progetto:
 
-- Open the project you want to share
-- Click the "Share project" button to the right of the project name
-- Add individual members using their name or email, or copy and paste a list of email addresses for bulk sharing (in this case, the project will show up in their "Shared with you" section)
-- Or, share with "Everyone at \[your organization\]" to make your project discoverable within the Team tab
+- Apri il progetto che vuoi condividere
+- Clicca sul pulsante "Share project" (Condividi progetto) a destra del nome del progetto
+- Aggiungi i singoli membri usando il loro nome o email, oppure copia e incolla una lista di indirizzi email per una condivisione multipla (in questo caso, il progetto apparirà nella loro sezione "Shared with you" - Condivisi con te)
+- Oppure, condividi con "Everyone at \[la tua organizzazione\]" per rendere il tuo progetto visibile nella scheda Team
 
-Team members will receive email notifications when you share a project with them, and they can find shared projects in their "Shared with me" tab.
+I membri del team riceveranno notifiche via email quando condividi un progetto con loro e potranno trovare i progetti condivisi nella scheda "Shared with me" (Condivisi con me).
 
-### Example projects to inspire you
+### Esempi di progetti a cui ispirarti
 
-Not sure where to start? Here are some common project types across different functions:
+Non sai da dove cominciare? Ecco alcuni tipi di progetti comuni in diverse funzioni:
 
-- **Q4 product launch:** Upload your product specs, competitive analysis, and messaging brainstorming notes. Claude will have this context top of mind for any inquiry or document draft.
-- **Research support:** Centralize your competitive review, user research data, and customer feedback. Claude can help you synthesize sources, draft reports, and maintain consistency across recommendations.
-- **Client account hub:** Keep your client's brand guidelines, past deliverables, and communication history in one place. Set instructions so Claude matches their tone and references their specific context when creating proposals or reports.
-- **Event planning workspace:** Upload venue contracts, speaker bios, and attendee data. Claude can help generate run-of-show documents, attendee communications, and post-event reports that stay consistent with your event's theme.
-- **Job description generator:** Gather past job descriptions, team charters, and internal headcount request docs. Work with Claude to draft job descriptions that reflect your team's actual work and culture.
+- **Lancio del prodotto Q4:** carica le specifiche del prodotto, l'analisi competitiva e gli appunti di brainstorming sui messaggi. Claude avrà questo contesto sempre a portata di mano per qualsiasi richiesta o bozza di documento.
+- **Supporto alla ricerca:** centralizza l'analisi della concorrenza, i dati delle ricerche sugli utenti e i feedback dei clienti. Claude può aiutarti a sintetizzare le fonti, redigere report e mantenere la coerenza nelle raccomandazioni.
+- **Hub per i clienti (Account hub):** tieni in un unico posto le linee guida del brand del cliente, i materiali consegnati in passato e la cronologia delle comunicazioni. Imposta le istruzioni in modo che Claude si adatti al loro tono e faccia riferimento al loro contesto specifico quando crea proposte o report.
+- **Spazio di lavoro per l'organizzazione di eventi:** carica i contratti della location, le biografie degli speaker e i dati dei partecipanti. Claude può aiutarti a generare le scalette dell'evento, le comunicazioni per i partecipanti e i report post-evento mantenendo la coerenza con il tema dell'evento.
+- **Generatore di descrizioni delle mansioni:** raccogli le descrizioni dei lavori precedenti, le carte del team e i documenti interni di richiesta del personale. Lavora con Claude per redigere job description che riflettano il lavoro reale e la cultura del tuo team.
 
-### Best practices for projects
+### Migliori pratiche per i progetti
 
-To get the most out of projects:
+Per trarre il massimo dai progetti:
 
-- **Start focused, then expand.** Begin with a specific use case rather than trying to create one project for everything. You can always add more content as you go.
-- **Keep your knowledge base current.** Outdated documents can lead to outdated responses. Review and update your project knowledge periodically.
-- **Write clear instructions.** Be specific about what you want. Vague instructions lead to inconsistent results.
-- **Name your documents descriptively.** (e.g., 'Q4-2025-Sales-Report.pdf' not 'report.pdf') and group related files together. Claude uses filenames and proximity to understand relationships between documents.
-- **Reference documents by name.** When asking questions, you can mention specific documents to help Claude focus its search: "Based on our Q3 report, what were the top customer concerns?"
+- **Parti con un obiettivo preciso, poi espanditi.** Inizia con un caso d'uso specifico invece di cercare di creare un solo progetto per tutto. Potrai sempre aggiungere altri contenuti in corso d'opera.
+- **Mantieni aggiornata la tua base di conoscenza.** Documenti obsoleti possono portare a risposte obsolete. Rivedi e aggiorna periodicamente la conoscenza del tuo progetto.
+- **Scrivi istruzioni chiare.** Sii specifico su ciò che desideri. Istruzioni vaghe portano a risultati incoerenti.
+- **Dai nomi descrittivi ai tuoi documenti.** (es. 'Q4-2025-Report-Vendite.pdf' e non 'report.pdf') e raggruppa i file correlati. Claude usa i nomi dei file e la loro vicinanza per capire le relazioni tra i documenti.
+- **Fai riferimento ai documenti per nome.** Quando fai domande, puoi menzionare documenti specifici per aiutare Claude a focalizzare la sua ricerca: "In base al nostro report Q3, quali sono state le principali preoccupazioni dei clienti?"
 
-### Lesson reflection
+### Riflessione sulla lezione
 
-Before moving on, consider:
+Prima di proseguire, considera:
 
-- What ongoing work could benefit from having a dedicated project with persistent context?
-- What documents do you expect you'll be re-uploading or re-explaining to Claude on a regular basis?
-- If you're on a team, are there projects that would benefit from shared knowledge and instructions?
+- Quali lavori continuativi trarrebbero vantaggio dall'avere un progetto dedicato con un contesto persistente?
+- Quali documenti prevedi di ricaricare o di dover rispiegare a Claude su base regolare?
+- Se fai parte di un team, ci sono progetti che trarrebbero vantaggio dalla condivisione di conoscenze e istruzioni?
 
-### What's next
+### Prossimi passi
 
-In the next lesson, we'll learn how to create mini-apps with Artifacts — actual outputs that Claude build and you can share right away.
+Nella prossima lezione impareremo a creare mini-app con gli Artefatti (Artifacts): veri e propri output che Claude costruisce e che tu puoi condividere immediatamente.
 
-For more information on getting started with projects, visit the [Anthropic Help Center](https://support.anthropic.com/en/articles/9519177-how-can-i-create-and-manage-projects).
+Per maggiori informazioni su come iniziare a usare i progetti, visita il [Centro assistenza Anthropic](https://support.anthropic.com/en/articles/9519177-how-can-i-create-and-manage-projects).
 
 #### Feedback
 
-As you progress through the course, we'd love to hear from you about how you are using concepts from the course in your work and any feedback you may have. Share your feedback [here](https://forms.gle/sY9ou5fqZBd3TjHF8).
+Man mano che avanzi nel corso, ci piacerebbe sapere come stai utilizzando i concetti appresi nel tuo lavoro e ricevere i tuoi commenti. Condividi il tuo feedback [qui](https://forms.gle/sY9ou5fqZBd3TjHF8).
 
-#### Acknowledgments and license
+#### Riconoscimenti e licenza
 
-*Copyright 2025 Anthropic. All rights reserved.*
+*Copyright 2025 Anthropic. Tutti i diritti riservati.*
