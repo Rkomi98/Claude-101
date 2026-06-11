@@ -43,7 +43,7 @@ Il 4D Framework for AI Fluency, sviluppato attraverso una collaborazione di rice
 
 Hai già messo in pratica queste abilità durante questo corso. Il framework per i prompt della Lezione 2 (fornire il contesto, definire il compito, specificare le regole) è radicato nella Descrizione. Le tecniche di risoluzione dei problemi viste sopra attingono al Discernimento e alla Diligenza.
 
-Per saperne di più, dai un'occhiata al nostro corso gratuito sull'AI Fluency che esplora a fondo tutte e quattro le competenze, con esercizi pratici e applicazioni nel mondo reale.
+Per saperne di più, dai un'occhiata al [corso gratuito di Anthropic sull'AI Fluency](https://anthropic.skilljar.com/ai-fluency-framework-foundations) che esplora a fondo tutte e quattro le competenze, con esercizi pratici e applicazioni nel mondo reale.
 
 ## Valutare Claude per i tuoi flussi di lavoro
 

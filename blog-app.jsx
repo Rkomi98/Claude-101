@@ -103,6 +103,22 @@ function blockToSpeechQueue(block, sectionIndex, sectionTitle) {
     }].filter((item) => item.text);
   }
 
+  if (block.type === 'table') {
+    const intro = block.headers?.length ? 'Tabella.' : 'Tabella senza intestazioni.';
+    const headerText = block.headers?.length
+      ? withSentencePause(`Colonne: ${block.headers.join(', ')}.`)
+      : '';
+    const rows = (block.rows || [])
+      .map((row, index) => withSentencePause(`Riga ${index + 1}. ${row.join('. ')}`))
+      .filter(Boolean)
+      .map((text) => ({ section: sectionIndex, paragraph: -1, text }));
+    return [
+      { section: sectionIndex, paragraph: -1, text: intro },
+      headerText ? { section: sectionIndex, paragraph: -1, text: headerText } : null,
+      ...rows,
+    ].filter(Boolean);
+  }
+
   return [];
 }
 

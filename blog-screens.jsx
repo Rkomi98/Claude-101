@@ -364,6 +364,32 @@ function ArticleBlock({ block }) {
       </ListTag>
     );
   }
+  if (block.type === 'table') {
+    return (
+      <div className="article-table-wrap">
+        <table className="article-table">
+          {block.headers?.length ? (
+            <thead>
+              <tr>
+                {block.headers.map((header, index) => (
+                  <th key={`${header}-${index}`}>{renderInlineContent(header)}</th>
+                ))}
+              </tr>
+            </thead>
+          ) : null}
+          <tbody>
+            {(block.rows || []).map((row, rowIndex) => (
+              <tr key={`row-${rowIndex}`}>
+                {row.map((cell, cellIndex) => (
+                  <td key={`row-${rowIndex}-cell-${cellIndex}`}>{renderInlineContent(cell)}</td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    );
+  }
   return null;
 }
 

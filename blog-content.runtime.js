@@ -101,6 +101,16 @@
     return items.length ? { type: 'timeline', title, items } : null;
   }
 
+  function parseTableRow(row) {
+    const trimmed = String(row || '').trim();
+    const normalized = trimmed.replace(/^\|/, '').replace(/\|$/, '');
+    return normalized.split('|').map((cell) => normalizeInline(cell.trim(), { preserveLinks: true }));
+  }
+
+  function isTableDividerRow(cells) {
+    return cells.every((cell) => /^:?-{3,}:?$/.test(cell.replace(/\s+/g, '')));
+  }
+
   function markdownToSections(markdown) {
     const lines = String(markdown || '').replace(/\r\n/g, '\n').split('\n');
     const sections = [];
@@ -166,17 +176,28 @@
     const flushTable = () => {
       if (!tableBuffer.length) return;
       const section = ensureSection();
-      for (const row of tableBuffer) {
-        const cells = row
-          .split('|')
-          .map((cell) => normalizeInline(cell, { preserveLinks: true }))
-          .filter(Boolean);
+      const rows = tableBuffer
+        .map(parseTableRow)
+        .filter((cells) => cells.some(Boolean));
 
-        if (!cells.length) continue;
-        if (cells.every((cell) => /^-+$/.test(cell.replace(/\s/g, '')))) continue;
-        pushParagraph(section, cells.join(' — '));
-      }
       tableBuffer = [];
+      if (!rows.length) return;
+
+      const hasHeaderDivider = rows.length >= 2 && isTableDividerRow(rows[1]);
+      if (hasHeaderDivider) {
+        pushBlock(section, {
+          type: 'table',
+          headers: rows[0],
+          rows: rows.slice(2),
+        });
+        return;
+      }
+
+      pushBlock(section, {
+        type: 'table',
+        headers: [],
+        rows,
+      });
     };
 
     const flushList = () => {
@@ -342,6 +363,12 @@
           chunks.push(plainTextInline(block.title));
           for (const item of block.items) {
             chunks.push(plainTextInline(item.label), plainTextInline(item.text));
+          }
+        }
+        if (block.type === 'table') {
+          for (const header of block.headers || []) chunks.push(plainTextInline(header));
+          for (const row of block.rows || []) {
+            for (const cell of row) chunks.push(plainTextInline(cell));
           }
         }
       }

@@ -593,6 +593,43 @@
 .prose li { margin-bottom: 8px; }
 .prose .article-list { margin-top: 4px; }
 .prose .article-list li::marker { color: var(--accent); }
+.prose .article-table-wrap {
+  margin: 28px 0 30px;
+  overflow-x: auto;
+  border: 1px solid var(--rule);
+  border-radius: 14px;
+  background: linear-gradient(180deg, color-mix(in oklab, var(--paper-2), white 10%), var(--paper));
+  box-shadow: 0 14px 34px rgba(13, 31, 46, 0.06);
+}
+.prose .article-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 720px;
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.5;
+}
+.prose .article-table th,
+.prose .article-table td {
+  padding: 14px 16px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--rule);
+}
+.prose .article-table th {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: color-mix(in oklab, var(--paper-3), white 8%);
+}
+.prose .article-table tbody tr:last-child td {
+  border-bottom: none;
+}
+.prose .article-table tbody tr:nth-child(even) td {
+  background: color-mix(in oklab, var(--paper-2), transparent 25%);
+}
 .prose strong { font-weight: 600; color: var(--ink); }
 .prose em { font-style: italic; }
 .prose a {
@@ -1024,6 +1061,9 @@
 .blog.mobile .prose { font-size: 17px; line-height: 1.6; }
 .blog.mobile .prose h2 { font-size: 24px; margin-top: 36px; }
 .blog.mobile .prose p:first-of-type::first-letter { font-size: 48px; }
+.blog.mobile .prose .article-table { min-width: 640px; font-size: 14px; }
+.blog.mobile .prose .article-table th,
+.blog.mobile .prose .article-table td { padding: 12px 13px; }
 .blog.mobile .prose .roadmap-block { padding: 18px 16px 14px; }
 .blog.mobile .prose .roadmap-step { grid-template-columns: 14px 1fr; gap: 12px; }
 .blog.mobile .prose .roadmap-step__label { font-size: 14px; }
