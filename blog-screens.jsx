@@ -494,8 +494,7 @@ function ChapterScreen({ courseId, chapterId, navigate, tts }) {
     return () => obs.disconnect();
   }, [chapterId]);
 
-  // ↓ changed: article exists → show full content
-  const hasFullContent = !!article;
+  const hasFullContent = Boolean(article && Array.isArray(article.sections) && article.sections.length);
 
   return (
     <div className="chapter-layout">

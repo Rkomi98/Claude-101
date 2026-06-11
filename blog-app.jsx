@@ -323,7 +323,8 @@ const BlogApp = ({ deviceClass = 'desktop', forceTheme = null, instanceId = 'def
   const startChapter = (courseId, chapterId) => {
     // ↓ changed: look up by key in articles map instead of singleton article
     const article = window.BLOG_DATA.articles[`${courseId}/${chapterId}`];
-    if (!article) {
+    const hasFullContent = Boolean(article && Array.isArray(article.sections) && article.sections.length);
+    if (!hasFullContent) {
       const ch = window.BLOG_DATA.courses.find(c => c.id === courseId).chapters.find(c => c.id === chapterId);
       const queue = [{ section: 0, paragraph: 0, text: `${ch.title}. Capitolo ancora in lavorazione.` }];
       const r = ttsRef.current;
