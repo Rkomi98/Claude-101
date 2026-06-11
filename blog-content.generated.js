@@ -222,13 +222,6 @@ window.BLOG_GENERATED_CONTENT = {
               "items": [
                 "Risoluzione di problemi e ragionamento: Claude gestisce complessi compiti cognitivi, problemi matematici, pensiero e analisi strategica e ricerca. Claude Opus 4.7 e Sonnet 4.7 sono modelli ibridi che offrono due modalità: risposte quasi istantanee e pensiero esteso (Extended thinking) per un ragionamento più profondo. Questa funzionalità permette a Claude di affrontare i problemi passo dopo passo, rendendolo particolarmente adatto a compiti che richiedono un'attenta analisi."
               ]
-            },
-            {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Imparare cose nuove: che tu stia imparando una nuova competenza, esplorando campi a te non familiari o affrontando sfide complesse, Claude può adattarsi al tuo stile e al tuo ritmo di apprendimento. La Learning mode (modalità di apprendimento) è una nuova esperienza che guida il tuo processo di ragionamento invece di darti semplicemente le risposte, aiutandoti a sviluppare il pensiero critico."
-              ]
             }
           ],
           "content": [
@@ -266,13 +259,6 @@ window.BLOG_GENERATED_CONTENT = {
               ]
             },
             {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Imparare cose nuove: che tu stia imparando una nuova competenza, esplorando campi a te non familiari o affrontando sfide complesse, Claude può adattarsi al tuo stile e al tuo ritmo di apprendimento. La Learning mode (modalità di apprendimento) è una nuova esperienza che guida il tuo processo di ragionamento invece di darti semplicemente le risposte, aiutandoti a sviluppare il pensiero critico."
-              ]
-            },
-            {
               "type": "paragraph",
               "text": "Lasciati ispirare su come usare Claude nel tuo ruolo specifico esplorando la [loro galleria di casi d'uso](https://claude.com/resources/use-cases). Per approfondire cosa l'IA può (e non può) fare, consulta come sempre il loro [corso sui limiti e potenzialità](https://anthropic.skilljar.com/ai-capabilities-and-limitations) o seguire direttamente Datapizza 😜.",
               "paragraphIndex": 1
@@ -294,7 +280,7 @@ window.BLOG_GENERATED_CONTENT = {
                 "Claude.ai (e le relative app mobile e desktop) è il modo principale con cui la maggior parte delle persone interagisce con Claude. Qui puoi fare domande, brainstorming di idee, creare e modificare documenti e molto altro. Claude.ai è ideale per conversazioni, assistenza alla scrittura, ricerca, analisi e creazione di file. Questo è il focus principale del corso.",
                 "Claude Code è uno strumento di coding \"agente\" progettato per sviluppatori, ma utilizzabile per manipolare qualsiasi tipo di file sul tuo computer. Claude Code può modificare direttamente i file, eseguire comandi e creare commit.",
                 "Claude e Slack portano Claude direttamente nello strumento di comunicazione del tuo team. Puoi chattare con Claude nell'intestazione dell'assistente IA da qualsiasi canale o conversazione, oppure menzionando @Claude nei thread. Se connetti Slack a Claude, questo cercherà nei canali del workspace, nei messaggi diretti e nei file condivisi per trovare il contesto necessario a fornirti risposte e ricerche migliori.",
-                "Claude per Excel ti consente di lavorare direttamente con Claude da una barra laterale in Microsoft Excel, dove può leggere, analizzare, modificare e creare nuove cartelle di lavoro. È ottimo per l'analisi di modelli, l'aggiornamento di ipotesi, il debug degli errori, la compilazione di template, la spiegazione di formule e la navigazione in fogli multipli."
+                "Claude per Microsoft ti consente di lavorare direttamente con Claude da una barra laterale nei prodotti Microsoft, dove può leggere, analizzare, modificare e creare nuove cartelle di lavoro. È ottimo per l'analisi di modelli, l'aggiornamento di ipotesi, il debug degli errori, la compilazione di template, la spiegazione di formule e la navigazione in fogli multipli. E questo è solo excel. Pensate a Word e Powerpoint!"
               ]
             }
           ],
@@ -311,7 +297,7 @@ window.BLOG_GENERATED_CONTENT = {
                 "Claude.ai (e le relative app mobile e desktop) è il modo principale con cui la maggior parte delle persone interagisce con Claude. Qui puoi fare domande, brainstorming di idee, creare e modificare documenti e molto altro. Claude.ai è ideale per conversazioni, assistenza alla scrittura, ricerca, analisi e creazione di file. Questo è il focus principale del corso.",
                 "Claude Code è uno strumento di coding \"agente\" progettato per sviluppatori, ma utilizzabile per manipolare qualsiasi tipo di file sul tuo computer. Claude Code può modificare direttamente i file, eseguire comandi e creare commit.",
                 "Claude e Slack portano Claude direttamente nello strumento di comunicazione del tuo team. Puoi chattare con Claude nell'intestazione dell'assistente IA da qualsiasi canale o conversazione, oppure menzionando @Claude nei thread. Se connetti Slack a Claude, questo cercherà nei canali del workspace, nei messaggi diretti e nei file condivisi per trovare il contesto necessario a fornirti risposte e ricerche migliori.",
-                "Claude per Excel ti consente di lavorare direttamente con Claude da una barra laterale in Microsoft Excel, dove può leggere, analizzare, modificare e creare nuove cartelle di lavoro. È ottimo per l'analisi di modelli, l'aggiornamento di ipotesi, il debug degli errori, la compilazione di template, la spiegazione di formule e la navigazione in fogli multipli."
+                "Claude per Microsoft ti consente di lavorare direttamente con Claude da una barra laterale nei prodotti Microsoft, dove può leggere, analizzare, modificare e creare nuove cartelle di lavoro. È ottimo per l'analisi di modelli, l'aggiornamento di ipotesi, il debug degli errori, la compilazione di template, la spiegazione di formule e la navigazione in fogli multipli. E questo è solo excel. Pensate a Word e Powerpoint!"
               ]
             },
             {

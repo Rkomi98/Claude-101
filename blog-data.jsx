@@ -239,61 +239,162 @@ window.BLOG_DATA = {
       chapterId: 'risultati-migliori',
       title: 'Ottenere risultati migliori',
       titleEm: '',
-      lede: 'Sfide comuni, mentalità iterativa e AI Fluency: come riconoscere gli ostacoli, affinarsi passo dopo passo e valutare Claude per i tuoi flussi di lavoro.',
+      lede: 'Sfide comuni, mentalità iterativa e AI Fluency: come riconoscere gli ostacoli, affinare il proprio approccio e valutare Claude nei flussi di lavoro reali.',
       readingTime: '5 min',
-      words: 850,
-      updated: '19 maggio 2026',
+      words: 735,
+      updated: '11 giugno 2026',
       sections: [
         {
-          id: 's-sfide-comuni',
+          id: 'obiettivi-di-apprendimento',
+          title: 'Obiettivi di apprendimento',
+          paragraphs: [
+            "Al termine di questa lezione, sarai in grado di:"
+          ],
+          blocks: [
+            {
+              type: 'list',
+              ordered: false,
+              items: [
+                "Riconoscere le sfide comuni quando si inizia a usare l'IA e utilizzare tecniche di risoluzione dei problemi per superarle.",
+                "Definire l'AI Fluency (alfabetizzazione all'IA) e sapere dove approfondire per lavorare con l'IA in modo piu naturale.",
+                "Spiegare come impostare delle valutazioni (evals) per comprendere meglio le prestazioni di Claude nei tuoi specifici flussi di lavoro.",
+              ],
+            },
+          ],
+        },
+        {
+          id: 'sfide-comuni-e-come-risolverle',
           title: 'Sfide comuni e come risolverle',
           paragraphs: [
-            "Iniziando a lavorare con Claude, probabilmente incontrerai momenti in cui la risposta non è esattamente quella che ti aspettavi. È normale, ed è un'opportunità per affinare il tuo approccio.",
-            "Risposta troppo generica: il prompt non includeva abbastanza contesto sulla tua situazione specifica. Aggiungi dettagli sul pubblico, il ruolo o i vincoli. Invece di \"Scrivi un'email sul ritardo del progetto\", specifica il cliente, il contesto e il tono — ad esempio: \"Scrivi un'email al nostro cliente enterprise spiegando un ritardo di due settimane sull'integrazione software. È il secondo ritardo; il tono deve essere professionale ma di scusa.\"",
-            "Risposta troppo lunga o troppo corta: Claude sta indovinando la lunghezza appropriata. Sii esplicito: \"Fammi un riassunto di due paragrafi\", \"Mantieni il testo sotto le 100 parole\" o \"Ho bisogno di un'analisi completa, la lunghezza non è un problema.\"",
-            "Formato non seguito: Claude ha capito cosa vuoi ma non come vuoi che venga presentato. Mostra, non limitarti a descrivere. Fornisci un esempio del formato o descrivi la struttura: \"Usa un elenco puntato con intestazioni in grassetto per ogni sezione.\"",
-            "Informazioni plausibili ma errate: a volte Claude genera dettagli sicuri in apparenza ma sbagliati, specialmente su fatti specifici o argomenti di nicchia. Per lavori importanti, verifica i fatti chiave in modo indipendente. Chiedi a Claude di indicare il suo livello di sicurezza o di citare le fonti.",
-            "Tono non adatto: di default Claude è disponibile e professionale, ma potrebbe non corrispondere alle tue esigenze. Descrivi il tono con parole semplici — \"Rendilo più colloquiale\" o \"Dovrebbe sembrare autorevole e formale\" — e fornisci un esempio di scrittura nello stile che desideri.",
+            "Iniziando a lavorare con Claude, probabilmente incontrerai momenti in cui la risposta non è esattamente quella che ti aspettavi. E normale, ed e un'opportunita per affinare il tuo approccio. Ecco alcune delle sfide piu comuni e come affrontarle."
+          ],
+          blocks: [
+            {
+              type: 'list',
+              ordered: false,
+              items: [
+                "La risposta di Claude e troppo generica: il tuo prompt non includeva abbastanza contesto sulla tua situazione specifica. Aggiungi dettagli sul tuo pubblico, ruolo o vincoli. Invece di \"Scrivi un'email sul ritardo del progetto\", prova \"Scrivi un'email al nostro cliente enterprise spiegando che l'integrazione del software subira un ritardo di due settimane. Sono stati pazienti finora, ma questo e il secondo ritardo. Mantieni un tono professionale ma di scusa.\"",
+                "La risposta e troppo lunga (o troppo corta): Claude sta tirando a indovinare la lunghezza appropriata. Sii esplicito: \"Fammi un riassunto di due paragrafi\" o \"Mantieni il testo sotto le 100 parole\" o \"Ho bisogno di un'analisi completa, la lunghezza non e un problema.\"",
+                "Claude non ha seguito il mio formato: Claude ha capito cosa vuoi ma non come vuoi che venga presentato. Mostra, non limitarti a raccontare. Fornisci un esempio del formato o descrivi esplicitamente la struttura: \"Usa un elenco puntato con intestazioni in grassetto per ogni sezione.\"",
+                "Ho ricevuto informazioni che sembravano sicure ma si sono rivelate errate: a volte Claude genera informazioni plausibili ma errate, specialmente su fatti specifici o argomenti di nicchia. Per lavori importanti, verifica i fatti chiave in modo indipendente. Chiedi a Claude di citare le fonti o di indicare il suo livello di sicurezza. Abilita la ricerca web per basare le risposte su informazioni aggiornate.",
+                "Il tono non e quello giusto: di default Claude e disponibile e professionale, ma potrebbe non corrispondere alle tue esigenze. Descrivi il tono con parole semplici: \"Rendilo piu colloquiale\" o \"Dovrebbe sembrare autorevole e formale.\" Fornisci un esempio di scrittura nello stile che desideri.",
+              ],
+            },
           ],
         },
         {
-          id: 's-mentalita-iterativa',
+          id: 'la-mentalita-iterativa',
           title: 'La mentalità iterativa',
           paragraphs: [
-            "Uno dei cambiamenti più importanti quando si lavora con Claude è riconoscere che il primo prompt raramente produce un risultato perfetto — e va bene così. Pensa al tuo prompt iniziale come all'inizio di una conversazione, non a una richiesta unica.",
-            "Gli utenti efficaci considerano le prime bozze come punti di partenza: rivedono ciò che Claude produce, identificano cosa funziona e cosa no, quindi affinano. Forniscono feedback specifici — \"Fallo più corto\" va bene, ma \"Taglia i primi due paragrafi e rendi la conclusione più orientata all'azione\" è meglio.",
-            "Sanno anche quando ricominciare da capo. Se una conversazione ha preso la strada sbagliata, a volte è più veloce aprire una nuova chat con un prompt più chiaro piuttosto che cercare di reindirizzarla.",
+            "Uno dei cambiamenti più importanti quando si lavora con Claude è riconoscere che il primo prompt raramente produce un risultato perfetto, e va bene così. Pensa al tuo prompt iniziale come all'inizio di una conversazione, non a una richiesta unica (one-shot)."
+          ],
+          blocks: [
+            {
+              type: 'list',
+              ordered: false,
+              items: [
+                "Considerano le prime bozze come punti di partenza. Rivedono cio che Claude produce, identificano cosa funziona e cosa no, quindi affinano.",
+                "Forniscono feedback specifici. \"Fallo piu corto\" va bene, ma \"Taglia i primi due paragrafi e rendi la conclusione piu orientata all'azione\" e meglio.",
+                "Sanno quando ricominciare da capo. Se una conversazione ha preso la strada sbagliata, a volte e piu veloce aprire una nuova chat con un prompt piu chiaro piuttosto che cercare di reindirizzarla.",
+              ],
+            },
           ],
         },
         {
-          id: 's-ai-fluency',
+          id: 'cos-e-l-ai-fluency',
           title: "Cos'è l'AI Fluency?",
           paragraphs: [
-            "L'AI Fluency è la capacità di collaborare in modo efficace con gli strumenti di intelligenza artificiale: non significa solo sapere quali pulsanti premere, ma sviluppare la capacità di giudizio per usare bene l'IA in diverse situazioni.",
-            "Il 4D Framework for AI Fluency — sviluppato dal Professor Rick Dakan (Ringling College of Art and Design) e dal Professor Joseph Feller (University College Cork) — individua quattro competenze chiave:",
-            "Delega: decidere quale lavoro debba essere fatto dagli umani, quale dall'IA e come distribuire i compiti. Include la comprensione dei propri obiettivi, delle capacità dell'IA e la capacità di compiere scelte strategiche sulla collaborazione.",
-            "Descrizione: comunicare efficacemente con i sistemi di IA. Include la chiara definizione dei risultati, la guida dei processi e la specifica dei comportamenti e delle interazioni desiderate.",
-            "Discernimento: valutare in modo attento e critico i risultati dell'IA. Include la valutazione della qualità, dell'accuratezza, dell'adeguatezza e la determinazione delle aree di miglioramento.",
-            "Diligenza: utilizzare l'IA in modo responsabile ed etico. Include fare scelte ponderate sui sistemi di IA, mantenere la trasparenza e assumersi la responsabilità del lavoro assistito dall'IA.",
-            "Hai già messo in pratica queste abilità durante questo corso. Il framework per i prompt della Lezione 2 è radicato nella Descrizione. Le tecniche di risoluzione dei problemi viste sopra attingono al Discernimento e alla Diligenza.",
+            "L'AI Fluency e la capacita di collaborare in modo efficace con gli strumenti di intelligenza artificiale: non significa solo sapere quali pulsanti premere, ma sviluppare la capacita di giudizio per usare bene l'IA in diverse situazioni.",
+            "Il 4D Framework for AI Fluency, sviluppato attraverso una collaborazione di ricerca tra il Professor Rick Dakan (Ringling College of Art and Design) e il Professor Joseph Feller (University College Cork), individua quattro competenze chiave che, se combinate, possono aiutarti a trarre il massimo dalle tue interazioni con l'IA:",
+            "Hai gia messo in pratica queste abilita durante questo corso. Il framework per i prompt della Lezione 2 (fornire il contesto, definire il compito, specificare le regole) e radicato nella Descrizione. Le tecniche di risoluzione dei problemi viste sopra attingono al Discernimento e alla Diligenza.",
+            "Per saperne di piu, dai un'occhiata al nostro corso gratuito sull'AI Fluency che esplora a fondo tutte e quattro le competenze, con esercizi pratici e applicazioni nel mondo reale.",
+          ],
+          blocks: [
+            {
+              type: 'list',
+              ordered: false,
+              items: [
+                "Delega (Delegation): decidere quale lavoro debba essere fatto dagli umani, quale dall'IA e come distribuire i compiti. Include la comprensione dei propri obiettivi, delle capacita dell'IA e la capacita di compiere scelte strategiche sulla collaborazione.",
+                "Descrizione (Description): comunicare efficacemente con i sistemi di IA. Include la chiara definizione dei risultati, la guida dei processi dell'IA e la specifica dei comportamenti e delle interazioni desiderate.",
+                "Discernimento (Discernment): valutare in modo attento e critico i risultati, i processi, i comportamenti e le interazioni dell'IA. Include la valutazione della qualita, dell'accuratezza, dell'adeguatezza e la determinazione delle aree di miglioramento.",
+                "Diligenza (Diligence): utilizzare l'IA in modo responsabile ed etico. Include il fare scelte ponderate sui sistemi e le interazioni dell'IA, mantenere la trasparenza e assumersi la responsabilita del lavoro assistito dall'IA.",
+              ],
+            },
           ],
         },
         {
-          id: 's-valutare',
+          id: 'valutare-claude-per-i-tuoi-flussi-di-lavoro',
           title: 'Valutare Claude per i tuoi flussi di lavoro',
           paragraphs: [
-            "Man mano che inizi a integrare Claude in una parte maggiore del tuo lavoro, potresti chiederti: come faccio a sapere se Claude è davvero bravo in questo compito specifico? È qui che il Discernimento diventa essenziale.",
-            "Le \"evals\" (abbreviazione di valutazioni) sono metodi sistematici per testare quanto bene Claude si comporta su tipi specifici di compiti. Il tuo lavoro è unico: Claude potrebbe eccellere nella stesura di testi di marketing, ma aver bisogno di maggiore guida per la documentazione tecnica nel tuo dominio.",
-            "Un approccio pratico in quattro passi: raccogli 5-10 esempi di un compito che svolgi regolarmente; scrivi prompt che genererebbero risultati simili; esegui i prompt e confronta le risposte di Claude con i tuoi esempi (Claude coglie le informazioni chiave? Il tono è appropriato? Cosa manca?); infine adatta i prompt, aggiungi esempi per mostrare com'è un buon risultato, o identifica dove la revisione umana rimane essenziale.",
-            "Questo tipo di valutazione leggera ti aiuta a sviluppare l'intuito su come lavorare con Claude sui compiti che ti interessano e su dove concentrare le tue energie di revisione e affinamento.",
+            "Man mano che inizi a integrare Claude in una parte maggiore del tuo lavoro, potresti chiederti: come faccio a sapere se Claude e davvero bravo in questo compito specifico?",
+            "E qui che il Discernimento diventa essenziale. Le \"evals\" (abbreviazione di valutazioni) sono un modo per sviluppare l'intuito nel giudicare i risultati di Claude sui compiti che ti interessano. Sono metodi sistematici per testare quanto bene Claude si comporta su tipi specifici di compiti per te importanti."
+          ],
+          blocks: [
+            {
+              type: 'list',
+              ordered: false,
+              items: [
+                "Capire dove Claude aggiunge maggior valore al tuo flusso di lavoro.",
+                "Identificare i compiti per i quali dovrai fornire piu contesto o esempi.",
+                "Acquisire sicurezza nei risultati di Claude per i compiti ricorrenti.",
+              ],
+            },
           ],
         },
         {
-          id: 's-riflessione',
+          id: 'un-approccio-semplice-alle-valutazioni',
+          title: 'Un approccio semplice alle valutazioni',
+          paragraphs: [
+            "Non hai bisogno di infrastrutture complesse per valutare Claude. Ecco un approccio pratico:"
+          ],
+          blocks: [
+            {
+              type: 'list',
+              ordered: true,
+              items: [
+                "Raccogli esempi. Metti insieme 5-10 esempi di un compito che svolgi regolarmente: email che hai scritto, report che hai creato, analisi che hai fatto.",
+                "Crea prompt di test. Scrivi prompt che genererebbero risultati simili. Includi il contesto che avresti naturalmente svolgendo questo lavoro.",
+                "Confronta i risultati. Esegui i tuoi prompt e confronta le risposte di Claude con i tuoi esempi. Chiediti: Claude coglie le informazioni chiave? Il tono e lo stile sono appropriati? Cosa manca o potrebbe essere migliorato?",
+                "Affina il tuo approccio. In base a cio che impari, adatta i tuoi prompt, aggiungi esempi per mostrare a Claude com'e un buon risultato, o identifica dove la revisione umana e essenziale.",
+              ],
+            },
+          ],
+        },
+        {
+          id: 'esempio-usare-claude-per-l-analisi-dei-dati',
+          title: "Esempio: Usare Claude per l'analisi dei dati",
+          paragraphs: [
+            "Il video qui sopra (n.d.r. dal corso originale) e tratto dal nostro corso AI Fluency per le organizzazioni no profit, ma l'esempio e rilevante per chiunque lavori con i dati e l'IA. Per valutare come Claude potrebbe lavorare con i tuoi dati:"
+          ],
+          blocks: [
+            {
+              type: 'list',
+              ordered: false,
+              items: [
+                "Trova un set di dati che hai analizzato manualmente.",
+                "Crea prompt che chiedano a Claude di fare l'analisi per tuo conto.",
+                "Confronta i risultati di Claude con i tuoi originali.",
+                "Prendi nota degli schemi ricorrenti e affina il prompt di conseguenza: forse Claude ottiene i numeri giusti ma si perde le tendenze generali.",
+              ],
+            },
+          ],
+        },
+        {
+          id: 'riflessione-sulla-lezione',
           title: 'Riflessione sulla lezione',
           paragraphs: [
-            "Prima di proseguire, considera: quali delle sfide comuni hai già incontrato? Quali tecniche potresti provare la prossima volta?",
-            "In quale parte del tuo lavoro una semplice valutazione ti aiuterebbe a capire se Claude è adatto a un compito ricorrente? In che modo il Framework delle 4D potrebbe aiutarti a riflettere sulla tua collaborazione con Claude?",
+            "Prima di proseguire, considera:"
+          ],
+          blocks: [
+            {
+              type: 'list',
+              ordered: false,
+              items: [
+                "Quali delle sfide comuni hai gia incontrato? Quali tecniche potresti provare la prossima volta?",
+                "In quale parte del tuo lavoro una semplice valutazione (eval) ti aiuterebbe a capire se Claude e adatto a un compito ricorrente?",
+                "In che modo il Framework delle 4D potrebbe aiutarti a riflettere sulla tua collaborazione con Claude?",
+              ],
+            },
           ],
         },
       ],
