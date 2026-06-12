@@ -605,7 +605,7 @@ window.BLOG_GENERATED_CONTENT = {
       ]
     },
     "claude-101/risultati-migliori": {
-      "words": 723,
+      "words": 724,
       "sections": [
         {
           "id": "obiettivi-di-apprendimento",
@@ -774,7 +774,7 @@ window.BLOG_GENERATED_CONTENT = {
             "L'AI Fluency è la capacità di collaborare in modo efficace con gli strumenti di intelligenza artificiale: non significa solo sapere quali pulsanti premere, ma sviluppare la capacità di giudizio per usare bene l'IA in diverse situazioni.",
             "Il 4D Framework for AI Fluency, sviluppato attraverso una collaborazione di ricerca tra il Professor Rick Dakan (Ringling College of Art and Design) e il Professor Joseph Feller (University College Cork), individua quattro competenze chiave che, se combinate, possono aiutarti a trarre il massimo dalle tue interazioni con l'IA:",
             "Hai già messo in pratica queste abilità durante questo corso. Il framework per i prompt della Lezione 2 (fornire il contesto, definire il compito, specificare le regole) è radicato nella Descrizione. Le tecniche di risoluzione dei problemi viste sopra attingono al Discernimento e alla Diligenza.",
-            "Per saperne di più, dai un'occhiata al nostro corso gratuito sull'AI Fluency che esplora a fondo tutte e quattro le competenze, con esercizi pratici e applicazioni nel mondo reale."
+            "Per saperne di più, dai un'occhiata al [corso gratuito di Anthropic sull'AI Fluency](https://anthropic.skilljar.com/ai-fluency-framework-foundations) che esplora a fondo tutte e quattro le competenze, con esercizi pratici e applicazioni nel mondo reale."
           ],
           "blocks": [
             {
@@ -816,7 +816,7 @@ window.BLOG_GENERATED_CONTENT = {
             },
             {
               "type": "paragraph",
-              "text": "Per saperne di più, dai un'occhiata al nostro corso gratuito sull'AI Fluency che esplora a fondo tutte e quattro le competenze, con esercizi pratici e applicazioni nel mondo reale.",
+              "text": "Per saperne di più, dai un'occhiata al [corso gratuito di Anthropic sull'AI Fluency](https://anthropic.skilljar.com/ai-fluency-framework-foundations) che esplora a fondo tutte e quattro le competenze, con esercizi pratici e applicazioni nel mondo reale.",
               "paragraphIndex": 3
             }
           ]
@@ -2021,6 +2021,370 @@ window.BLOG_GENERATED_CONTENT = {
           ]
         }
       ]
+    },
+    "claude-101/creare-artefacts": {
+      "words": 506,
+      "sections": [
+        {
+          "id": "header-navigation",
+          "title": "Header Navigation",
+          "paragraphs": [
+            "[Anthropic Academy](https://www.anthropic.com/learn) [Courses](https://anthropic.skilljar.com/)",
+            "Estimated time: 20 minutes"
+          ],
+          "blocks": [],
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "[Anthropic Academy](https://www.anthropic.com/learn) [Courses](https://anthropic.skilljar.com/)",
+              "paragraphIndex": 0
+            },
+            {
+              "type": "paragraph",
+              "text": "Estimated time: 20 minutes",
+              "paragraphIndex": 1
+            }
+          ]
+        },
+        {
+          "id": "learning-objectives",
+          "title": "Learning objectives",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Explain what artifacts are and when Claude creates them",
+                "Share artifacts with colleagues and publish them publicly",
+                "Troubleshoot common artifact issues"
+              ]
+            }
+          ],
+          "content": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Explain what artifacts are and when Claude creates them",
+                "Share artifacts with colleagues and publish them publicly",
+                "Troubleshoot common artifact issues"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "what-are-artifacts",
+          "title": "What are artifacts?",
+          "paragraphs": [
+            "Artifacts are standalone, interactive outputs that Claude creates in a dedicated window alongside your conversation. Instead of getting a long block of code or text buried in the chat, you see your content rendered and ready to use—whether that's a working website, an interactive chart, or a document you can immediately download.",
+            "Claude automatically creates an artifact when content meets certain criteria:"
+          ],
+          "blocks": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "It's significant and self-contained, typically over 15 lines",
+                "It's something you're likely to want to edit, iterate on, or reuse",
+                "It represents complex content that stands on its own without needing the surrounding conversation",
+                "It's content you'll want to reference or use later"
+              ]
+            }
+          ],
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Artifacts are standalone, interactive outputs that Claude creates in a dedicated window alongside your conversation. Instead of getting a long block of code or text buried in the chat, you see your content rendered and ready to use—whether that's a working website, an interactive chart, or a document you can immediately download.",
+              "paragraphIndex": 0
+            },
+            {
+              "type": "paragraph",
+              "text": "Claude automatically creates an artifact when content meets certain criteria:",
+              "paragraphIndex": 1
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "It's significant and self-contained, typically over 15 lines",
+                "It's something you're likely to want to edit, iterate on, or reuse",
+                "It represents complex content that stands on its own without needing the surrounding conversation",
+                "It's content you'll want to reference or use later"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "common-artifact-types",
+          "title": "Common artifact types",
+          "paragraphs": [
+            "Claude can create different of artifacts, each suited to different needs:"
+          ],
+          "blocks": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Documents (including markdown, plain text, Word docs, PDFs, PowerPoint, and Excel): Great for anything text-heavy that you'll want to export or continue editing — like meeting notes, reports, project plans, blog posts, and other written content.",
+                "Code snippets: Working code in any programming language—Python, JavaScript, C++, and more. You can view the code, copy it, or download it to use in your own projects.",
+                "HTML pages: Complete web pages with HTML, CSS, and JavaScript in a single file. Perfect for landing pages, forms, interactive demos, or quick prototypes.",
+                "SVG images: Scalable vector graphics for logos, icons, illustrations, and other visual elements. These render directly in the artifact window so you can see exactly what you're getting.",
+                "Mermaid diagrams: Flowcharts, sequence diagrams, Gantt charts, org charts, and more. Describe the relationships you want to visualize, and Claude will create a diagram you can refine.",
+                "React components: Interactive UI elements with real functionality—calculators, dashboards, games, data visualizations. These aren't just mockups; they include actual logic and respond to user input."
+              ]
+            }
+          ],
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Claude can create different of artifacts, each suited to different needs:",
+              "paragraphIndex": 0
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Documents (including markdown, plain text, Word docs, PDFs, PowerPoint, and Excel): Great for anything text-heavy that you'll want to export or continue editing — like meeting notes, reports, project plans, blog posts, and other written content.",
+                "Code snippets: Working code in any programming language—Python, JavaScript, C++, and more. You can view the code, copy it, or download it to use in your own projects.",
+                "HTML pages: Complete web pages with HTML, CSS, and JavaScript in a single file. Perfect for landing pages, forms, interactive demos, or quick prototypes.",
+                "SVG images: Scalable vector graphics for logos, icons, illustrations, and other visual elements. These render directly in the artifact window so you can see exactly what you're getting.",
+                "Mermaid diagrams: Flowcharts, sequence diagrams, Gantt charts, org charts, and more. Describe the relationships you want to visualize, and Claude will create a diagram you can refine.",
+                "React components: Interactive UI elements with real functionality—calculators, dashboards, games, data visualizations. These aren't just mockups; they include actual logic and respond to user input."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "creating-your-first-artifact",
+          "title": "Creating your first artifact",
+          "paragraphs": [
+            "Creating an artifact is as simple as having a conversation. Just describe what you want, and Claude will determine whether to present it as an artifact.",
+            "For example, you might say:",
+            "If Claude doesn't automatically create an artifact when you expect one, you can explicitly ask: \"Create this as an artifact\" or \"Show me this in an artifact.\"",
+            "When Claude generates an artifact, it appears in a dedicated window to the right of your conversation. From here, you can:"
+          ],
+          "blocks": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "\"Create a flowchart showing our customer onboarding process (Note: Claude may now generate visual diagrams like flowcharts as HTML using Imagine, in addition to code-based artifacts.)\"",
+                "\"Build an interactive dashboard that lets me input monthly expenses and see a breakdown\"",
+                "\"Design a landing page for a productivity app with a hero section and feature list\"",
+                "\"Write a project brief template I can reuse for new initiatives\""
+              ]
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "View different formats: Toggle between a preview (how it looks) and the underlying code",
+                "Copy content: Click the copy icon to grab the content for use elsewhere",
+                "Download files: Save the artifact as a file to your computer",
+                "View code: See exactly what Claude generated under the hood"
+              ]
+            }
+          ],
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Creating an artifact is as simple as having a conversation. Just describe what you want, and Claude will determine whether to present it as an artifact.",
+              "paragraphIndex": 0
+            },
+            {
+              "type": "paragraph",
+              "text": "For example, you might say:",
+              "paragraphIndex": 1
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "\"Create a flowchart showing our customer onboarding process (Note: Claude may now generate visual diagrams like flowcharts as HTML using Imagine, in addition to code-based artifacts.)\"",
+                "\"Build an interactive dashboard that lets me input monthly expenses and see a breakdown\"",
+                "\"Design a landing page for a productivity app with a hero section and feature list\"",
+                "\"Write a project brief template I can reuse for new initiatives\""
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "If Claude doesn't automatically create an artifact when you expect one, you can explicitly ask: \"Create this as an artifact\" or \"Show me this in an artifact.\"",
+              "paragraphIndex": 2
+            },
+            {
+              "type": "paragraph",
+              "text": "When Claude generates an artifact, it appears in a dedicated window to the right of your conversation. From here, you can:",
+              "paragraphIndex": 3
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "View different formats: Toggle between a preview (how it looks) and the underlying code",
+                "Copy content: Click the copy icon to grab the content for use elsewhere",
+                "Download files: Save the artifact as a file to your computer",
+                "View code: See exactly what Claude generated under the hood"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sharing-and-publishing-artifacts",
+          "title": "Sharing and publishing artifacts",
+          "paragraphs": [
+            "Once you've created something useful, you have several options for sharing it.",
+            "Copy or download: For personal use or sharing via other channels, use the copy or download buttons in the lower right corner of the artifact window.",
+            "Share within your organization (Claude for Work): Team and Enterprise users can share artifacts internally with colleagues. The shared artifact stays within your organization and requires team authentication to access.",
+            "Publish publicly: For free, Pro, and Max users, you can publish artifacts to make them accessible to anyone with the link. When you publish:",
+            "To publish, click the \"Share\" or \"Publish\" button in the upper right corner of the artifact. You can unpublish at any time by returning to that artifact and removing public access. Note: When you publish an artifact, it is publicly accessible via its link — anyone can view it, even without a Claude account. Published artifacts are not indexed by search engines, so they won't appear in Google results."
+          ],
+          "blocks": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Only the selected version becomes public (your chat remains private)",
+                "Anyone can view and interact with the artifact without a Claude account",
+                "Others can \"remix\" your artifact—opening it in their own Claude conversation to modify and build upon it"
+              ]
+            }
+          ],
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Once you've created something useful, you have several options for sharing it.",
+              "paragraphIndex": 0
+            },
+            {
+              "type": "paragraph",
+              "text": "Copy or download: For personal use or sharing via other channels, use the copy or download buttons in the lower right corner of the artifact window.",
+              "paragraphIndex": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "Share within your organization (Claude for Work): Team and Enterprise users can share artifacts internally with colleagues. The shared artifact stays within your organization and requires team authentication to access.",
+              "paragraphIndex": 2
+            },
+            {
+              "type": "paragraph",
+              "text": "Publish publicly: For free, Pro, and Max users, you can publish artifacts to make them accessible to anyone with the link. When you publish:",
+              "paragraphIndex": 3
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Only the selected version becomes public (your chat remains private)",
+                "Anyone can view and interact with the artifact without a Claude account",
+                "Others can \"remix\" your artifact—opening it in their own Claude conversation to modify and build upon it"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "To publish, click the \"Share\" or \"Publish\" button in the upper right corner of the artifact. You can unpublish at any time by returning to that artifact and removing public access. Note: When you publish an artifact, it is publicly accessible via its link — anyone can view it, even without a Claude account. Published artifacts are not indexed by search engines, so they won't appear in Google results.",
+              "paragraphIndex": 4
+            }
+          ]
+        },
+        {
+          "id": "tips-for-getting-the-most-from-artifacts",
+          "title": "Tips for getting the most from artifacts",
+          "paragraphs": [
+            "Be specific about what you want. \"Build a budget tracker\" is good, but \"Build a monthly budget tracker where I can input expenses by category, see a pie chart breakdown, and get a warning when I'm over budget\" is better.",
+            "Describe the end user. Telling Claude who will use the artifact helps it make appropriate design choices. \"This flowchart is for new employees\" leads to different results than \"This flowchart is for the engineering team.\"",
+            "Iterate incrementally. Ask Claude to add one feature or make one change at a time. This makes it easier to identify what's working and catch issues early.",
+            "Request artifacts when needed. If you ask for something substantial and Claude responds in the chat instead of creating an artifact, just say \"Please create that as an artifact.\""
+          ],
+          "blocks": [],
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Be specific about what you want. \"Build a budget tracker\" is good, but \"Build a monthly budget tracker where I can input expenses by category, see a pie chart breakdown, and get a warning when I'm over budget\" is better.",
+              "paragraphIndex": 0
+            },
+            {
+              "type": "paragraph",
+              "text": "Describe the end user. Telling Claude who will use the artifact helps it make appropriate design choices. \"This flowchart is for new employees\" leads to different results than \"This flowchart is for the engineering team.\"",
+              "paragraphIndex": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "Iterate incrementally. Ask Claude to add one feature or make one change at a time. This makes it easier to identify what's working and catch issues early.",
+              "paragraphIndex": 2
+            },
+            {
+              "type": "paragraph",
+              "text": "Request artifacts when needed. If you ask for something substantial and Claude responds in the chat instead of creating an artifact, just say \"Please create that as an artifact.\"",
+              "paragraphIndex": 3
+            }
+          ]
+        },
+        {
+          "id": "lesson-reflection",
+          "title": "Lesson reflection",
+          "paragraphs": [
+            "Before moving on, consider:"
+          ],
+          "blocks": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "What recurring work could benefit from having an interactive artifact you can reuse?",
+                "Are there processes in your work that would be clearer as a flowchart or diagram?",
+                "What prototype or tool would help you test an idea quickly?"
+              ]
+            }
+          ],
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Before moving on, consider:",
+              "paragraphIndex": 0
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "What recurring work could benefit from having an interactive artifact you can reuse?",
+                "Are there processes in your work that would be clearer as a flowchart or diagram?",
+                "What prototype or tool would help you test an idea quickly?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "what-s-next",
+          "title": "What's next",
+          "paragraphs": [
+            "In the next lesson, you'll learn about Skills — reusable instruction sets that teach Claude specialized workflows."
+          ],
+          "blocks": [],
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "In the next lesson, you'll learn about Skills — reusable instruction sets that teach Claude specialized workflows.",
+              "paragraphIndex": 0
+            }
+          ]
+        },
+        {
+          "id": "feedback",
+          "title": "Feedback",
+          "paragraphs": [
+            "As you progress through the course, we'd love to hear from you about how you are using concepts from the course in your work and any feedback you may have. Share your feedback [here](https://forms.gle/sY9ou5fqZBd3TjHF8)."
+          ],
+          "blocks": [],
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "As you progress through the course, we'd love to hear from you about how you are using concepts from the course in your work and any feedback you may have. Share your feedback [here](https://forms.gle/sY9ou5fqZBd3TjHF8).",
+              "paragraphIndex": 0
+            }
+          ]
+        }
+      ]
     }
   },
   "chapterReadingTimeByKey": {
@@ -2089,6 +2453,18 @@ window.BLOG_GENERATED_CONTENT = {
       "Prossimi passi",
       "Feedback",
       "Riconoscimenti e licenza"
+    ],
+    "claude-101/creare-artefacts": [
+      "Header Navigation",
+      "Learning objectives",
+      "What are artifacts?",
+      "Common artifact types",
+      "Creating your first artifact",
+      "Sharing and publishing artifacts",
+      "Tips for getting the most from artifacts",
+      "Lesson reflection",
+      "What's next",
+      "Feedback"
     ]
   }
 };

@@ -12,6 +12,7 @@ const ARTICLE_SOURCES = {
   'claude-101/risultati-migliori': 'Corso base/03_risultati_migliori_it.md',
   'claude-101/app-desktop': 'Corso base/04_app_desktop_claude_it.md',
   'claude-101/introduzione-progetti': 'Corso base/05_introduzione_progetti_it.md',
+  'claude-101/creare-artefacts': 'Corso base/06_creare_artefacts.md',
 };
 
 function normalizeInline(text, options = {}) {

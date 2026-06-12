@@ -15,9 +15,9 @@ window.BLOG_DATA = {
       num: '01',
       title: 'Claude 101',
       titleEm: 'Le basi',
-      desc: 'Cos\'è Claude, come iniziare una conversazione, ottenere risultati migliori e organizzare il lavoro con progetti e app desktop.',
+      desc: 'Cos\'è Claude, come iniziare una conversazione, ottenere risultati migliori e organizzare il lavoro con progetti, app desktop e artefatti.',
       level: 'Principiante',
-      hours: '43 min',
+      hours: '1h 23m',
       chapters: [
         {
           id: 'cose-claude',
@@ -62,6 +62,15 @@ window.BLOG_DATA = {
           desc: 'Come organizzare il lavoro in spazi dedicati con memoria persistente e istruzioni condivise.',
           readingTime: '2 min',
           sections: ['Spazi dedicati', 'Conoscenze', 'Istruzioni persistenti', 'Multi-progetto'],
+          available: true,
+        },
+        {
+          id: 'creare-artefacts',
+          num: '06',
+          title: 'Creare artefatti',
+          desc: 'Cosa sono gli artifacts, quando Claude li genera e come condividerli o pubblicarli.',
+          readingTime: '20 min',
+          sections: ['Cosa sono', 'Tipi di artefatti', 'Creazione', 'Condivisione'],
           available: true,
         },
       ],
@@ -159,6 +168,15 @@ window.BLOG_DATA = {
       titleEm: '',
       lede: 'Come organizzare il lavoro in spazi dedicati con memoria condivisa, documenti di riferimento e istruzioni persistenti che guidano Claude in ogni conversazione.',
       updated: '19 maggio 2026',
+    },
+
+    'claude-101/creare-artefacts': {
+      courseId: 'claude-101',
+      chapterId: 'creare-artefacts',
+      title: 'Creare artefatti',
+      titleEm: '',
+      lede: 'Cosa sono gli artifacts di Claude, quando vengono generati automaticamente e come usarli per condividere, pubblicare e iterare su contenuti interattivi.',
+      updated: '11 giugno 2026',
     },
 
   },
