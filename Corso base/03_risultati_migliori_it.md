@@ -73,7 +73,7 @@ Non hai bisogno di infrastrutture complesse per valutare Claude. Ecco un approcc
 
 ### Esempio: Usare Claude per l'analisi dei dati
 
-Il video qui sopra (n.d.r. dal corso originale) è tratto dal nostro corso AI Fluency per le organizzazioni no profit, ma l'esempio è rilevante per chiunque lavori con i dati e l'IA. Per valutare come Claude potrebbe lavorare con i tuoi dati:
+Nel corso originale, Anthropic propone un [loro video](https://www.youtube.com/watch?v=Zzn-g8lvLMA&t=6s), tratto dal nostro corso AI Fluency per le organizzazioni no profit, ma l'esempio è rilevante per chiunque lavori con i dati e l'IA. Per valutare come Claude potrebbe lavorare con i tuoi dati:
 
 - Trova un set di dati che hai analizzato manualmente.
 - Crea prompt che chiedano a Claude di fare l'analisi per tuo conto.
