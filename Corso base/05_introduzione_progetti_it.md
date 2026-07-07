@@ -26,11 +26,11 @@ Vi lascio un video direttamente girato da Anthropic e che spiega come usare i pr
 - **I progetti scalano automaticamente.** Quando la tua base di conoscenza si avvicina ai limiti di contesto, Claude abilita in modo trasparente la modalità Retrieval Augmented Generation (RAG) per espandere la capacità fino a 10 volte mantenendo la qualità della risposta.
 - **Per gli utenti Claude for Work, i progetti consentono la collaborazione.** Condividi i progetti con i colleghi in modo che tutti traggano vantaggio dallo stesso contesto, dalle stesse istruzioni e dalla conoscenza accumulata.
 
-### Cosa sono i Progetti?
+## Cosa sono i Progetti?
 
 I progetti sono ideali per archiviare le conoscenze che Claude dovrebbe consultare, organizzare le chat correlate a un argomento o area di lavoro specifica e collaborare con i membri del team che necessitano di accedere allo stesso contesto condiviso.
 
-#### Quando usare i Progetti
+### Quando usare i Progetti
 
 I progetti sono particolarmente preziosi quando lavori su qualcosa di continuativo, non solo su una domanda occasionale. Prendi in considerazione la creazione di un progetto quando hai un flusso di lavoro con:
 
@@ -38,11 +38,11 @@ I progetti sono particolarmente preziosi quando lavori su qualcosa di continuati
 - **Requisiti coerenti** su come Claude dovrebbe rispondere (usare sempre un linguaggio formale, citare sempre le fonti, seguire sempre il nostro template)
 - **Esigenze di collaborazione del team** in cui più persone dovrebbero lavorare partendo dalle stesse basi
 
-### Creare il tuo primo progetto
+## Creare il tuo primo progetto
 
 Impostare un progetto richiede solo pochi minuti. Ecco come iniziare:
 
-#### Passaggio 1: Imposta il tuo progetto
+### Passaggio 1: Imposta il tuo progetto
 
 1. Passa il mouse sulla barra laterale sinistra e clicca su "Projects" (Progetti), oppure naviga direttamente su claude.ai/projects
 2. Clicca su "+ New Project" (Nuovo progetto) nell'angolo in alto a destra
@@ -50,7 +50,7 @@ Impostare un progetto richiede solo pochi minuti. Ecco come iniziare:
 4. Aggiungi una breve descrizione di ciò a cui stai lavorando. Anche se Claude non vede direttamente questa descrizione, aiuta te e i tuoi colleghi a comprendere lo scopo del progetto.
 5. Scegli le impostazioni di visibilità: mantienilo privato o condividilo con la tua organizzazione (per gli utenti Claude for Work)
 
-#### Passaggio 2: Aggiungi le istruzioni del progetto
+### Passaggio 2: Aggiungi le istruzioni del progetto
 
 Le istruzioni del progetto indicano a Claude come comportarsi in tutte le conversazioni all'interno del progetto. Clicca su "Instructions" (Istruzioni) per aprire il pannello delle istruzioni.
 
@@ -65,7 +65,7 @@ Una volta scritte le istruzioni, clicca su "Save instructions" (Salva istruzioni
 
 Puoi anche usare le istruzioni di progetto per automatizzare i flussi di lavoro — ad esempio: "Quando carico la trascrizione di una riunione, crea un riassunto strutturato usando questo template." Pensa alle istruzioni come a una programmazione del comportamento di Claude per questo progetto.
 
-#### Passaggio 3: Costruisci la tua base di conoscenza
+### Passaggio 3: Costruisci la tua base di conoscenza
 
 La base di conoscenza (knowledge base) del tuo progetto è il luogo in cui carichi i documenti che Claude deve consultare. Troverai il menu dei file sul lato destro della pagina principale del tuo progetto.
 
@@ -80,7 +80,7 @@ Clicca sul pulsante "+" per aggiungere contenuti. Puoi caricare vari tipi di fil
 
 **Consiglio pro:** Dai ai tuoi file un nome descrittivo. Claude usa i nomi dei file per comprendere e recuperare le informazioni giuste, quindi "Q4-2024-Linee-Guida-Brand.pdf" è più utile di "documento1.pdf".
 
-#### Come i progetti gestiscono basi di conoscenza estese
+### Come i progetti gestiscono basi di conoscenza estese
 
 Potresti chiederti cosa succede quando carichi molti contenuti. I progetti scalano automaticamente per gestire grandi quantità di dati attraverso un processo chiamato Retrieval Augmented Generation (RAG). A livello generale, questo significa che Claude può trovare e usare automaticamente le parti più rilevanti dei tuoi documenti caricati nel momento di rispondere, senza che tu debba dirgli quale file guardare.
 
@@ -115,7 +115,7 @@ Per condividere un progetto:
 
 I membri del team riceveranno notifiche via email quando condividi un progetto con loro e potranno trovare i progetti condivisi nella scheda "Shared with me" (Condivisi con me).
 
-### Esempi di progetti a cui ispirarti
+## Esempi di progetti a cui ispirarti
 
 Non sai da dove cominciare? Ecco alcuni tipi di progetti comuni in diverse funzioni:
 
@@ -125,7 +125,7 @@ Non sai da dove cominciare? Ecco alcuni tipi di progetti comuni in diverse funzi
 - **Spazio di lavoro per l'organizzazione di eventi:** carica i contratti della location, le biografie degli speaker e i dati dei partecipanti. Claude può aiutarti a generare le scalette dell'evento, le comunicazioni per i partecipanti e i report post-evento mantenendo la coerenza con il tema dell'evento.
 - **Generatore di descrizioni delle mansioni:** raccogli le descrizioni dei lavori precedenti, le carte del team e i documenti interni di richiesta del personale. Lavora con Claude per redigere job description che riflettano il lavoro reale e la cultura del tuo team.
 
-### Migliori pratiche per i progetti
+## Migliori pratiche per i progetti
 
 Per trarre il massimo dai progetti:
 
