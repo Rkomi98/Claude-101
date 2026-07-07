@@ -14,9 +14,9 @@
 
 ### Video
 
-![](https://www.youtube.com/watch?v=GJ5jTgcbRHA)
+Vi lascio un video direttamente girato da Anthropic e che spiega come usare i progetti su Claude.ai.
 
-\[Video: Introduzione ai Progetti - Iniziare a usare i progetti su Claude.ai\]
+![Video: Introduzione ai Progetti - Iniziare a usare i progetti su Claude.ai](https://www.youtube.com/watch?v=GJ5jTgcbRHA)
 
 #### Punti chiave
 
