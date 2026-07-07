@@ -128,7 +128,7 @@ Per ulteriori informazioni sulle Skills, incluso come creare le tue Skills perso
 
 #### Feedback
 
-Man mano che avanzi nel corso, ci piacerebbe sapere da te come stai utilizzando i concetti del corso nel tuo lavoro e qualsiasi feedback tu possa avere. Condividi il tuo feedback [qui](https://forms.gle/sY9ou5fqZBd3TjHF8).
+Man mano che avanzi nel corso, agli organizzatori del corso piacerebbe sapere come stai utilizzando i concetti appresi nel tuo lavoro e ricevere i tuoi commenti. Condividi il tuo feedback [qui](https://forms.gle/sY9ou5fqZBd3TjHF8). Secondo me chi ha fatto questi corsi sarebbe molto contento della cosa
 
 #### Riconoscimenti e licenza
 
