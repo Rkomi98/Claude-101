@@ -151,7 +151,7 @@ Per maggiori informazioni su come iniziare a usare i progetti, visita il [Centro
 
 #### Feedback
 
-Man mano che avanzi nel corso, ci piacerebbe sapere come stai utilizzando i concetti appresi nel tuo lavoro e ricevere i tuoi commenti. Condividi il tuo feedback [qui](https://forms.gle/sY9ou5fqZBd3TjHF8).
+Man mano che avanzi nel corso, agli organizzatori del corso piacerebbe sapere come stai utilizzando i concetti appresi nel tuo lavoro e ricevere i tuoi commenti. Condividi il tuo feedback [qui](https://forms.gle/sY9ou5fqZBd3TjHF8). Secondo me chi ha fatto questi corsi sarebbe molto contento della cosa
 
 #### Riconoscimenti e licenza
 

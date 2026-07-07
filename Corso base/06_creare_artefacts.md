@@ -1,100 +1,99 @@
-## Header Navigation
+## Navigazione
 
-[Anthropic Academy](https://www.anthropic.com/learn) [Courses](https://anthropic.skilljar.com/) 
+[Anthropic Academy](https://www.anthropic.com/learn) [Corsi](https://anthropic.skilljar.com/) 
 
   
 
-**Estimated time:** 20 minutes
+**Tempo stimato:** 20 minuti
 
-### Learning objectives
+### Obiettivi di apprendimento
 
-- Explain what artifacts are and when Claude creates them
-- Share artifacts with colleagues and publish them publicly
-- Troubleshoot common artifact issues
+- Spiegare cosa sono gli artefatti e quando Claude li crea
+- Condividere gli artefatti con i colleghi e pubblicarli pubblicamente
+- Risolvere i problemi comuni degli artefatti
 
 ---
 
-### What are artifacts?
+### Cosa sono gli artefatti?
 
-Artifacts are standalone, interactive outputs that Claude creates in a dedicated window alongside your conversation. Instead of getting a long block of code or text buried in the chat, you see your content rendered and ready to use—whether that's a working website, an interactive chart, or a document you can immediately download.
+Gli artefatti sono output autonomi e interattivi che Claude crea in una finestra dedicata accanto alla tua conversazione. Invece di ricevere un lungo blocco di codice o testo sepolto nella chat, vedi il tuo contenuto renderizzato e pronto all'uso, che si tratti di un sito web funzionante, un grafico interattivo o un documento che puoi scaricare immediatamente.
 
-Claude automatically creates an artifact when content meets certain criteria:
+Claude crea automaticamente un artefatto quando il contenuto soddisfa determinati criteri:
 
-- It's significant and self-contained, typically over 15 lines
-- It's something you're likely to want to edit, iterate on, or reuse
-- It represents complex content that stands on its own without needing the surrounding conversation
-- It's content you'll want to reference or use later
+- È significativo e autonomo, tipicamente oltre le 15 righe
+- È qualcosa che probabilmente vorrai modificare, iterare o riutilizzare
+- Rappresenta contenuti complessi che stanno in piedi da soli senza aver bisogno della conversazione circostante
+- È un contenuto che vorrai consultare o utilizzare in seguito
 
-### Common artifact types
+### Tipi di artefatti comuni
 
-Claude can create different of artifacts, each suited to different needs:
+Claude può creare diversi tipi di artefatti, ognuno adatto a diverse esigenze:
 
-- **Documents** (including markdown, plain text, Word docs, PDFs, PowerPoint, and Excel): Great for anything text-heavy that you'll want to export or continue editing — like meeting notes, reports, project plans, blog posts, and other written content.
-- **Code snippets:** Working code in any programming language—Python, JavaScript, C++, and more. You can view the code, copy it, or download it to use in your own projects.
-- **HTML pages:** Complete web pages with HTML, CSS, and JavaScript in a single file. Perfect for landing pages, forms, interactive demos, or quick prototypes.
-- **SVG images:** Scalable vector graphics for logos, icons, illustrations, and other visual elements. These render directly in the artifact window so you can see exactly what you're getting.
-- **Mermaid diagrams:** Flowcharts, sequence diagrams, Gantt charts, org charts, and more. Describe the relationships you want to visualize, and Claude will create a diagram you can refine.
-- **React components:** Interactive UI elements with real functionality—calculators, dashboards, games, data visualizations. These aren't just mockups; they include actual logic and respond to user input.
+- **Documenti** (inclusi markdown, testo normale, documenti Word, PDF, PowerPoint ed Excel): Ottimi per qualsiasi cosa ricca di testo che vorrai esportare o continuare a modificare, come note di riunioni, report, piani di progetto, post di blog e altri contenuti scritti.
+- **Snippet di codice:** Codice funzionante in qualsiasi linguaggio di programmazione—Python, JavaScript, C++ e altro ancora. Puoi visualizzare il codice, copiarlo o scaricarlo per usarlo nei tuoi progetti.
+- **Pagine HTML:** Pagine web complete con HTML, CSS e JavaScript in un singolo file. Perfette per landing page, moduli, demo interattive o prototipi veloci.
+- **Immagini SVG:** Grafica vettoriale scalabile per loghi, icone, illustrazioni e altri elementi visivi. Questi vengono renderizzati direttamente nella finestra dell'artefatto così puoi vedere esattamente cosa stai ottenendo.
+- **Diagrammi Mermaid:** Diagrammi di flusso, diagrammi di sequenza, diagrammi di Gantt, organigrammi e altro. Descrivi le relazioni che vuoi visualizzare e Claude creerà un diagramma che puoi perfezionare.
+- **Componenti React:** Elementi UI interattivi con funzionalità reali—calcolatrici, dashboard, giochi, visualizzazioni di dati. Questi non sono solo mockup; includono una logica reale e rispondono all'input dell'utente.
 
-### Creating your first artifact
+### Creare il tuo primo artefatto
 
-Creating an artifact is as simple as having a conversation. Just describe what you want, and Claude will determine whether to present it as an artifact.
+Creare un artefatto è semplice come avere una conversazione. Descrivi semplicemente ciò che vuoi e Claude determinerà se presentarlo come un artefatto.
 
-For example, you might say:
+Ad esempio, potresti dire:
 
-- "Create a flowchart showing our customer onboarding process (Note: Claude may now generate visual diagrams like flowcharts as HTML using Imagine, in addition to code-based artifacts.)"
-- "Build an interactive dashboard that lets me input monthly expenses and see a breakdown"
-- "Design a landing page for a productivity app with a hero section and feature list"
-- "Write a project brief template I can reuse for new initiatives"
+- "Crea un diagramma di flusso che mostri il nostro processo di onboarding dei clienti (Nota: Claude ora può generare diagrammi visivi come diagrammi di flusso come HTML utilizzando Imagine, oltre ad artefatti basati sul codice.)"
+- "Costruisci una dashboard interattiva che mi permetta di inserire le spese mensili e vedere una ripartizione"
+- "Progetta una landing page per un'app di produttività con una sezione hero e un elenco di funzionalità"
+- "Scrivi un modello di brief di progetto che posso riutilizzare per nuove iniziative"
 
-If Claude doesn't automatically create an artifact when you expect one, you can explicitly ask: "Create this as an artifact" or "Show me this in an artifact."
+Se Claude non crea automaticamente un artefatto quando te lo aspetti, puoi chiedere esplicitamente: "Crea questo come artefatto" o "Mostrami questo in un artefatto".
 
-When Claude generates an artifact, it appears in a dedicated window to the right of your conversation. From here, you can:
+Quando Claude genera un artefatto, appare in una finestra dedicata a destra della tua conversazione. Da qui, puoi:
 
-- **View different formats:** Toggle between a preview (how it looks) and the underlying code
-- **Copy content:** Click the copy icon to grab the content for use elsewhere
-- **Download files:** Save the artifact as a file to your computer
-- **View code:** See exactly what Claude generated under the hood
+- **Visualizzare formati diversi:** Alternare tra un'anteprima (come appare) e il codice sottostante
+- **Copiare il contenuto:** Fare clic sull'icona di copia per prelevare il contenuto da utilizzare altrove
+- **Scaricare i file:** Salvare l'artefatto come file sul tuo computer
+- **Visualizzare il codice:** Vedere esattamente cosa ha generato Claude dietro le quinte
 
-### Sharing and publishing artifacts
+### Condivisione e pubblicazione di artefatti
 
-Once you've created something useful, you have several options for sharing it.
+Una volta che hai creato qualcosa di utile, hai diverse opzioni per condividerlo.
 
-**Copy or download:** For personal use or sharing via other channels, use the copy or download buttons in the lower right corner of the artifact window.
+**Copia o scarica:** Per uso personale o condivisione tramite altri canali, usa i pulsanti di copia o download nell'angolo in basso a destra della finestra dell'artefatto.
 
-**Share within your organization (Claude for Work):** Team and Enterprise users can share artifacts internally with colleagues. The shared artifact stays within your organization and requires team authentication to access.
+**Condividi all'interno della tua organizzazione (Claude for Work):** Gli utenti Team ed Enterprise possono condividere internamente gli artefatti con i colleghi. L'artefatto condiviso rimane all'interno della tua organizzazione e richiede l'autenticazione del team per l'accesso.
 
-**Publish publicly:** For free, Pro, and Max users, you can publish artifacts to make them accessible to anyone with the link. When you publish:
+**Pubblica pubblicamente:** Per gli utenti Free, Pro e Max, puoi pubblicare gli artefatti per renderli accessibili a chiunque abbia il link. Quando pubblichi:
 
-- Only the selected version becomes public (your chat remains private)
-- Anyone can view and interact with the artifact without a Claude account
-- Others can "remix" your artifact—opening it in their own Claude conversation to modify and build upon it
+- Solo la versione selezionata diventa pubblica (la tua chat rimane privata)
+- Chiunque può visualizzare e interagire con l'artefatto senza un account Claude
+- Altri possono "remixare" il tuo artefatto, aprendolo nella loro conversazione Claude per modificarlo e svilupparlo
 
-To publish, click the "Share" or "Publish" button in the upper right corner of the artifact. You can unpublish at any time by returning to that artifact and removing public access. Note: When you publish an artifact, it is publicly accessible via its link — anyone can view it, even without a Claude account. Published artifacts are not indexed by search engines, so they won't appear in Google results.
+Per pubblicare, fai clic sul pulsante "Condividi" o "Pubblica" nell'angolo in alto a destra dell'artefatto. Puoi annullare la pubblicazione in qualsiasi momento tornando a quell'artefatto e rimuovendo l'accesso pubblico. Nota: quando pubblichi un artefatto, è accessibile pubblicamente tramite il suo link; chiunque può visualizzarlo, anche senza un account Claude. Gli artefatti pubblicati non sono indicizzati dai motori di ricerca, quindi non appariranno nei risultati di Google.
 
-### Tips for getting the most from artifacts
+### Suggerimenti per ottenere il massimo dagli artefatti
 
-**Be specific about what you want.** "Build a budget tracker" is good, but "Build a monthly budget tracker where I can input expenses by category, see a pie chart breakdown, and get a warning when I'm over budget" is better.
+**Sii specifico su ciò che vuoi.** "Costruisci un tracker per il budget" va bene, ma "Costruisci un tracker per il budget mensile dove posso inserire le spese per categoria, vedere una ripartizione a torta e ricevere un avviso quando supero il budget" è meglio.
 
-**Describe the end user.** Telling Claude who will use the artifact helps it make appropriate design choices. "This flowchart is for new employees" leads to different results than "This flowchart is for the engineering team."
+**Descrivi l'utente finale.** Dire a Claude chi utilizzerà l'artefatto lo aiuta a fare scelte di design appropriate. "Questo diagramma di flusso è per i nuovi dipendenti" porta a risultati diversi rispetto a "Questo diagramma di flusso è per il team di ingegneria".
 
-**Iterate incrementally.** Ask Claude to add one feature or make one change at a time. This makes it easier to identify what's working and catch issues early.
+**Itera in modo incrementale.** Chiedi a Claude di aggiungere una funzionalità o apportare una modifica alla volta. Questo rende più facile identificare cosa funziona e rilevare i problemi in anticipo.
 
-**Request artifacts when needed.** If you ask for something substantial and Claude responds in the chat instead of creating an artifact, just say "Please create that as an artifact."
+**Richiedi artefatti quando necessario.** Se chiedi qualcosa di sostanziale e Claude risponde nella chat invece di creare un artefatto, di' semplicemente "Per favore, crea questo come artefatto".
 
-### Lesson reflection
+### Riflessione sulla lezione
 
-Before moving on, consider:
+Prima di procedere, considera:
 
-- What recurring work could benefit from having an interactive artifact you can reuse?
-- Are there processes in your work that would be clearer as a flowchart or diagram?
-- What prototype or tool would help you test an idea quickly?
+- Quali lavori ricorrenti potrebbero trarre vantaggio dall'avere un artefatto interattivo che puoi riutilizzare?
+- Ci sono processi nel tuo lavoro che sarebbero più chiari come diagramma di flusso o diagramma?
+- Quale prototipo o strumento ti aiuterebbe a testare rapidamente un'idea?
 
-### What's next
+### Cosa c'è dopo
 
-In the next lesson, you'll learn about Skills — reusable instruction sets that teach Claude specialized workflows.
+Nella prossima lezione, imparerai cosa sono le Skills (Competenze): set di istruzioni riutilizzabili che insegnano a Claude flussi di lavoro specializzati.
 
 #### Feedback
 
-As you progress through the course, we'd love to hear from you about how you are using concepts from the course in your work and any feedback you may have. Share your feedback [here](https://forms.gle/sY9ou5fqZBd3TjHF8).
-
+Man mano che avanzi nel corso, ci piacerebbe sapere da te come stai utilizzando i concetti del corso nel tuo lavoro e qualsiasi feedback tu possa avere. Condividi il tuo feedback [qui](https://forms.gle/sY9ou5fqZBd3TjHF8).
