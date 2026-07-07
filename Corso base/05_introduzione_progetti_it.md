@@ -1,8 +1,4 @@
-## Navigazione
-
-[Anthropic Academy](https://www.anthropic.com/learn) [Courses](https://anthropic.skilljar.com/) 
-
-  
+# Creare con gli artefatti
 
 **Tempo stimato:** 20 minuti
 
