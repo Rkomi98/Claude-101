@@ -16,11 +16,13 @@ L'app desktop di Claude ti offre tre modi di lavorare con l'intelligenza artific
 - **Cowork** è uno strumento "agente": gli dai un obiettivo, lo connetti ai tuoi strumenti/risorse e lo lasci lavorare. Con Cowork, Claude ha più autonomia per svolgere ricerche, eseguire analisi approfondite e produrre documenti più complessi.
 - **Code** è per la creazione di software: dalla scrittura, al testing, fino al deployment del codice.
 
-Cowork e Code funzionano sullo stesso motore, *Claude Code*. Girano in locale sulla tua macchina, sono capaci di operare in modo indipendente, possono avviare sotto-agenti e sostenere attività a lungo termine. 
+Cowork e Code funzionano sullo stesso motore, *Claude Code*. Girano in locale sulla tua macchina, sono capaci di operare in modo indipendente, possono avviare sotto-agenti e sostenere attività a lungo termine.
 
 Ogni modalità è studiata intorno al tipo di lavoro che deve supportare, mostrandoti ciò che conta e dandoti il controllo dove ne hai bisogno.
 
 ### Chat
+
+![Claude desktop in modalita Chat](../Assets/claude-desktop-chat.svg)
 
 La Chat dà il meglio di sé quando devi fare domande, fare brainstorming, buttar giù delle bozze o risolvere problemi con continui scambi.
 
@@ -32,11 +34,14 @@ Se hai usato claude.ai, funziona allo stesso modo, ma con alcuni vantaggi extra 
 - **Connettori desktop:** collega strumenti e servizi locali tramite i connettori affinché Claude interagisca con altre app sul tuo computer.
 
 **Provalo quando:**
+
 - Stai guardando una dashboard sconosciuta. Fai doppio tap su *Option*, cattura uno screenshot della finestra e chiedi: *"Che cosa significano queste metriche?"*.
 - Tra una riunione e l'altra vuoi pianificare una presentazione. Apri l'inserimento rapido, attiva la voce, spiegagli i punti principali e lascia che ti prepari una scaletta.
 - Hai preso appunti sparsi per settimane in Apple Notes. Aggiungi il connettore Note e chiedi: *"Raccogli tutte le mie note sul progetto X e controlla gli altri strumenti connessi per colmare eventuali lacune"*.
 
 ### Cowork
+
+![Claude desktop in modalita Cowork](../Assets/claude-desktop-cowork.svg)
 
 Claude Cowork è pensato per lavori più complessi e lunghi: raccogliere informazioni da diverse fonti, analizzarle e produrre qualcosa di finito e impaginato.
 
@@ -44,7 +49,7 @@ In Cowork, Claude può operare in multitasking, attingendo da decine di file per
 
 Prima di iniziare, spesso ti fa qualche breve domanda per chiarire ambito, formato e vincoli. Dopodiché genera un *piano d'azione* visibile nella barra laterale e ti mostra in diretta quali file sta analizzando e a che punto è.
 
-- **Accesso alle cartelle:** indica a Claude una cartella sul tuo PC: lui ne leggerà il contenuto, capirà cosa è pertinente e ci salverà dentro il lavoro finito.
+- **Accesso alle cartelle:** indica a Claude una cartella sul tuo PC. Lui ne leggerà il contenuto, capirà cosa è pertinente e ci salverà dentro il lavoro finito.
 - **Attività programmate (Scheduled tasks):** affida a Claude task ricorrenti (un riassunto quotidiano pescato da Slack e dal calendario, la cernita mattutina delle email). Definisci cosa e quando deve girare: Claude lo farà in automatico appena apri l'app.
 - **Sotto-agenti (Subagents):** lavoratori "ombra" che Claude crea per sdoppiarsi. Se chiedi un brief di ricerca complesso, lo scompone in sotto-task, assegna ogni pezzo a un sub-agente, poi ri-assembla i risultati per fornirti un unico documento pulito.
 - **Dispatch:** continua una conversazione Cowork dal telefono (usando l'app mobile), commissionando attività che usano i file sul tuo PC (che deve essere però acceso e con l'app aperta).
@@ -60,6 +65,8 @@ Prima di iniziare, spesso ti fa qualche breve domanda per chiarire ambito, forma
 *(Cowork è disponibile per utenti Pro, Max, Team ed Enterprise).*
 
 ### Code
+
+![Claude desktop in modalita Code](../Assets/claude-desktop-code.svg)
 
 La scheda Code ti dà accesso a tutta la potenza di Claude Code direttamente dentro l'interfaccia dell'app, fornendoti un ambiente di sviluppo completo.
 

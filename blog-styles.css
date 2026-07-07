@@ -593,6 +593,17 @@
 .prose li { margin-bottom: 8px; }
 .prose .article-list { margin-top: 4px; }
 .prose .article-list li::marker { color: var(--accent); }
+.prose .article-image {
+  margin: 22px 0 30px;
+}
+.prose .article-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--rule);
+  background: #1c1c1b;
+}
 .prose .article-table-wrap {
   margin: 28px 0 30px;
   overflow-x: auto;

@@ -36,6 +36,10 @@ function plainTextInline(text) {
   return normalizeInline(text, { preserveLinks: false });
 }
 
+function normalizeImageSrc(src) {
+  return String(src || '').replace(/^\.\.\//, '');
+}
+
 function slugify(text) {
   const slug = text
     .normalize('NFD')
@@ -265,6 +269,20 @@ function markdownToSections(markdown) {
       continue;
     }
 
+    const imageMatch = trimmed.match(/^!\[([^\]]*)\]\(([^)\s]+)\)$/);
+    if (imageMatch) {
+      flushParagraph();
+      flushQuote();
+      flushTable();
+      flushList();
+      pushBlock(ensureSection(), {
+        type: 'image',
+        alt: normalizeInline(imageMatch[1], { preserveLinks: false }),
+        src: normalizeImageSrc(imageMatch[2]),
+      });
+      continue;
+    }
+
     const headingMatch = trimmed.match(/^(#{1,6})\s+(.*)$/);
     if (headingMatch) {
       flushParagraph();
@@ -377,6 +395,9 @@ function countWords(sections) {
             chunks.push(plainTextInline(cell));
           }
         }
+      }
+      if (block.type === 'image') {
+        chunks.push(plainTextInline(block.alt));
       }
     }
   }

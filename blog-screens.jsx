@@ -354,6 +354,13 @@ function ArticleBlock({ block }) {
   if (block.type === 'quote') {
     return <blockquote className="article-quote">{renderInlineContent(block.text)}</blockquote>;
   }
+  if (block.type === 'image') {
+    return (
+      <figure className="article-image">
+        <img src={block.src} alt={block.alt || ''} loading="lazy" />
+      </figure>
+    );
+  }
   if (block.type === 'list') {
     const ListTag = block.ordered ? 'ol' : 'ul';
     return (

@@ -605,7 +605,7 @@ window.BLOG_GENERATED_CONTENT = {
       ]
     },
     "claude-101/risultati-migliori": {
-      "words": 724,
+      "words": 723,
       "sections": [
         {
           "id": "obiettivi-di-apprendimento",
@@ -946,7 +946,7 @@ window.BLOG_GENERATED_CONTENT = {
           "id": "esempio-usare-claude-per-l-analisi-dei-dati",
           "title": "Esempio: Usare Claude per l'analisi dei dati",
           "paragraphs": [
-            "Il video qui sopra (n.d.r. dal corso originale) è tratto dal nostro corso AI Fluency per le organizzazioni no profit, ma l'esempio è rilevante per chiunque lavori con i dati e l'IA. Per valutare come Claude potrebbe lavorare con i tuoi dati:",
+            "Nel corso originale, Anthropic propone un [loro video](https://www.youtube.com/watch?v=Zzn-g8lvLMA&t=6s), tratto dal nostro corso AI Fluency per le organizzazioni no profit, ma l'esempio è rilevante per chiunque lavori con i dati e l'IA. Per valutare come Claude potrebbe lavorare con i tuoi dati:",
             "Questo tipo di valutazione leggera ti aiuta a sviluppare l'intuito su come lavorare con Claude sui compiti che ti interessano e su dove concentrare le tue energie di revisione e affinamento."
           ],
           "blocks": [
@@ -964,7 +964,7 @@ window.BLOG_GENERATED_CONTENT = {
           "content": [
             {
               "type": "paragraph",
-              "text": "Il video qui sopra (n.d.r. dal corso originale) è tratto dal nostro corso AI Fluency per le organizzazioni no profit, ma l'esempio è rilevante per chiunque lavori con i dati e l'IA. Per valutare come Claude potrebbe lavorare con i tuoi dati:",
+              "text": "Nel corso originale, Anthropic propone un [loro video](https://www.youtube.com/watch?v=Zzn-g8lvLMA&t=6s), tratto dal nostro corso AI Fluency per le organizzazioni no profit, ma l'esempio è rilevante per chiunque lavori con i dati e l'IA. Per valutare come Claude potrebbe lavorare con i tuoi dati:",
               "paragraphIndex": 0
             },
             {
@@ -1022,7 +1022,7 @@ window.BLOG_GENERATED_CONTENT = {
     },
     "claude-101/app-desktop": {
       "readingTime": "6 min",
-      "words": 398,
+      "words": 413,
       "sections": [
         {
           "id": "panoramica",
@@ -1114,6 +1114,11 @@ window.BLOG_GENERATED_CONTENT = {
           ],
           "blocks": [
             {
+              "type": "image",
+              "alt": "Claude desktop in modalita Chat",
+              "src": "Assets/claude-desktop-chat.svg"
+            },
+            {
               "type": "list",
               "ordered": false,
               "items": [
@@ -1134,6 +1139,11 @@ window.BLOG_GENERATED_CONTENT = {
             }
           ],
           "content": [
+            {
+              "type": "image",
+              "alt": "Claude desktop in modalita Chat",
+              "src": "Assets/claude-desktop-chat.svg"
+            },
             {
               "type": "paragraph",
               "text": "La Chat dà il meglio di sé quando devi fare domande, fare brainstorming, buttar giù delle bozze o risolvere problemi con continui scambi.",
@@ -1182,6 +1192,11 @@ window.BLOG_GENERATED_CONTENT = {
           ],
           "blocks": [
             {
+              "type": "image",
+              "alt": "Claude desktop in modalita Cowork",
+              "src": "Assets/claude-desktop-cowork.svg"
+            },
+            {
               "type": "list",
               "ordered": false,
               "items": [
@@ -1205,6 +1220,11 @@ window.BLOG_GENERATED_CONTENT = {
             }
           ],
           "content": [
+            {
+              "type": "image",
+              "alt": "Claude desktop in modalita Cowork",
+              "src": "Assets/claude-desktop-cowork.svg"
+            },
             {
               "type": "paragraph",
               "text": "Claude Cowork è pensato per lavori più complessi e lunghi: raccogliere informazioni da diverse fonti, analizzarle e produrre qualcosa di finito e impaginato.",
@@ -1266,6 +1286,11 @@ window.BLOG_GENERATED_CONTENT = {
           ],
           "blocks": [
             {
+              "type": "image",
+              "alt": "Claude desktop in modalita Code",
+              "src": "Assets/claude-desktop-code.svg"
+            },
+            {
               "type": "list",
               "ordered": false,
               "items": [
@@ -1284,6 +1309,11 @@ window.BLOG_GENERATED_CONTENT = {
             }
           ],
           "content": [
+            {
+              "type": "image",
+              "alt": "Claude desktop in modalita Code",
+              "src": "Assets/claude-desktop-code.svg"
+            },
             {
               "type": "paragraph",
               "text": "La scheda Code ti dà accesso a tutta la potenza di Claude Code direttamente dentro l'interfaccia dell'app, fornendoti un ambiente di sviluppo completo.",
@@ -1483,8 +1513,19 @@ window.BLOG_GENERATED_CONTENT = {
           "paragraphs": [
             "\\[Video: Introduzione ai Progetti - Iniziare a usare i progetti su Claude.ai\\]"
           ],
-          "blocks": [],
+          "blocks": [
+            {
+              "type": "image",
+              "alt": "",
+              "src": "https://www.youtube.com/watch?v=GJ5jTgcbRHA"
+            }
+          ],
           "content": [
+            {
+              "type": "image",
+              "alt": "",
+              "src": "https://www.youtube.com/watch?v=GJ5jTgcbRHA"
+            },
             {
               "type": "paragraph",
               "text": "\\[Video: Introduzione ai Progetti - Iniziare a usare i progetti su Claude.ai\\]",
