@@ -1116,7 +1116,7 @@ window.BLOG_GENERATED_CONTENT = {
             {
               "type": "image",
               "alt": "Claude desktop in modalita Chat",
-              "src": "Assets/claude-desktop-chat.svg"
+              "src": "Assets/claude-desktop-chat.png"
             },
             {
               "type": "list",
@@ -1142,7 +1142,7 @@ window.BLOG_GENERATED_CONTENT = {
             {
               "type": "image",
               "alt": "Claude desktop in modalita Chat",
-              "src": "Assets/claude-desktop-chat.svg"
+              "src": "Assets/claude-desktop-chat.png"
             },
             {
               "type": "paragraph",
@@ -1194,13 +1194,13 @@ window.BLOG_GENERATED_CONTENT = {
             {
               "type": "image",
               "alt": "Claude desktop in modalita Cowork",
-              "src": "Assets/claude-desktop-cowork.svg"
+              "src": "Assets/claude-desktop-cowork.png"
             },
             {
               "type": "list",
               "ordered": false,
               "items": [
-                "Accesso alle cartelle: indica a Claude una cartella sul tuo PC: lui ne leggerà il contenuto, capirà cosa è pertinente e ci salverà dentro il lavoro finito.",
+                "Accesso alle cartelle: indica a Claude una cartella sul tuo PC. Lui ne leggerà il contenuto, capirà cosa è pertinente e ci salverà dentro il lavoro finito.",
                 "Attività programmate (Scheduled tasks): affida a Claude task ricorrenti (un riassunto quotidiano pescato da Slack e dal calendario, la cernita mattutina delle email). Definisci cosa e quando deve girare: Claude lo farà in automatico appena apri l'app.",
                 "Sotto-agenti (Subagents): lavoratori \"ombra\" che Claude crea per sdoppiarsi. Se chiedi un brief di ricerca complesso, lo scompone in sotto-task, assegna ogni pezzo a un sub-agente, poi ri-assembla i risultati per fornirti un unico documento pulito.",
                 "Dispatch: continua una conversazione Cowork dal telefono (usando l'app mobile), commissionando attività che usano i file sul tuo PC (che deve essere però acceso e con l'app aperta).",
@@ -1223,7 +1223,7 @@ window.BLOG_GENERATED_CONTENT = {
             {
               "type": "image",
               "alt": "Claude desktop in modalita Cowork",
-              "src": "Assets/claude-desktop-cowork.svg"
+              "src": "Assets/claude-desktop-cowork.png"
             },
             {
               "type": "paragraph",
@@ -1244,7 +1244,7 @@ window.BLOG_GENERATED_CONTENT = {
               "type": "list",
               "ordered": false,
               "items": [
-                "Accesso alle cartelle: indica a Claude una cartella sul tuo PC: lui ne leggerà il contenuto, capirà cosa è pertinente e ci salverà dentro il lavoro finito.",
+                "Accesso alle cartelle: indica a Claude una cartella sul tuo PC. Lui ne leggerà il contenuto, capirà cosa è pertinente e ci salverà dentro il lavoro finito.",
                 "Attività programmate (Scheduled tasks): affida a Claude task ricorrenti (un riassunto quotidiano pescato da Slack e dal calendario, la cernita mattutina delle email). Definisci cosa e quando deve girare: Claude lo farà in automatico appena apri l'app.",
                 "Sotto-agenti (Subagents): lavoratori \"ombra\" che Claude crea per sdoppiarsi. Se chiedi un brief di ricerca complesso, lo scompone in sotto-task, assegna ogni pezzo a un sub-agente, poi ri-assembla i risultati per fornirti un unico documento pulito.",
                 "Dispatch: continua una conversazione Cowork dal telefono (usando l'app mobile), commissionando attività che usano i file sul tuo PC (che deve essere però acceso e con l'app aperta).",
@@ -1288,7 +1288,7 @@ window.BLOG_GENERATED_CONTENT = {
             {
               "type": "image",
               "alt": "Claude desktop in modalita Code",
-              "src": "Assets/claude-desktop-code.svg"
+              "src": "Assets/claude-desktop-code.png"
             },
             {
               "type": "list",
@@ -1312,7 +1312,7 @@ window.BLOG_GENERATED_CONTENT = {
             {
               "type": "image",
               "alt": "Claude desktop in modalita Code",
-              "src": "Assets/claude-desktop-code.svg"
+              "src": "Assets/claude-desktop-code.png"
             },
             {
               "type": "paragraph",

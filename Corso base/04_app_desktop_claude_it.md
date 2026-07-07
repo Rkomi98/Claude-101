@@ -22,7 +22,7 @@ Ogni modalità è studiata intorno al tipo di lavoro che deve supportare, mostra
 
 ### Chat
 
-![Claude desktop in modalita Chat](../Assets/claude-desktop-chat.svg)
+![Claude desktop in modalita Chat](../Assets/claude-desktop-chat.png)
 
 La Chat dà il meglio di sé quando devi fare domande, fare brainstorming, buttar giù delle bozze o risolvere problemi con continui scambi.
 
@@ -41,7 +41,7 @@ Se hai usato claude.ai, funziona allo stesso modo, ma con alcuni vantaggi extra 
 
 ### Cowork
 
-![Claude desktop in modalita Cowork](../Assets/claude-desktop-cowork.svg)
+![Claude desktop in modalita Cowork](../Assets/claude-desktop-cowork.png)
 
 Claude Cowork è pensato per lavori più complessi e lunghi: raccogliere informazioni da diverse fonti, analizzarle e produrre qualcosa di finito e impaginato.
 
@@ -66,7 +66,7 @@ Prima di iniziare, spesso ti fa qualche breve domanda per chiarire ambito, forma
 
 ### Code
 
-![Claude desktop in modalita Code](../Assets/claude-desktop-code.svg)
+![Claude desktop in modalita Code](../Assets/claude-desktop-code.png)
 
 La scheda Code ti dà accesso a tutta la potenza di Claude Code direttamente dentro l'interfaccia dell'app, fornendoti un ambiente di sviluppo completo.
 
@@ -89,8 +89,9 @@ Tre modalità di interazione ti lasciano il totale controllo:
 |---|---|---|---|
 | **Ottimizzato per** | Scambi rapidi, esplorare idee, drafting, brainstorming, apprendimento dal dialogo. | Lavoro prolungato, analisi di file, produzione di documenti complessi. | Creazione software: codice, testing, deploy, terminale. |
 | **Funzionalità chiave** | Inserimento rapido, dettatura (Mac). | Cartelle locali, task programmati, sub-agenti. | Ambienti locali/remoti, Git, Plan/Code/Ask. |
-| **Strumenti attivi** | Connettori, Skills, Chrome. | Connettori, Skills, Chrome, Plugin, Computer use. | Connettori, Skills, Chrome, Plugin, Hooks. |
+| **Strumenti attivi** | Connettori, Skills, Claude in Chrome. | Connettori, Skills, Claude in Chrome, Plugin, Computer use. | Connettori, Skills, Claude in Chrome, Plugin, Hooks. |
 
 ## Riflessione sulla lezione
+
 - Pensa alle mansioni in cui usi maggiormente Claude. Quale modalità calza meglio per ciascuna di esse?
 - Pensa all'ultimo progetto dove dovevi unire informazioni da diverse fonti: in che modo la modalità Cowork avrebbe alleggerito il lavoro?
