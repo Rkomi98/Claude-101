@@ -6,6 +6,12 @@
     'claude-101/app-desktop': 'Corso base/04_app_desktop_claude_it.md',
     'claude-101/introduzione-progetti': 'Corso base/05_introduzione_progetti_it.md',
     'claude-101/creare-artefacts': 'Corso base/06_creare_artefacts.md',
+    'claude-101/working-with-skills': 'Corso base/07_working_with_skills.md',
+    'claude-101/connecting-your-tools': 'Corso base/08_connecting_your_tools.md',
+    'claude-101/enterprise-search': 'Corso base/09_enterprise_search.md',
+    'claude-101/research-mode': 'Corso base/10_research_mode_for_deep_dives.md',
+    'claude-101/claude-in-action': 'Corso base/11_claude_in_action_use_cases_by_role.md',
+    'claude-101/other-ways-to-work': 'Corso base/12_other_ways_to_work_with_claude.md',
   };
 
   function isLocalDevHost() {

@@ -133,6 +133,9 @@ function Nav({ route, isDark, setTheme, navigate }) {
 // ─── Home / catalogue ───────────────────────────────────────────
 function HomeScreen({ navigate }) {
   const { courses } = window.BLOG_DATA;
+  const totalChapters = courses.reduce((n, c) => n + c.chapters.length, 0);
+  const totalMinutes = courses.reduce((n, c) => n + (parseMinutes(c.hours) || 0), 0);
+  const totalReadingTime = totalMinutes ? formatMinutes(totalMinutes) : 'tempo variabile';
   return (
     <>
       <section className="hero">
@@ -147,15 +150,15 @@ function HomeScreen({ navigate }) {
         </p>
         <div className="hero__meta">
           <div><b>{courses.length}</b> corsi</div>
-          <div><b>{courses.reduce((n, c) => n + c.chapters.length, 0)}</b> capitoli</div>
-          <div><b>10h 00m</b> di lettura</div>
+          <div><b>{totalChapters}</b> capitoli</div>
+          <div><b>{totalReadingTime}</b> di lettura</div>
           <div>aggiornato <b>19 mag 2026</b></div>
         </div>
       </section>
 
       <div className="section-head">
         <h2>Catalogo</h2>
-        <div className="count">4 corsi · 17 capitoli</div>
+        <div className="count">{courses.length} corsi · {totalChapters} capitoli</div>
       </div>
 
       <div className="courses">
