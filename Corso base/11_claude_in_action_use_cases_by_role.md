@@ -1,84 +1,84 @@
-## Header Navigation
+## Navigazione
 
-[Anthropic Academy](https://www.anthropic.com/learn) [Courses](https://anthropic.skilljar.com/) 
+[Anthropic Academy](https://www.anthropic.com/learn) [Corsi](https://anthropic.skilljar.com/) 
 
   
 
-**Estimated time:** 10 minutes
+**Tempo stimato:** 10 minuti
 
-### Learning objectives
+### Obiettivi di apprendimento
 
-- Describe 2-3 use-cases for claude.ai that you can try right away
-- Know where to go to find additional use-case inspiration
+- Descrivere 2-3 casi d'uso di claude.ai che puoi provare subito
+- Sapere dove andare per trovare ulteriore ispirazione per i casi d'uso
 
 ---
 
-No matter what you do, Claude can help streamline your work. This lesson highlights practical use cases organized by role, so you can see how Claude applies to your specific work context.
+Indipendentemente da ciò che fai, Claude può aiutarti a snellire il tuo lavoro. Questa lezione evidenzia casi d'uso pratici organizzati per ruolo, in modo che tu possa vedere come Claude si applica al tuo specifico contesto lavorativo.
 
-Each use case below links to a detailed guide in our Use Case Gallery with step-by-step instructions you can follow.
+Ogni caso d'uso qui sotto rimanda a una guida dettagliata nella nostra Use Case Gallery con istruzioni passo dopo passo che puoi seguire.
 
-### General professional use
+### Uso professionale generale
 
-These use cases apply across many roles and industries.
+Questi casi d'uso si applicano a molti ruoli e settori.
 
-- [Generate project status reports](https://claude.com/resources/use-cases/generate-project-status-reports) – Keep stakeholders informed with clear, consistent updates
-- [Analyze patterns in user feedback](https://claude.com/resources/use-cases/analyze-patterns-in-user-feedback) – Extract insights from customer comments and survey responses
-- [Package your brand guidelines in a skill](https://claude.com/resources/use-cases/package-your-brand-guidelines-in-a-skill) – Create a reusable Claude skill that applies your brand standards
+- [Generare report sullo stato del progetto](https://claude.com/resources/use-cases/generate-project-status-reports) – Tieni informati gli stakeholder con aggiornamenti chiari e coerenti
+- [Analizzare modelli nel feedback degli utenti](https://claude.com/resources/use-cases/analyze-patterns-in-user-feedback) – Estrai insight dai commenti dei clienti e dalle risposte ai sondaggi
+- [Pacchettizzare le linee guida del tuo marchio in una skill](https://claude.com/resources/use-cases/package-your-brand-guidelines-in-a-skill) – Crea una skill Claude riutilizzabile che applica gli standard del tuo marchio
 
-### Sales
+### Vendite (Sales)
 
-Sales professionals can use Claude to accelerate deal preparation, create compelling materials, and stay on top of competitive intelligence.
+I professionisti delle vendite possono utilizzare Claude per accelerare la preparazione delle trattative, creare materiali convincenti e rimanere aggiornati sull'intelligenza competitiva.
 
-- [Build a battle card library](https://claude.com/resources/use-cases/build-a-battle-card-library) – Create competitive intelligence resources that help your team win deals
-- [Prepare for sales deals](https://claude.com/resources/use-cases/prepare-for-sales-deals) – Research prospects and organize your talking points before important meetings
-- [Create sales reports](https://claude.com/resources/use-cases/create-sales-reports) – Turn your pipeline data into clear, actionable reports
+- [Costruire una libreria di battle card](https://claude.com/resources/use-cases/build-a-battle-card-library) – Crea risorse di intelligenza competitiva che aiutano il tuo team a vincere le trattative
+- [Prepararsi per gli accordi di vendita](https://claude.com/resources/use-cases/prepare-for-sales-deals) – Fai ricerca sui prospect e organizza i tuoi argomenti di discussione prima di riunioni importanti
+- [Creare report di vendita](https://claude.com/resources/use-cases/create-sales-reports) – Trasforma i dati della tua pipeline in report chiari e azionabili
 
 ### Marketing
 
-Marketers can leverage Claude to analyze performance data and efficiently repurpose content across channels.
+I professionisti del marketing possono sfruttare Claude per analizzare i dati sulle prestazioni e riadattare in modo efficiente i contenuti su più canali.
 
-- [Analyze campaign performance](https://claude.com/resources/use-cases/analyze-campaign-performance) – Extract insights from campaign metrics to inform your strategy
-- [Adapt content across platforms](https://claude.com/resources/use-cases/adapt-content-across-platforms) – Efficiently repurpose content for different channels and audiences
+- [Analizzare le prestazioni delle campagne](https://claude.com/resources/use-cases/analyze-campaign-performance) – Estrai insight dalle metriche delle campagne per informare la tua strategia
+- [Adattare i contenuti su diverse piattaforme](https://claude.com/resources/use-cases/adapt-content-across-platforms) – Riadatta in modo efficiente i contenuti per canali e pubblici diversi
 
-### Finance
+### Finanza (Finance)
 
-Finance professionals can use Claude to build models, draft documents, and make sense of complex spreadsheets.
+I professionisti della finanza possono utilizzare Claude per costruire modelli, redigere documenti e dare un senso a fogli di calcolo complessi.
 
-- [Build financial models](https://claude.com/resources/use-cases/build-financial-models) – Create and refine financial projections with Claude's help
-- [Draft investment memos](https://claude.com/resources/use-cases/draft-investment-memos) – Structure and write investment analyses more efficiently
-- [Understand and extend an inherited spreadsheet](https://claude.com/resources/use-cases/understand-and-extend-an-inherited-spreadsheet) – Decode complex spreadsheets and add new functionality
+- [Costruire modelli finanziari](https://claude.com/resources/use-cases/build-financial-models) – Crea e perfeziona le proiezioni finanziarie con l'aiuto di Claude
+- [Redigere memo di investimento](https://claude.com/resources/use-cases/draft-investment-memos) – Struttura e scrivi analisi degli investimenti in modo più efficiente
+- [Comprendere ed estendere un foglio di calcolo ereditato](https://claude.com/resources/use-cases/understand-and-extend-an-inherited-spreadsheet) – Decodifica fogli di calcolo complessi e aggiungi nuove funzionalità
 
-### HR
+### Risorse Umane (HR)
 
-HR teams can use Claude to create better onboarding experiences and documentation.
+I team HR possono utilizzare Claude per creare migliori esperienze di onboarding e documentazione.
 
-- [Create new hire onboarding guides](https://claude.com/resources/use-cases/create-new-hire-onboarding-guides) – Develop comprehensive onboarding materials tailored to different roles
+- [Creare guide all'onboarding per i nuovi assunti](https://claude.com/resources/use-cases/create-new-hire-onboarding-guides) – Sviluppa materiali di onboarding completi e su misura per i diversi ruoli
 
-### Legal
+### Legale (Legal)
 
-Legal professionals can use Claude to track complex timelines and manage discovery processes.
+I professionisti legali possono utilizzare Claude per tenere traccia di tempistiche complesse e gestire i processi di discovery.
 
-- [Track discovery timelines and analyze patterns](https://claude.com/resources/use-cases/track-discovery-timelines-and-analyze-patterns) – Organize case timelines and identify key patterns in legal documents
+- [Tracciare le tempistiche di discovery e analizzare i modelli](https://claude.com/resources/use-cases/track-discovery-timelines-and-analyze-patterns) – Organizza le tempistiche dei casi e identifica modelli chiave nei documenti legali
 
-### Research
+### Ricerca (Research)
 
-Researchers can use Claude to plan literature reviews and verify data analysis.
+I ricercatori possono utilizzare Claude per pianificare revisioni della letteratura e verificare l'analisi dei dati.
 
-- [Plan your literature review](https://claude.com/resources/use-cases/plan-your-literature-review) – Organize your approach to reviewing academic sources
-- [Verify statistics from raw data](https://claude.com/resources/use-cases/verify-statistics-from-raw-data) – Double-check calculations and statistical analyses
+- [Pianificare la revisione della letteratura](https://claude.com/resources/use-cases/plan-your-literature-review) – Organizza il tuo approccio alla revisione delle fonti accademiche
+- [Verificare le statistiche dai dati grezzi](https://claude.com/resources/use-cases/verify-statistics-from-raw-data) – Ricontrolla i calcoli e le analisi statistiche
 
-### Explore more
+### Esplora altro
 
-These examples are just the beginning. Visit the [Use Case Gallery](https://claude.com/resources/use-cases) to browse the full collection and find inspiration for how Claude can help with your specific work.
+Questi esempi sono solo l'inizio. Visita la [Use Case Gallery](https://claude.com/resources/use-cases) per sfogliare la collezione completa e trovare l'ispirazione su come Claude può aiutare nel tuo lavoro specifico.
 
-### What's next
+### Cosa c'è dopo
 
-In our final module, you'll meet a few more ways to work with Claude — including Claude Code, @Claude, Claude Design, Claude for Microsoft 365, and Claude in Chrome — each tailored to where the work actually happens.
+Nel nostro modulo finale, incontrerai alcuni altri modi di lavorare con Claude—tra cui Claude Code, @Claude, Claude Design, Claude for Microsoft 365 e Claude in Chrome—ognuno adattato a dove si svolge effettivamente il lavoro.
 
 #### Feedback
 
-As you progress through the course, we'd love to hear from you about how you are using concepts from the course in your work and any feedback you may have. Share your feedback [here](https://forms.gle/sY9ou5fqZBd3TjHF8).
+Man mano che avanzi nel corso, ci piacerebbe sapere da te come stai utilizzando i concetti del corso nel tuo lavoro e qualsiasi feedback tu possa avere. Condividi il tuo feedback [qui](https://forms.gle/sY9ou5fqZBd3TjHF8).
 
-#### Acknowledgments and license
+#### Riconoscimenti e licenza
 
-*Copyright 2025 Anthropic. All rights reserved.*
+*Copyright 2025 Anthropic. Tutti i diritti riservati.*

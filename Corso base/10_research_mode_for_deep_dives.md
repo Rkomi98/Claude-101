@@ -1,136 +1,136 @@
-## Header Navigation
+## Navigazione
 
-[Anthropic Academy](https://www.anthropic.com/learn) [Courses](https://anthropic.skilljar.com/) 
+[Anthropic Academy](https://www.anthropic.com/learn) [Corsi](https://anthropic.skilljar.com/) 
 
   
 
-**Estimated time:** 15 minutes
+**Tempo stimato:** 15 minuti
 
-### Learning objectives
+### Obiettivi di apprendimento
 
-- Explain what Research does: systematic, multi-source investigation
-- Identify when to use Research for comprehensive information gathering
-- Understand how Research works with extended thinking to deliver thorough reports
-- Write effective Research prompts for complex investigations
+- Spiegare cosa fa Research: indagine sistematica su più fonti
+- Identificare quando utilizzare Research per la raccolta completa di informazioni
+- Comprendere come Research lavora con il ragionamento esteso (extended thinking) per fornire report approfonditi
+- Scrivere prompt efficaci per Research per indagini complesse
 
 ---
 
-### Researching with Claude
+### Fare ricerca con Claude
 
-#### Key takeaways
+#### Punti chiave
 
-- **Research transforms how Claude finds and analyzes information.** Instead of a single search, Claude operates agentically—conducting multiple searches that build on each other while determining exactly what to investigate next. It explores different angles of your question automatically and works through open questions systematically.
-- **Research delivers comprehensive answers in minutes.** Most reports complete in 5 to 15 minutes, though more complex investigations may take up to 45 minutes—work that would typically require hours of manual research.
-- **Extended thinking is automatically enabled with Research.** This powerful combination lets Claude both plan its approach thoughtfully and gather comprehensive information, breaking complex requests into manageable pieces.
-- **Citations make verification easy.** Research delivers thorough answers complete with easy-to-check citations, so you can trust Claude's findings and quickly verify sources yourself.
+- **Research trasforma il modo in cui Claude trova e analizza le informazioni.** Invece di una singola ricerca, Claude opera in modo autonomo—conducendo molteplici ricerche che si basano l'una sull'altra mentre determina esattamente cosa indagare in seguito. Esplora diversi angoli della tua domanda automaticamente e lavora attraverso le domande aperte in modo sistematico.
+- **Research fornisce risposte complete in pochi minuti.** La maggior parte dei report si completa in 5-15 minuti, sebbene le indagini più complesse possano richiedere fino a 45 minuti—lavoro che in genere richiederebbe ore di ricerca manuale.
+- **Il pensiero esteso è automaticamente abilitato con Research.** Questa potente combinazione consente a Claude sia di pianificare con attenzione il suo approccio sia di raccogliere informazioni complete, suddividendo richieste complesse in parti gestibili.
+- **Le citazioni semplificano la verifica.** Research fornisce risposte approfondite complete di citazioni facili da controllare, in modo che tu possa fidarti delle scoperte di Claude e verificare rapidamente le fonti da solo.
 
-### What is Research?
+### Cos'è Research?
 
-Research is an advanced feature that transforms Claude from a conversational assistant into a systematic investigator. When you enable Research, Claude doesn't just answer your question—it explores it from multiple angles, synthesizing information from across the web and your connected integrations.
+Research (Ricerca) è una funzionalità avanzata che trasforma Claude da un assistente conversazionale a un investigatore sistematico. Quando abiliti Research, Claude non risponde solo alla tua domanda: la esplora da più angolazioni, sintetizzando informazioni da tutto il web e dalle tue integrazioni connesse.
 
-Think of it as having a skilled research assistant who can spend hours gathering information, cross-referencing sources, and compiling a comprehensive report—except it happens in minutes instead of hours.
+Pensala come avere un abile assistente di ricerca che può passare ore a raccogliere informazioni, incrociare fonti e compilare un report completo—tranne che avviene in pochi minuti invece di ore.
 
-Research is particularly valuable when you need more than a quick answer. It's designed for situations where a thorough understanding requires pulling together information from multiple sources, comparing different perspectives, and synthesizing findings into actionable insights.
+Research è particolarmente preziosa quando hai bisogno di più di una rapida risposta. È progettata per le situazioni in cui una comprensione approfondita richiede di unire informazioni da più fonti, confrontare diverse prospettive e sintetizzare le scoperte in insight azionabili.
 
-### When to use Research
+### Quando utilizzare Research
 
-Understanding when to use Research versus other Claude capabilities helps you get the best results for your specific needs.
+Comprendere quando utilizzare Research rispetto ad altre capacità di Claude ti aiuta a ottenere i migliori risultati per le tue esigenze specifiche.
 
-**Use Research when you need:**
+**Usa Research quando hai bisogno di:**
 
-- Comprehensive reports that synthesize information from multiple sources
-- In-depth analysis across the web and your connected integrations (like Google Workspace)
-- Thorough investigations that would typically require hours of manual work
-- Comparative analysis, such as evaluating competitors or vendor options
-- Reports with citations you can verify
+- Report completi che sintetizzano informazioni da più fonti
+- Analisi approfondite sul web e sulle tue integrazioni connesse (come Google Workspace)
+- Indagini approfondite che in genere richiederebbero ore di lavoro manuale
+- Analisi comparativa, come la valutazione dei concorrenti o delle opzioni dei fornitori
+- Report con citazioni che puoi verificare
 
-**Research is ideal for tasks like:**
+**Research è ideale per compiti come:**
 
-- Market analysis and competitive research
-- Planning complex projects, like team offsites or product launches
-- Synthesizing information from your email, calendar, and documents
-- Creating technical documentation that draws from multiple sources
-- Preparing briefings that require current, verified information
+- Analisi di mercato e ricerca competitiva
+- Pianificazione di progetti complessi, come offsite del team o lanci di prodotti
+- Sintesi di informazioni provenienti da email, calendario e documenti
+- Creazione di documentazione tecnica che attinge da più fonti
+- Preparazione di briefing che richiedono informazioni attuali e verificate
 
-**Consider web search instead when:**
+**Considera la ricerca web invece quando:**
 
-- You need a quick, specific fact (like today's stock price or a company's address)
-- The answer requires only one or two sources
-- Speed matters more than comprehensiveness
+- Hai bisogno di un fatto rapido e specifico (come il prezzo delle azioni di oggi o l'indirizzo di un'azienda)
+- La risposta richiede solo una o due fonti
+- La velocità è più importante della completezza
 
-**Consider extended thinking instead when:**
+**Considera il pensiero esteso (extended thinking) invece quando:**
 
-- You need deep reasoning on a complex problem that doesn't require external information
-- You're working on mathematical problems, code debugging, or logical analysis
-- The answer comes from reasoning through a problem rather than gathering information
+- Hai bisogno di un ragionamento profondo su un problema complesso che non richiede informazioni esterne
+- Stai lavorando su problemi matematici, debugging del codice o analisi logica
+- La risposta deriva dal ragionare su un problema piuttosto che dalla raccolta di informazioni
 
-**Consider enterprise search instead when:**
+**Considera l'Enterprise Search invece quando:**
 
-- You need answers that draw from your organization's internal knowledge — documents, Slack threads, emails, meeting notes
-- You're onboarding and want to quickly find how your company handles something (like policies, processes, or past decisions)
-- You're asking a question that's specific to your company, not the public web
+- Hai bisogno di risposte che attingono alla conoscenza interna della tua organizzazione: documenti, thread Slack, email, note di riunioni
+- Sei in fase di onboarding e vuoi trovare rapidamente come la tua azienda gestisce qualcosa (come politiche, processi o decisioni passate)
+- Stai ponendo una domanda specifica per la tua azienda, non per il web pubblico
 
-### How Research works
+### Come funziona Research
 
-When you enable Research, you're activating an agentic, multi-step process that goes far beyond a simple web search. Claude autonomously decides what to search next based on what it has already found, pursuing leads and filling gaps without you needing to direct each step.
+Quando abiliti Research, stai attivando un processo agentico in più fasi che va ben oltre una semplice ricerca web. Claude decide autonomamente cosa cercare dopo in base a ciò che ha già trovato, seguendo le tracce e colmando le lacune senza che tu debba dirigere ogni passo.
 
-1. **Step 1: Claude plans its approach.** When Research is enabled, extended thinking automatically activates. This lets Claude break down your request, identify what information it needs, and plan how to investigate different angles of your question.
-2. **Step 2: Claude conducts multiple searches.** Rather than running a single search, Claude conducts many searches that build on each other. It determines what to investigate next based on what it finds, pursuing promising leads and filling in gaps.
-3. **Step 3: Claude synthesizes findings.** After gathering information from multiple sources—including the web and any connected integrations like Gmail, Google Calendar, or Google Drive—Claude compiles everything into a comprehensive, well-organized report.
-4. **Step 4: Claude provides citations.** Every claim in Research reports links back to its source, making it easy to verify information and dig deeper when needed.
+1. **Fase 1: Claude pianifica il suo approccio.** Quando Research è abilitato, il pensiero esteso si attiva automaticamente. Questo permette a Claude di scomporre la tua richiesta, identificare quali informazioni gli servono e pianificare come indagare sui diversi angoli della tua domanda.
+2. **Fase 2: Claude conduce ricerche multiple.** Invece di eseguire una singola ricerca, Claude conduce molte ricerche che si basano l'una sull'altra. Determina cosa indagare dopo in base a ciò che trova, perseguendo tracce promettenti e colmando le lacune.
+3. **Fase 3: Claude sintetizza le scoperte.** Dopo aver raccolto informazioni da più fonti—incluso il web e qualsiasi integrazione connessa come Gmail, Google Calendar o Google Drive—Claude compila tutto in un report completo e ben organizzato.
+4. **Fase 4: Claude fornisce citazioni.** Ogni affermazione nei report di Research rimanda alla sua fonte, rendendo facile verificare le informazioni e scavare più a fondo quando necessario.
 
-### Using Research in practice
+### Utilizzare Research in pratica
 
-Here's how to enable and use Research:
+Ecco come abilitare e utilizzare Research:
 
-1. Click the **+** button on the bottom left of your chat interface
-2. Select **Research** from the menu—it appears highlighted once active
-3. Enter your prompt and submit
-4. Claude will work in the background, and you'll see progress indicators as it searches and analyzes
+1. Fai clic sul pulsante **+** in basso a sinistra nella tua interfaccia di chat
+2. Seleziona **Research** dal menu—appare evidenziato una volta attivo
+3. Inserisci il tuo prompt e invia
+4. Claude lavorerà in background e vedrai indicatori di avanzamento mentre cerca e analizza
 
-**Important:** Web search must be enabled for Research to function. If you haven't already turned on web search, you can do so from the same **+** menu.
+**Importante:** La ricerca sul web deve essere abilitata affinché Research funzioni. Se non hai già attivato la ricerca web, puoi farlo dallo stesso menu **+**.
 
-#### Tips for effective Research prompts
+#### Suggerimenti per prompt di Research efficaci
 
-Since Research can take 5 to 45 minutes depending on complexity, investing time in crafting your prompt pays off. Here are some strategies:
+Poiché Research può richiedere da 5 a 45 minuti a seconda della complessità, investire tempo nella creazione del prompt ripaga. Ecco alcune strategie:
 
-- **Be specific about your goals.** Instead of "Tell me about the EV market," try "Analyze the electric vehicle battery market—identify key players, technology trends, and supply chain challenges that might affect investment decisions."
-- **Specify the sections or structure you want.** Claude will organize its findings around the structure you provide. For example: "Compare venue options for a team offsite including: location and accessibility, meeting space and amenities, catering options, and pricing considerations."
-- **Include relevant constraints.** Budget ranges, timelines, geographic requirements, and other parameters help Claude focus its research on relevant options.
-- **Ask Claude to help refine your prompt.** If you're not sure how to frame your research question, you can even ask Claude to help you write a better Research prompt before enabling the feature.
+- **Sii specifico sui tuoi obiettivi.** Invece di "Parlami del mercato dei veicoli elettrici", prova "Analizza il mercato delle batterie per veicoli elettrici: identifica gli attori chiave, le tendenze tecnologiche e le sfide della catena di fornitura che potrebbero influenzare le decisioni di investimento."
+- **Specifica le sezioni o la struttura che desideri.** Claude organizzerà le sue scoperte attorno alla struttura che fornisci. Ad esempio: "Confronta le opzioni per le sedi di un offsite aziendale, tra cui: posizione e accessibilità, spazi per riunioni e servizi, opzioni di catering e considerazioni sui prezzi."
+- **Includi vincoli pertinenti.** Fasce di budget, tempistiche, requisiti geografici e altri parametri aiutano Claude a concentrare la sua ricerca sulle opzioni pertinenti.
+- **Chiedi a Claude di aiutarti a perfezionare il prompt.** Se non sei sicuro di come inquadrare la tua domanda di ricerca, puoi persino chiedere a Claude di aiutarti a scrivere un prompt per Research migliore prima di abilitare la funzione.
 
-#### Working with connected integrations
+#### Lavorare con le integrazioni connesse
 
-When you have Google Workspace or other integrations connected, Research becomes even more powerful. Claude can pull context from your emails, calendar, and documents alongside web research.
+Quando hai Google Workspace o altre integrazioni connesse, Research diventa ancora più potente. Claude può estrarre il contesto dalle tue email, calendario e documenti insieme alla ricerca web.
 
-For example, you might ask Claude to:
+Ad esempio, potresti chiedere a Claude di:
 
-- "Summarize what's been discussed about Project X across my emails and Slack, then research industry best practices for similar initiatives"
-- "Review my calendar commitments for next week and research each company I'm meeting with"
-- "Find all internal documents about our pricing strategy and compare to how competitors are positioning themselves"
+- "Riassumere ciò che è stato discusso sul Progetto X nelle mie email e su Slack, quindi ricercare le migliori pratiche del settore per iniziative simili"
+- "Rivedere i miei impegni di calendario per la prossima settimana e cercare informazioni su ciascuna azienda con cui mi incontrerò"
+- "Trovare tutti i documenti interni sulla nostra strategia dei prezzi e confrontarli con il modo in cui i concorrenti si posizionano"
 
-When using Research with integrations, you can steer Claude by saying things like "Pull relevant context from my Google Drive" or "Include insights from my recent emails on this topic."
+Quando utilizzi Research con le integrazioni, puoi guidare Claude dicendo cose come "Eststrai il contesto pertinente dal mio Google Drive" o "Includi le informazioni dalle mie email recenti su questo argomento".
 
-**Pro tip:** You can also turn off web search to do internal-only research across your connected tools — great for questions like "What did our team discuss about the Q3 launch across Slack and Docs?"
+**Suggerimento pro:** Puoi anche disattivare la ricerca web per fare ricerche solo interne sui tuoi strumenti connessi: ottimo per domande come "Di cosa ha discusso il nostro team riguardo al lancio del Q3 su Slack e Docs?"
 
-### Lesson reflection
+### Riflessione sulla lezione
 
-Before moving on, consider:
+Prima di procedere, considera:
 
-- What research tasks in your work typically require gathering information from multiple sources?
-- How might combining Research with your connected integrations (like Google Workspace) change your workflow?
-- What's a complex question you've been putting off because it would take too much research time?
+- Quali attività di ricerca nel tuo lavoro richiedono in genere la raccolta di informazioni da più fonti?
+- Come potrebbe l'unione di Research con le tue integrazioni connesse (come Google Workspace) cambiare il tuo flusso di lavoro?
+- Qual è una domanda complessa che hai rimandato perché richiederebbe troppo tempo di ricerca?
 
-### What's next
+### Cosa c'è dopo
 
-In the next section we're putting it all together. You'll see how everything you've learned comes together through real-world use cases organized by role, and discover additional ways to interact with Claude beyond the web interface.
+Nella prossima sezione metteremo tutto insieme. Vedrai come tutto ciò che hai imparato si unisce attraverso casi d'uso del mondo reale organizzati per ruolo e scoprirai altri modi per interagire con Claude oltre all'interfaccia web.
 
-For more information on Research, including video tutorials, visit the [Anthropic Help Center](https://support.anthropic.com/en/articles/11088861-using-research-on-claude-ai).
+Per ulteriori informazioni su Research, inclusi video tutorial, visita l'[Anthropic Help Center](https://support.anthropic.com/en/articles/11088861-using-research-on-claude-ai).
 
 #### Feedback
 
-As you progress through the course, we'd love to hear from you about how you are using concepts from the course in your work and any feedback you may have. Share your feedback [here](https://forms.gle/sY9ou5fqZBd3TjHF8).
+Man mano che avanzi nel corso, ci piacerebbe sapere da te come stai utilizzando i concetti del corso nel tuo lavoro e qualsiasi feedback tu possa avere. Condividi il tuo feedback [qui](https://forms.gle/sY9ou5fqZBd3TjHF8).
 
-#### Acknowledgments and license
+#### Riconoscimenti e licenza
 
-*Copyright 2025 Anthropic. All rights reserved.*
+*Copyright 2025 Anthropic. Tutti i diritti riservati.*

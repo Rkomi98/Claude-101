@@ -1,116 +1,115 @@
+## Navigazione
 
-## Header Navigation
-
-[Anthropic Academy](https://www.anthropic.com/learn) [Courses](https://anthropic.skilljar.com/) 
+[Anthropic Academy](https://www.anthropic.com/learn) [Corsi](https://anthropic.skilljar.com/) 
 
   
 
-## Enterprise search
+## Enterprise search (Ricerca aziendale)
 
-**Estimated time:** 15 minutes
+**Tempo stimato:** 15 minuti
 
-### Learning objectives
+### Obiettivi di apprendimento
 
-- Explain what Enterprise Search is and the types of questions Enterprise Search can answer
-- Understand how the setup process works for both admins and users
-- Recognize how security and permissions protect organizational data
+- Spiegare cos'è l'Enterprise Search e il tipo di domande a cui può rispondere
+- Comprendere come funziona il processo di configurazione per amministratori e utenti
+- Riconoscere come la sicurezza e le autorizzazioni proteggono i dati organizzativi
 
 ---
 
-> **Plan availability:** Enterprise Search is available on Team and Enterprise plans, and must be enabled by a workspace admin. If you're on a Free, Pro, or Max plan, you can skip this lesson.
+> **Disponibilità del piano:** Enterprise Search è disponibile sui piani Team ed Enterprise e deve essere abilitata da un amministratore dello spazio di lavoro. Se sei su un piano Free, Pro o Max, puoi saltare questa lezione.
 
-### What is Enterprise Search?
+### Cos'è Enterprise Search?
 
-Enterprise Search adds a dedicated "Ask {Your Org Name}" option to your sidebar. This is designed specifically for finding and synthesizing knowledge buried across your company's tools and data sources. Think of Enterprise Search as a pre-built Project for your entire organization — your company's knowledge base is already loaded, so you can jump right in to get context-aware responses to your questions.
+Enterprise Search aggiunge un'opzione dedicata "Ask {Nome della tua organizzazione}" nella barra laterale. È progettata specificamente per trovare e sintetizzare le conoscenze sepolte negli strumenti e nelle fonti di dati della tua azienda. Pensa a Enterprise Search come a un Progetto predefinito per l'intera organizzazione: la base di conoscenza della tua azienda è già caricata, così puoi iniziare subito per ottenere risposte contestualizzate alle tue domande.
 
-Unlike regular chats with connectors enabled, Enterprise Search is specifically designed for information gathering, using custom instructions configured by the Anthropic team.
+A differenza delle chat normali con i connettori abilitati, Enterprise Search è progettata specificamente per la raccolta di informazioni, utilizzando istruzioni personalizzate configurate dal team Anthropic.
 
-### What can you ask?
+### Cosa puoi chiedere?
 
-Enterprise Search is particularly valuable for questions that span multiple sources or require synthesizing information from across your organization. Here are some common use cases:
+Enterprise Search è particolarmente preziosa per le domande che abbracciano più fonti o richiedono la sintesi di informazioni da tutta la tua organizzazione. Ecco alcuni casi d'uso comuni:
 
-**Getting up to speed**
+**Aggiornarsi rapidamente**
 
-- "What happened yesterday while I was out?"
-- "Summarize key updates across the business from the last week"
-- "What are the current blockers on the Platform project?"
+- "Cosa è successo ieri mentre ero assente?"
+- "Riassumi gli aggiornamenti chiave sul business dell'ultima settimana"
+- "Quali sono gli ostacoli attuali sul progetto Platform?"
 
-**Policy and process questions**
+**Domande su politiche e processi**
 
-- "What is our company's remote work policy?"
-- "How do I submit an expense report?"
-- "What's the process for requesting time off?"
+- "Qual è la politica di lavoro da remoto della nostra azienda?"
+- "Come presento una nota spese?"
+- "Qual è la procedura per richiedere giorni di ferie?"
 
-**Research and analysis**
+**Ricerca e analisi**
 
-- "What are the main reasons customers cite for choosing competitors?"
-- "Summarize discussions about the Q4 product roadmap"
-- "Find information about our customer onboarding process"
+- "Quali sono i motivi principali citati dai clienti per scegliere i concorrenti?"
+- "Riassumi le discussioni sulla roadmap del prodotto Q4"
+- "Trova informazioni sul nostro processo di onboarding dei clienti"
 
-**Onboarding new team members**
+**Inserimento di nuovi membri del team**
 
-- "How does our authentication system work?"
-- "Who should I talk to about learning the billing system?"
-- "What tools does the engineering team use for deployment?"
+- "Come funziona il nostro sistema di autenticazione?"
+- "Con chi dovrei parlare per imparare a usare il sistema di fatturazione?"
+- "Quali strumenti usa il team di ingegneria per il deployment?"
 
-**Performance and project tracking**
+**Monitoraggio delle prestazioni e dei progetti**
 
-- "Find discussions and documents related to the marketing campaign"
-- "What were the key decisions from last week's leadership meetings?"
-- "Summarize team contributions to the Infrastructure initiative"
+- "Trova discussioni e documenti relativi alla campagna di marketing"
+- "Quali sono state le decisioni chiave delle riunioni della leadership della scorsa settimana?"
+- "Riassumi i contributi del team all'iniziativa Infrastruttura"
 
-When you ask a question, Claude searches across all your connected tools—such as SharePoint documents, Slack conversations, Gmail threads, and Google Drive files—and synthesizes information into a unified response. Plus, it always cites its sources so you can get the full context.
+Quando fai una domanda, Claude cerca su tutti i tuoi strumenti connessi—come documenti SharePoint, conversazioni Slack, thread Gmail e file di Google Drive—e sintetizza le informazioni in una risposta unificata. Inoltre, cita sempre le sue fonti in modo da poter ottenere l'intero contesto.
 
-### Setting up Enterprise Search
+### Configurazione di Enterprise Search
 
-Enterprise Search requires a **two-step setup process**: first an admin configures it for the organization, then individual users authenticate with their personal accounts.
+Enterprise Search richiede un **processo di configurazione in due fasi**: prima un amministratore lo configura per l'organizzazione, poi i singoli utenti si autenticano con i loro account personali.
 
-#### For admins (Owners)
+#### Per gli amministratori (Proprietari)
 
-The Enterprise Search project is enabled by default for all Team and Enterprise organizations, but an Owner needs to complete the initial setup before team members can use it:
+Il progetto Enterprise Search è abilitato per impostazione predefinita per tutte le organizzazioni Team ed Enterprise, ma un Proprietario deve completare la configurazione iniziale prima che i membri del team possano usarlo:
 
-1. Click "Ask Your Org" in the left sidebar.
-2. Click "Set up for your org" to continue (or "Disable" to turn the feature off).
-3. Connect your organization's tools. You'll be required to choose a connector for **Documents** (like Google Drive or SharePoint) and **Chat** (like Slack or Microsoft Teams). Email is recommended but optional.
-4. Click "+ Add more" to set up any additional tools your team needs.
-5. Customize the project name. Whatever you enter will appear as "Ask \[Name\]" in everyone's sidebar.
-6. Add a description, then click "Finish set up."
+1. Fai clic su "Ask Your Org" nella barra laterale sinistra.
+2. Fai clic su "Set up for your org" per continuare (o "Disable" per disattivare la funzione).
+3. Connetti gli strumenti della tua organizzazione. Ti verrà richiesto di scegliere un connettore per **Documenti** (come Google Drive o SharePoint) e **Chat** (come Slack o Microsoft Teams). L'email è consigliata ma facoltativa.
+4. Fai clic su "+ Add more" per impostare eventuali strumenti aggiuntivi di cui il tuo team ha bisogno.
+5. Personalizza il nome del progetto. Qualsiasi cosa inserisci apparirà come "Ask [Nome]" nella barra laterale di tutti.
+6. Aggiungi una descrizione, quindi fai clic su "Finish set up."
 
-Once setup is complete, the project becomes available to all members of your organization.
+Una volta completata la configurazione, il progetto diventa disponibile per tutti i membri della tua organizzazione.
 
-#### For users
+#### Per gli utenti
 
-After an admin has set up Enterprise Search, you'll see the "Ask {Org Name}" project starred in your sidebar. Here's how to get started:
+Dopo che un amministratore ha configurato Enterprise Search, vedrai il progetto "Ask {Nome Org}" con una stella nella tua barra laterale. Ecco come iniziare:
 
-1. Click on the project in your sidebar.
-2. Follow the guided onboarding flow to connect to the recommended services.
-3. Authenticate with each service you want to search (Slack, Google, Microsoft 365, etc.).
-4. Start asking Claude questions about your organization's knowledge.
+1. Fai clic sul progetto nella barra laterale.
+2. Segui il flusso di onboarding guidato per connetterti ai servizi consigliati.
+3. Autenticati con ogni servizio su cui vuoi cercare (Slack, Google, Microsoft 365, ecc.).
+4. Inizia a fare domande a Claude sulla conoscenza della tua organizzazione.
 
-The more connectors you enable, the more comprehensive your search results will be. You can always add more connectors later by clicking "Connect" in the project's Instructions section.
+Più connettori abiliti, più completi saranno i tuoi risultati di ricerca. Puoi sempre aggiungere altri connettori in seguito facendo clic su "Connect" nella sezione Istruzioni del progetto.
 
-### That's a lot of data … is this safe?
+### Sono molti dati... è sicuro?
 
-In short, yes. Enterprise Search only shows what you already have permission to access in the original connected tool. Plus, your conversations remain private, and your connected data isn't indexed or stored separately.
+In breve, sì. Enterprise Search mostra solo ciò a cui hai già il permesso di accedere nello strumento connesso originale. Inoltre, le tue conversazioni rimangono private e i dati connessi non vengono indicizzati o memorizzati separatamente.
 
-### Lesson reflection
+### Riflessione sulla lezione
 
-Before moving on, consider:
+Prima di procedere, considera:
 
-- What questions do you frequently ask colleagues that could be answered by searching your organization's documents and communications?
-- Are there onboarding or training scenarios where Enterprise Search could help new team members get up to speed faster?
-- Which data sources would be most valuable to connect for your specific role?
+- Quali domande fai di frequente ai colleghi che potrebbero trovare risposta cercando nei documenti e nelle comunicazioni della tua organizzazione?
+- Ci sono scenari di onboarding o formazione in cui Enterprise Search potrebbe aiutare i nuovi membri del team a diventare operativi più velocemente?
+- Quali fonti di dati sarebbero più preziose da connettere per il tuo ruolo specifico?
 
-### What's next
+### Cosa c'è dopo
 
-In the next lesson, you'll learn about Research mode—Claude's capability for deep, multi-step investigations that go beyond quick lookups to comprehensive analysis.
+Nella prossima lezione, imparerai a conoscere la modalità Research (Ricerca), la capacità di Claude per indagini approfondite in più fasi che vanno oltre le rapide ricerche per un'analisi completa.
 
-For more information on Enterprise Search, visit the [Anthropic Help Center](https://support.claude.com/en/articles/12489464-using-enterprise-search).
+Per ulteriori informazioni su Enterprise Search, visita l'[Anthropic Help Center](https://support.claude.com/en/articles/12489464-using-enterprise-search).
 
 #### Feedback
 
-As you progress through the course, we'd love to hear from you about how you are using concepts from the course in your work and any feedback you may have. Share your feedback [here](https://forms.gle/sY9ou5fqZBd3TjHF8).
+Man mano che avanzi nel corso, ci piacerebbe sapere da te come stai utilizzando i concetti del corso nel tuo lavoro e qualsiasi feedback tu possa avere. Condividi il tuo feedback [qui](https://forms.gle/sY9ou5fqZBd3TjHF8).
 
-#### Acknowledgments and license
+#### Riconoscimenti e licenza
 
-*Copyright 2025 Anthropic. All rights reserved.*
+*Copyright 2025 Anthropic. Tutti i diritti riservati.*

@@ -1,120 +1,120 @@
-## Header Navigation
+## Navigazione
 
-[Anthropic Academy](https://www.anthropic.com/learn) [Courses](https://anthropic.skilljar.com/) 
+[Anthropic Academy](https://www.anthropic.com/learn) [Corsi](https://anthropic.skilljar.com/) 
 
   
 
-**Estimated time:** 20 minutes
+**Tempo stimato:** 20 minuti
 
-### Learning objectives
+### Obiettivi di apprendimento
 
-- Explain what connectors are and why they matter for your work with Claude
-- Navigate the connectors directory and set up your first connection
-- Use connected tools effectively in your conversations with Claude
+- Spiegare cosa sono i connettori e perché sono importanti per il tuo lavoro con Claude
+- Navigare nella directory dei connettori e configurare la tua prima connessione
+- Utilizzare efficacemente gli strumenti connessi nelle tue conversazioni con Claude
 
 ---
 
-### What are connectors?
+### Cosa sono i connettori?
 
-#### Key takeaways
+#### Punti chiave
 
-- **Connectors transform Claude from an assistant into an informed collaborator** by giving Claude access to the same tools, data, and context that you use every day. Instead of starting every conversation from scratch, Claude can work directly with your actual information.
-- **Connectors allow Claude to read information and perform actions on your behalf.** Depending on the connector and permissions you grant, Claude can search your files, retrieve documents, analyze data, create new content, update records, and execute tasks across your connected applications—all from within your conversation.
-- **The Model Context Protocol (MCP) powers connectors.** Think of MCP like USB-C for AI—a universal standard that allows Claude to connect to many different applications through a single, consistent interface. This open standard means developers can build connectors for any tool, and those connectors work seamlessly with Claude.
-- **There are two types of connectors: web connectors and desktop extensions.** Web connectors link Claude to cloud services like Google Drive, Notion, Slack, and Asana. Desktop extensions run locally on your computer through the Claude Desktop app, giving Claude access to local files and native applications.
+- **I connettori trasformano Claude da un assistente a un collaboratore informato** dando a Claude accesso agli stessi strumenti, dati e contesti che usi ogni giorno. Invece di iniziare ogni conversazione da zero, Claude può lavorare direttamente con le tue informazioni reali.
+- **I connettori consentono a Claude di leggere informazioni ed eseguire azioni per tuo conto.** A seconda del connettore e delle autorizzazioni che concedi, Claude può cercare nei tuoi file, recuperare documenti, analizzare dati, creare nuovi contenuti, aggiornare record ed eseguire attività nelle tue applicazioni connesse—tutto all'interno della tua conversazione.
+- **Il Model Context Protocol (MCP) alimenta i connettori.** Pensa a MCP come all'USB-C per l'IA—uno standard universale che consente a Claude di connettersi a molte applicazioni diverse attraverso un'unica interfaccia coerente. Questo standard aperto significa che gli sviluppatori possono creare connettori per qualsiasi strumento e quei connettori funzionano perfettamente con Claude.
+- **Esistono due tipi di connettori: connettori web ed estensioni desktop.** I connettori web collegano Claude a servizi cloud come Google Drive, Notion, Slack e Asana. Le estensioni desktop funzionano localmente sul tuo computer tramite l'app desktop Claude, dando a Claude l'accesso a file locali e applicazioni native.
 
-### Finding and connecting tools
+### Trovare e collegare strumenti
 
-Anthropic maintains a directory of recommended connectors at claude.ai/directory. The directory is organized into two tabs:
+Anthropic mantiene una directory di connettori consigliati su claude.ai/directory. La directory è organizzata in due schede:
 
-- **Web:** Cloud services and applications (Gmail, Notion, Slack, Asana, Linear, Stripe, and many more)
-- **Desktop extensions:** Local tools that run on your computer through the Claude Desktop app
+- **Web:** Servizi e applicazioni cloud (Gmail, Notion, Slack, Asana, Linear, Stripe e molti altri)
+- **Estensioni desktop:** Strumenti locali che funzionano sul tuo computer tramite l'app desktop Claude
 
-To browse available connectors, you can also click the **+** button in the lower left of the chat window, then select **Connectors**.
+Per sfogliare i connettori disponibili, puoi anche fare clic sul pulsante **+** in basso a sinistra nella finestra della chat, quindi selezionare **Connettori** (Connectors).
 
-#### Setting up a web connector
+#### Configurazione di un connettore web
 
-Here's how to connect a cloud service:
+Ecco come connettere un servizio cloud:
 
-1. **Find the connector:** Navigate to claude.ai/directory, or click **+** > **Connectors** in any chat
-2. **Click Connect:** Select the connector you want to add
-3. **Authenticate:** You'll be redirected to the service's login page. Sign in with your existing credentials
-4. **Grant permissions:** Review the specific permissions Claude is requesting, then authorize access
-5. **Test the connection:** Return to Claude and try a simple request, like "Can you access my \[tool name\]?"
+1. **Trova il connettore:** Vai su claude.ai/directory, oppure fai clic su **+** > **Connettori** in qualsiasi chat
+2. **Fai clic su Connetti:** Seleziona il connettore che desideri aggiungere
+3. **Autenticati:** Verrai reindirizzato alla pagina di accesso del servizio. Accedi con le tue credenziali esistenti
+4. **Concedi le autorizzazioni:** Rivedi le autorizzazioni specifiche richieste da Claude, quindi autorizza l'accesso
+5. **Testa la connessione:** Torna su Claude e prova una semplice richiesta, come "Puoi accedere al mio [nome dello strumento]?"
 
-Once connected, Claude can search, read, and in some cases take actions within that service—depending on the permissions you've granted.
+Una volta connesso, Claude può cercare, leggere e in alcuni casi eseguire azioni all'interno di quel servizio—a seconda delle autorizzazioni che hai concesso.
 
-#### Desktop extensions
+#### Estensioni desktop
 
-Desktop extensions require the Claude Desktop app rather than the web interface. These extensions let Claude interact with local applications, your file system, and native features on macOS or Windows.
+Le estensioni desktop richiedono l'app desktop Claude anziché l'interfaccia web. Queste estensioni consentono a Claude di interagire con le applicazioni locali, il tuo file system e le funzionalità native su macOS o Windows.
 
-Some desktop extensions include:
+Alcune estensioni desktop includono:
 
-- Local file access for reading and organizing documents
-- Browser control for automated web tasks
-- Native application integration (like Figma for design work)
+- Accesso ai file locali per la lettura e l'organizzazione di documenti
+- Controllo del browser per attività web automatizzate
+- Integrazione di applicazioni native (come Figma per il lavoro di progettazione)
 
-To install a desktop extension:
+Per installare un'estensione desktop:
 
-1. Download and install the [Claude Desktop app](https://claude.ai/download)
-2. Open the app and navigate to Settings > Extensions
-3. Browse available extensions and click Install
-4. Follow any additional setup steps specific to that extension
+1. Scarica e installa l'[app desktop Claude](https://claude.ai/download)
+2. Apri l'app e vai su Impostazioni > Estensioni
+3. Sfoglia le estensioni disponibili e fai clic su Installa
+4. Segui eventuali passaggi di configurazione aggiuntivi specifici per quell'estensione
 
-### Using connectors in your work
+### Utilizzare i connettori nel tuo lavoro
 
-Once you've connected your tools, Claude considers them when responding to your requests. Here are some practical ways to use connected tools:
+Dopo aver connesso i tuoi strumenti, Claude li prende in considerazione quando risponde alle tue richieste. Ecco alcuni modi pratici per utilizzare gli strumenti connessi:
 
-**Project management (Asana, Linear, Jira)**
+**Gestione progetti (Asana, Linear, Jira)**
 
-- "What are my highest priority tasks due this week?"
-- "Create a new task for reviewing the Q4 budget proposal"
-- "Summarize the status of our product launch project"
+- "Quali sono i miei compiti a priorità più alta in scadenza questa settimana?"
+- "Crea una nuova attività per rivedere la proposta di budget del Q4"
+- "Riassumi lo stato del nostro progetto di lancio del prodotto"
 
-**Communication (Slack, Gmail)**
+**Comunicazione (Slack, Gmail)**
 
-- "Find the email thread where we discussed the vendor contract"
-- "Draft a reply to the latest message in the #marketing channel"
-- "What did the team decide about the timeline in yesterday's discussion?"
+- "Trova il thread di email in cui abbiamo discusso del contratto del fornitore"
+- "Scrivi una bozza di risposta all'ultimo messaggio nel canale #marketing"
+- "Cosa ha deciso il team in merito alla tempistica nella discussione di ieri?"
 
-**Documentation (Notion, Google Drive, Confluence)**
+**Documentazione (Notion, Google Drive, Confluence)**
 
-- "Search our documentation for our brand voice guidelines"
-- "Summarize the meeting notes from last week's product review"
-- "What does our style guide say about using contractions?"
+- "Cerca nella nostra documentazione le linee guida della voce del nostro marchio"
+- "Riassumi le note della riunione dalla revisione del prodotto della scorsa settimana"
+- "Cosa dice la nostra guida di stile sull'uso delle abbreviazioni?"
 
-**Business tools (Stripe, PayPal, Salesforce)**
+**Strumenti aziendali (Stripe, PayPal, Salesforce)**
 
-- "Show me revenue trends for the past quarter"
-- "What's the status of the Acme Corp opportunity?"
-- "List recent transactions over $1,000"
+- "Mostrami le tendenze delle entrate per l'ultimo trimestre"
+- "Qual è lo stato dell'opportunità Acme Corp?"
+- "Elenca le transazioni recenti superiori a $1.000"
 
-### Security and permissions
+### Sicurezza e autorizzazioni
 
-When you connect Claude to external services, you're granting it access to read—and sometimes modify—data within those services. Here are some important considerations:
+Quando connetti Claude a servizi esterni, gli stai concedendo l'accesso per leggere—e a volte modificare—i dati all'interno di quei servizi. Ecco alcune considerazioni importanti:
 
-- **Scoped access:** Permissions are specific to what the connector needs and you can toggle individual permissions on and off within each application's menu.
-- **Claude sees what you see:** Claude can only access data *you* have access to. Connecting your work email doesn't give Claude access to your CEO's inbox—only your own.
-- **Revocable at any time:** You can disconnect a service through Claude's settings or through the third-party service's security settings. Just as with Skills, you can also find or build custom connectors. Exercise the same caution — only install connectors from trusted sources.
+- **Accesso con ambito limitato:** Le autorizzazioni sono specifiche per ciò di cui il connettore ha bisogno e puoi attivare e disattivare le singole autorizzazioni all'interno del menu di ciascuna applicazione.
+- **Claude vede ciò che vedi tu:** Claude può accedere solo ai dati a cui *tu* hai accesso. Collegare la tua email di lavoro non dà a Claude l'accesso alla casella di posta del tuo CEO—solo alla tua.
+- **Revocabile in qualsiasi momento:** Puoi disconnettere un servizio tramite le impostazioni di Claude o tramite le impostazioni di sicurezza del servizio di terze parti. Proprio come con le Skills, puoi anche trovare o creare connettori personalizzati. Esercita la stessa cautela: installa i connettori solo da fonti attendibili.
 
-### Lesson reflection
+### Riflessione sulla lezione
 
-Before moving on, consider:
+Prima di procedere, considera:
 
-- Which of your daily work tools would be most valuable to connect to Claude?
-- What tasks currently require you to copy and paste information that connectors could handle automatically?
-- Are there workflows where combining data from multiple connected sources would save you significant time?
+- Quali dei tuoi strumenti di lavoro quotidiani sarebbero più utili da connettere a Claude?
+- Quali attività attualmente richiedono di copiare e incollare informazioni che i connettori potrebbero gestire automaticamente?
+- Ci sono flussi di lavoro in cui combinare dati da più origini connesse ti farebbe risparmiare molto tempo?
 
-### What's next
+### Cosa c'è dopo
 
-In the next lesson, you'll learn about Enterprise Search—a specialized feature for Claude for Work users that connects Claude to your organization's knowledge sources with custom prompts optimized for your company's context.
+Nella prossima lezione, imparerai l'Enterprise Search (Ricerca Aziendale), una funzione specializzata per gli utenti Claude for Work che collega Claude alle fonti di conoscenza della tua organizzazione con prompt personalizzati ottimizzati per il contesto della tua azienda.
 
-For more information on connectors and the Model Context Protocol, visit the [Anthropic Help Center](https://support.anthropic.com/en/articles/11176164-pre-built-web-connectors-using-remote-mcp) or explore the connector directory at claude.ai/directory.
+Per ulteriori informazioni sui connettori e sul Model Context Protocol, visita l'[Anthropic Help Center](https://support.anthropic.com/en/articles/11176164-pre-built-web-connectors-using-remote-mcp) o esplora la directory dei connettori su claude.ai/directory.
 
 #### Feedback
 
-As you progress through the course, we'd love to hear from you about how you are using concepts from the course in your work and any feedback you may have. Share your feedback [here](https://forms.gle/sY9ou5fqZBd3TjHF8).
+Man mano che avanzi nel corso, ci piacerebbe sapere da te come stai utilizzando i concetti del corso nel tuo lavoro e qualsiasi feedback tu possa avere. Condividi il tuo feedback [qui](https://forms.gle/sY9ou5fqZBd3TjHF8).
 
-#### Acknowledgments and license
+#### Riconoscimenti e licenza
 
-*Copyright 2025 Anthropic. All rights reserved.*
+*Copyright 2025 Anthropic. Tutti i diritti riservati.*

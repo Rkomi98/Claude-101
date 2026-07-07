@@ -1,143 +1,143 @@
-## Header Navigation
+## Navigazione
 
-[Anthropic Academy](https://www.anthropic.com/learn) [Courses](https://anthropic.skilljar.com/) 
+[Anthropic Academy](https://www.anthropic.com/learn) [Corsi](https://anthropic.skilljar.com/) 
 
   
 
-**Estimated time:** 10 minutes
+**Tempo stimato:** 10 minuti
 
-### Learning objectives
+### Obiettivi di apprendimento
 
-- Understand when to use additional Claude products including Claude Code, @Claude, Claude Design, Claude for Microsoft 365, and Claude in Chrome
+- Capire quando utilizzare prodotti aggiuntivi di Claude inclusi Claude Code, @Claude, Claude Design, Claude for Microsoft 365 e Claude in Chrome
 
 ---
 
-As we mentioned at the start of this course, Claude is an intelligence. [Claude.ai](https://claude.ai/) is just one way of working with it.
+Come abbiamo accennato all'inizio di questo corso, Claude è un'intelligenza. [Claude.ai](https://claude.ai/) è solo uno dei modi per lavorarci.
 
-Claude is also available in several specialized tools designed to meet you where you already work. This lesson introduces additional ways to work with Claude, each tailored to specific workflows and use cases.
+Claude è anche disponibile in diversi strumenti specializzati progettati per venirti incontro dove già lavori. Questa lezione introduce modi aggiuntivi per lavorare con Claude, ognuno adattato a flussi di lavoro e casi d'uso specifici.
 
 ### Claude Code
 
 ![](https://www.youtube.com/watch?v=s-avRazvmLg)
 
-Claude Code is an agentic coding tool that works where you work — in your terminal, IDE, browser, or even in Slack. It understands your codebase, executes commands, and handles entire development workflows through natural language.
+Claude Code è uno strumento di codifica agentico che lavora dove lavori tu: nel tuo terminale, IDE, browser o persino su Slack. Comprende la tua base di codice, esegue comandi e gestisce interi flussi di sviluppo attraverso il linguaggio naturale.
 
-**When to use Claude Code:**
+**Quando utilizzare Claude Code:**
 
-- You want to build features by describing what you need in plain English, and have Claude write the code, run tests, and create commits
-- You need to debug issues by pasting error messages and having Claude analyze your codebase to identify and fix problems
-- You're navigating an unfamiliar codebase and want to ask questions about how different parts work together
-- You want to automate tedious tasks like fixing lint errors, resolving merge conflicts, or writing release notes
-- You prefer working in your terminal alongside your existing IDE and development tools rather than switching to a separate interface
+- Vuoi costruire funzionalità descrivendo ciò di cui hai bisogno in linguaggio semplice e far sì che Claude scriva il codice, esegua i test e crei i commit
+- Devi fare il debug dei problemi incollando i messaggi di errore e facendo analizzare a Claude la tua base di codice per identificare e risolvere i problemi
+- Stai navigando in una base di codice non familiare e vuoi fare domande su come le diverse parti lavorano insieme
+- Vuoi automatizzare attività noiose come la correzione di errori di lint, la risoluzione di conflitti di merge o la scrittura delle note di rilascio
+- Preferisci lavorare nel tuo terminale insieme al tuo IDE e agli strumenti di sviluppo esistenti piuttosto che passare a un'interfaccia separata
 
 ### @Claude
 
 ![](https://www.youtube.com/watch?v=VojDzHaciKQ)
 
-@Claude brings Claude directly into Slack, allowing you to get help in channels and threads or bring Slack context into your Claude conversations — just tag @Claude in any thread.
+@Claude porta Claude direttamente in Slack, consentendoti di ottenere aiuto nei canali e nei thread o di portare il contesto di Slack nelle tue conversazioni Claude: basta taggare @Claude in qualsiasi thread.
 
-**When to use @Claude:**
+**Quando utilizzare @Claude:**
 
-- You want to draft responses to messages, summarize lengthy threads, or break down complex discussions without leaving Slack
-- You need to prepare for meetings by having Claude pull together relevant conversations and shared documents from your workspace
-- You're onboarding to a new team and want help understanding ongoing projects by reviewing channel history
-- You want to hand off coding tasks directly from a bug report or feature discussion—just tag @Claude and it can spin up a Claude Code session using the surrounding context
-- You need to quickly get answers about industry trends, technical concepts, or company information during a conversation
+- Vuoi redigere risposte a messaggi, riassumere lunghi thread o scomporre discussioni complesse senza lasciare Slack
+- Devi prepararti per le riunioni chiedendo a Claude di raccogliere le conversazioni rilevanti e i documenti condivisi dal tuo spazio di lavoro
+- Ti stai inserendo in un nuovo team e desideri aiuto per comprendere i progetti in corso esaminando la cronologia del canale
+- Vuoi delegare attività di codifica direttamente da una segnalazione di bug o da una discussione su una funzionalità—basta taggare @Claude e lui può avviare una sessione di Claude Code utilizzando il contesto circostante
+- Hai bisogno di risposte rapide sulle tendenze del settore, su concetti tecnici o sulle informazioni aziendali durante una conversazione
 
 ### Claude Design
 
-Claude Design is a dedicated space for turning ideas into working interfaces. Describe what you want in plain language — or start from a sketch or screenshot — and Claude builds an interactive prototype you can refine through conversation and hand off to your team.
+Claude Design è uno spazio dedicato per trasformare le idee in interfacce funzionanti. Descrivi ciò che vuoi con un linguaggio semplice — oppure inizia da uno schizzo o da uno screenshot — e Claude costruisce un prototipo interattivo che puoi perfezionare attraverso la conversazione e consegnare al tuo team.
 
-**When to use Claude Design:**
+**Quando utilizzare Claude Design:**
 
-- You want to go from a written brief, sketch, or reference screenshot to a working UI prototype without writing code
-- You're exploring design directions and want to generate and compare several variations quickly
-- You need to iterate on layout, copy, or interactions by describing the change you want rather than editing markup
-- You want a prototype that uses your team's design system, so what you hand off matches what engineering will build
+- Vuoi passare da un brief scritto, uno schizzo o uno screenshot di riferimento a un prototipo di interfaccia utente (UI) funzionante senza scrivere codice
+- Stai esplorando direzioni di design e vuoi generare e confrontare rapidamente diverse varianti
+- Devi iterare sul layout, sui testi o sulle interazioni descrivendo la modifica che desideri piuttosto che modificando il markup
+- Vuoi un prototipo che utilizzi il design system del tuo team, in modo che ciò che consegni corrisponda a ciò che il team di ingegneria costruirà
 
 ### Claude for Excel
 
 ![](https://www.youtube.com/watch?v=8ZRTSIRWLu4)
 
-Claude for Excel brings Claude directly into Microsoft Excel through a sidebar, allowing you to analyze, understand, and modify spreadsheets through conversation.
+Claude for Excel porta Claude direttamente in Microsoft Excel tramite una barra laterale, permettendoti di analizzare, comprendere e modificare i fogli di calcolo attraverso la conversazione.
 
-**When to use Claude for Excel:**
+**Quando utilizzare Claude for Excel:**
 
-- You're working with a complex multi-tab workbook and want to understand how specific formulas or calculation flows work across sheets
-- You need to update assumptions or inputs across your model while preserving formula dependencies and relationships
-- You're debugging spreadsheet errors like #REF!, #VALUE!, or circular references and want Claude to trace them to their source and suggest fixes
-- You want to create new spreadsheets or populate existing templates with data while maintaining proper formula structure
-- You need to quickly build pivot tables or charts to visualize your data
+- Stai lavorando con una complessa cartella di lavoro a più schede e vuoi capire come funzionano formule specifiche o flussi di calcolo tra i fogli
+- Devi aggiornare le ipotesi o gli input nel tuo modello preservando le dipendenze delle formule e le relazioni
+- Stai facendo il debug di errori del foglio di calcolo come #RIF!, #VALORE! o riferimenti circolari e vuoi che Claude li rintracci alla loro origine e suggerisca soluzioni
+- Vuoi creare nuovi fogli di calcolo o popolare i modelli esistenti con i dati mantenendo una corretta struttura delle formule
+- Hai bisogno di creare rapidamente tabelle pivot o grafici per visualizzare i tuoi dati
 
 ### Claude for PowerPoint
 
-Claude for PowerPoint brings Claude into Microsoft PowerPoint as a sidebar, so you can draft, edit, and restructure presentations through conversation while keeping your existing template and brand styling intact.
+Claude for PowerPoint porta Claude all'interno di Microsoft PowerPoint come una barra laterale, in modo da poter redigere, modificare e ristrutturare le presentazioni attraverso la conversazione mantenendo intatti il modello esistente e lo stile del marchio.
 
-**When to use Claude for PowerPoint:**
+**Quando utilizzare Claude for PowerPoint:**
 
-- You want to turn an outline, document, or set of notes into a first-draft slide deck without building each slide by hand
-- You need to rewrite or tighten slide copy — shortening bullets, adding speaker notes, or adjusting tone for a specific audience
-- You're restructuring an existing deck and want help reordering sections, splitting dense slides, or merging overlapping ones
-- You want consistent formatting applied across the deck — titles, bullet styles, and layouts — without manually fixing each slide
-- You'd like quick visual suggestions for a slide, such as which layout or chart type best fits the point you're making
+- Vuoi trasformare un sommario, un documento o una serie di appunti in una prima bozza di slide senza costruire ogni slide a mano
+- Hai bisogno di riscrivere o stringere il testo della slide — accorciando i punti elenco, aggiungendo le note del relatore o adattando il tono per un pubblico specifico
+- Stai ristrutturando una presentazione esistente e desideri aiuto per riordinare sezioni, dividere slide dense o unire quelle sovrapposte
+- Vuoi applicare una formattazione coerente su tutta la presentazione — titoli, stili di elenco puntato e layout — senza correggere manualmente ogni slide
+- Vorresti rapidi suggerimenti visivi per una slide, come ad esempio quale layout o tipo di grafico si adatta meglio al punto che stai trattando
 
 ### Claude for Word
 
-Claude for Word brings Claude into Microsoft Word as a sidebar, so you can draft, revise, and restructure the document you have open — working with tracked changes and comments, and pulling context from connected sources to ground what you write.
+Claude for Word porta Claude all'interno di Microsoft Word come barra laterale, in modo da poter redigere, revisionare e ristrutturare il documento che hai aperto — lavorando con le modifiche tracciate e i commenti, e attingendo al contesto da fonti connesse per fondare ciò che scrivi.
 
-**When to use Claude for Word:**
+**Quando utilizzare Claude for Word:**
 
-- You want to turn an outline or rough notes into a structured first draft in your team's template
-- You need to revise a section — tighten the writing, adjust the tone for a specific reader, or rework the structure — without leaving the document
-- You're responding to reviewer comments and tracked changes and want help working through them in place
-- You want the draft grounded in source material you've connected, so claims in the document trace back to where they came from
+- Vuoi trasformare una traccia o delle note approssimative in una prima bozza strutturata nel modello del tuo team
+- Devi revisionare una sezione — stringere la scrittura, adattare il tono per un lettore specifico o rielaborare la struttura — senza lasciare il documento
+- Stai rispondendo ai commenti dei revisori e alle modifiche tracciate e desideri aiuto per affrontarli sul posto
+- Vuoi che la bozza sia basata sul materiale di origine che hai collegato, in modo che le affermazioni nel documento risalgano alla loro provenienza
 
 ### Claude for Outlook
 
-Claude for Outlook brings Claude into your inbox as a sidebar, so you can triage mail, draft replies with context from related threads and your calendar, and turn a long email chain into a clear summary or a set of next steps.
+Claude for Outlook porta Claude nella tua casella di posta elettronica come barra laterale, in modo che tu possa smistare la posta, redigere risposte con il contesto da thread correlati e dal tuo calendario e trasformare una lunga catena di email in un chiaro riepilogo o in una serie di passaggi successivi.
 
-**Availability:** Claude for Outlook is currently in beta and is installed separately from the other Microsoft 365 add-ins. See [Claude for Outlook](https://support.claude.com/en/articles/14855664-use-claude-for-outlook) for setup.
+**Disponibilità:** Claude for Outlook è attualmente in versione beta e viene installato separatamente dagli altri componenti aggiuntivi di Microsoft 365. Vedi [Claude for Outlook](https://support.claude.com/en/articles/14855664-use-claude-for-outlook) per la configurazione.
 
 ### Claude in Chrome
 
 ![](https://www.youtube.com/watch?v=IypXvHej9eY)
 
-Claude in Chrome is a browser extension that adds Claude as a sidebar in Google Chrome. It can observe what you're working on and take actions directly within your browser.
+Claude in Chrome è un'estensione per browser che aggiunge Claude come barra laterale in Google Chrome. Può osservare su cosa stai lavorando ed eseguire azioni direttamente all'interno del tuo browser.
 
-**When to use Claude in Chrome:**
+**Quando utilizzare Claude in Chrome:**
 
-- You want to summarize articles, research papers, or web pages while browsing
-- You need help drafting email responses or managing your inbox
-- You're filling out repetitive forms and want to automate the process
-- You want to test website features or navigate multi-step workflows without manually clicking through each step
-- You need a browsing assistant that maintains context as you move between tabs and tasks. This makes it great for pulling context from niche internal tools, CRMs, or dashboards.
+- Vuoi riassumere articoli, documenti di ricerca o pagine web durante la navigazione
+- Hai bisogno di aiuto per redigere risposte alle email o per gestire la tua casella di posta
+- Stai compilando moduli ripetitivi e vuoi automatizzare il processo
+- Vuoi testare funzionalità del sito web o navigare in flussi di lavoro in più fasi senza fare clic manualmente in ogni passaggio
+- Hai bisogno di un assistente di navigazione che mantenga il contesto mentre ti sposti tra schede e attività. Questo lo rende ideale per estrarre contesto da strumenti interni di nicchia, CRM o dashboard.
 
-**Important note:** Claude in Chrome is currently in public beta. Anthropic recommends using it for low-risk tasks on trusted websites. The extension asks for permission before taking high-risk actions like purchasing or sharing personal data, and certain categories of websites (financial services, adult content) are blocked by default.
+**Nota importante:** Claude in Chrome è attualmente in beta pubblica. Anthropic consiglia di utilizzarlo per compiti a basso rischio su siti Web attendibili. L'estensione chiede il permesso prima di intraprendere azioni ad alto rischio come l'acquisto o la condivisione di dati personali e alcune categorie di siti Web (servizi finanziari, contenuti per adulti) sono bloccate per impostazione predefinita.
 
 ---
 
-### Summary
+### Riepilogo
 
-Each of these tools extends Claude's capabilities into the specific environments where you work:
+Ognuno di questi strumenti estende le capacità di Claude negli ambienti specifici in cui lavori:
 
-| Tool | Best for | Where it runs |
+| Strumento | Ideale per | Dove viene eseguito |
 | --- | --- | --- |
-| Claude.ai | General tasks, research, writing, analysis, file creation | Web, desktop, and mobile apps |
-| Claude Code | Software development, codebase navigation, git workflows | Terminal/command line, IDE, or your browser |
-| Claude Cowork | Complex, multi-step tasks: research briefs, document creation, file organization, data analysis | Desktop (and mobile apps via Dispatch) |
-| @Claude | Team collaboration, meeting prep, quick answers in context | Slack workspace |
-| Claude Design | UI prototypes, design exploration, design-system-aware mockups | Web |
-| Claude for Microsoft 365 | Editing in place and carrying context across documents | Excel, PowerPoint, Word, and Outlook sidebars |
-| Claude in Chrome | Web research, email management, browser automation | Chrome browser sidebar |
+| Claude.ai | Attività generali, ricerca, scrittura, analisi, creazione di file | App Web, desktop e mobili |
+| Claude Code | Sviluppo software, navigazione nel codice, flussi di lavoro git | Terminale/riga di comando, IDE o il tuo browser |
+| Claude Cowork | Attività complesse e in più fasi: riassunti di ricerca, creazione di documenti, organizzazione di file, analisi dei dati | Desktop (e app mobili tramite Dispatch) |
+| @Claude | Collaborazione in team, preparazione alle riunioni, risposte rapide nel contesto | Spazio di lavoro Slack |
+| Claude Design | Prototipi UI, esplorazione del design, mockup sensibili al design system | Web |
+| Claude for Microsoft 365 | Modifica sul posto e mantenimento del contesto tra i documenti | Barre laterali di Excel, PowerPoint, Word e Outlook |
+| Claude in Chrome | Ricerca sul web, gestione email, automazione del browser | Barra laterale del browser Chrome |
 
-### What's next
+### Cosa c'è dopo
 
-Wrap up with a short recap of this course and a quiz to earn your certificate of completion that you can share on LinkedIn, and with your team.
+Concludi con un breve riepilogo di questo corso e un quiz per ottenere il tuo certificato di completamento che puoi condividere su LinkedIn e con il tuo team.
 
 #### Feedback
 
-As you progress through the course, we'd love to hear from you about how you are using concepts from the course in your work and any feedback you may have. Share your feedback [here](https://forms.gle/sY9ou5fqZBd3TjHF8).
+Man mano che avanzi nel corso, ci piacerebbe sapere da te come stai utilizzando i concetti del corso nel tuo lavoro e qualsiasi feedback tu possa avere. Condividi il tuo feedback [qui](https://forms.gle/sY9ou5fqZBd3TjHF8).
 
-#### Acknowledgments and license
+#### Riconoscimenti e licenza
 
-*Copyright 2025 Anthropic. All rights reserved.*
+*Copyright 2025 Anthropic. Tutti i diritti riservati.*
