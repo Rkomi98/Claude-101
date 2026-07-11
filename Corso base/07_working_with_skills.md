@@ -1,9 +1,5 @@
 ## Navigazione
 
-[Anthropic Academy](https://www.anthropic.com/learn) [Corsi](https://anthropic.skilljar.com/) 
-
-  
-
 **Tempo stimato:** 15 minuti
 
 ### Obiettivi di apprendimento
